@@ -1,30 +1,4 @@
-
-@import "common/header.scss";
-@import "common/footer.scss";
-@import "common/body.scss";
-/*
-@import "common/button.scss";
-@import "common/copyright.scss";
-@import "common/invite.scss";
-@import "common/site-logo.scss";
-@import "common/site-navigation.scss";
-@import "common/social.scss";
-@import "common/visually-hidden.scss";
-
-@import "common/index-main.scss";
-@import "common/descriprion.scss";
-@import "common/example.scss";
-@import "common/options.scss";
-@import "common/site-promo.scss";
-@import "common/slider.scss";
-
-@import "common/catalog.scss";
-@import "common/product-card.scss";
-@import "common/additional-card.scss";
-@import "common/additional-goods.scss";
-@import "common/promo-offer.scss";
-
-
-@import "common/selection.scss";
-@import "common/selection-form.scss";
-*/
+@import "normalize";
+@import "variables";
+@import "common/header";
+@import "common/site-logo";
