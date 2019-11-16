@@ -1,0 +1,13 @@
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 64px;
+    padding-right: 64px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $green-tone;
+    @include text(#ffffff, 14px, 18px);
+}

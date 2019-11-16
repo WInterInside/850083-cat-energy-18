@@ -1,0 +1,10 @@
+@mixin list-style () {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+@mixin text($text-color,$font-size, $line-height) {
+font-size: $font-size;
+line-height: $line-height;
+color: $text-color;
+}

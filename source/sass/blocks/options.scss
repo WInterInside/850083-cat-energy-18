@@ -1,0 +1,43 @@
+.options {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.options__list {
+  @include list-style;
+}
+.options__item {
+  background-color: $oprtions-color;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.options__header--slim,
+.options__header--pro {
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.options__header--pro {
+  background-image: url('../img/icon-cat-pro.svg');
+}
+.options__header--slim{
+  background-image: url('../img/icon-cat-slim.svg');
+}
+.options__header {
+  @include text(#111111, 24px, 37px);
+  text-transform: uppercase;
+  padding-left: 90px;
+  font-weight: normal;
+}
+.options__text {
+  @include text(#444444, 14px, 18px);
+  text-transform: uppercase;
+  border-bottom: 1px solid $border-color;
+}
+.options__link {
+  @include text(#111111, 16px, 16px);
+  text-decoration: none;
+  text-transform: uppercase;
+}
