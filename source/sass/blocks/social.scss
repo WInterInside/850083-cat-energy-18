@@ -1,6 +1,5 @@
 .social {
-  padding-left: 20px;
-  padding-right: 20px;
+  @include lr-paddings;
 }
 .social__list {
   @include list-style;
@@ -13,8 +12,7 @@
   margin-left: 37px;
   display: inline-block;
   vertical-align: middle;
-  width: 46px;
-  height: 48px;
+
 }
 .social__link {
   position: relative;
@@ -26,10 +24,16 @@
 }
 .social__link--vkontakte {
   background-image: url("../img/icon-vk.svg");
-}
-.social__link--facebook {
-  background-image: url("../img/icon-fb.svg");
+  width: 23px;
+  height: 13px;
 }
 .social__link--instagram {
   background-image: url("../img/icon-insta.svg");
+  width: 16px;
+  height: 16px;
+}
+.social__link--facebook {
+  background-image: url("../img/icon-fb.svg");
+  width: 12px;
+  height: 20px;
 }

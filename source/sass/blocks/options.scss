@@ -10,8 +10,7 @@
   margin-bottom: 20px;
   margin-top: 20px;
   padding-top: 24px;
-  padding-left: 20px;
-  padding-right: 20px;
+  @include lr-paddings;
   padding-bottom: 20px;
 }
 .options__header--slim,
