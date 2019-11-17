@@ -3,11 +3,13 @@
   margin: 0;
   list-style: none;
 }
+
 @mixin text($text-color, $font-size, $line-height) {
   font-size: $font-size;
   line-height: $line-height;
   color: $text-color;
 }
+
 @mixin lr-paddings() {
   padding-left: 20px;
   padding-right: 20px;

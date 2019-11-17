@@ -1,19 +1,22 @@
 .social {
   @include lr-paddings;
 }
+
 .social__list {
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
+
 .social__item {
   list-style: none;
-  margin-top: 36px;
   margin-left: 37px;
   display: inline-block;
   vertical-align: middle;
-
 }
+
 .social__link {
   position: relative;
   display: block;
@@ -22,16 +25,19 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .social__link--vkontakte {
   background-image: url("../img/icon-vk.svg");
   width: 23px;
   height: 13px;
 }
+
 .social__link--instagram {
   background-image: url("../img/icon-insta.svg");
   width: 16px;
   height: 16px;
 }
+
 .social__link--facebook {
   background-image: url("../img/icon-fb.svg");
   width: 12px;

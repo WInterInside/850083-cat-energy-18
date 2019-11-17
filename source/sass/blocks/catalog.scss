@@ -2,20 +2,26 @@
   @include text(#111111, 36px, 60px);
   font-weight: normal;
   border-bottom: 1px solid $border-color;
+
   @include lr-paddings;
 }
+
 .catalog__list {
   @include list-style;
 }
+
 .catalog__more {
   border-bottom: 1px solid $border-color;
+
   @include text(#111111, 12px, 26px);
   @include lr-paddings;
 }
+
 .catalog__more__text--bigger {
   @include text(#111111, 16px, 20px);
   font-weight: bold;
 }
+
 .catalog__more__expansion {
   position: relative;
   display: block;

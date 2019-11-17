@@ -1,4 +1,6 @@
-.button, .button--more {
+
+.button {
+  border: none;
   display: inline-block;
   vertical-align: middle;
   height: 40px;
@@ -9,8 +11,11 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
+
   @include text(#ffffff, 14px, 18px);
+  cursor: pointer;
 }
+
 .button--more {
   background-color: $border-color;
 }

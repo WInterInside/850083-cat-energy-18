@@ -1,4 +1,10 @@
-.site-logo{
+.site-logo {
   display: flex;
+
   @include lr-paddings;
+}
+
+.site-logo--footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

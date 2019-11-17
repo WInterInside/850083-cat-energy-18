@@ -1,3 +1,15 @@
 .copyright {
+  display: flex;
+
   @include lr-paddings;
+  padding-top: 20px;
+}
+
+.copyright__text {
+  @include text (#444444, 14px, 1px);
+  margin-right: 20px;
+}
+
+.copyright__logo {
+  padding-bottom: 10px;
 }
