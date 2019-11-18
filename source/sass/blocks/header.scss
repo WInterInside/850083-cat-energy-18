@@ -1,7 +1,6 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding-top: 11px;
   background-color: $header-color;
 }
 
@@ -11,7 +10,7 @@
 }
 
 .header__menu {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-right: 10px;
   height: 19px;
   width: 25px;

@@ -9,6 +9,7 @@
 .options__item {
   background-color: $oprtions-color;
   margin-top: 20px;
+  padding-bottom: 23px;
 
   @include lr-paddings;
 }
@@ -25,24 +26,17 @@
 }
 
 .options__icon {
+  position: relative;
   width: 50px;
   height: 51px;
+  border-radius: 50%;
   margin-right: 27px;
-  @include round(35, 36, $green-tone);
+  background-color: $green-tone;
+  text-align: center;
 }
 
-.options__icon--slim,
-.options__icon--pro {
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.options__icon--pro {
-  background-image: url("../img/icon-cat-pro.svg");
-}
-
-.options__icon--slim {
-  background-image: url("../img/icon-cat-slim.svg");
+.options__icon--pro .oprtions__pic {
+  padding-top: 15px;
 }
 
 .options__text {
