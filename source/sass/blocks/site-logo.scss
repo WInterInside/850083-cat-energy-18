@@ -1,14 +1,15 @@
 .site-logo {
   display: flex;
+}
+
+.site-logo--header {
+  padding-bottom: 15px;
 
   @include lr-paddings;
 }
 
-.site-logo--header {
-  padding-bottom: 10px;
-}
-
 .site-logo--footer {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 39px;
+  margin-bottom: 31px;
+  margin-left: 96px;
 }

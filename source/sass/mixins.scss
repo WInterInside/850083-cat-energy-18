@@ -21,3 +21,10 @@
   display: $display;
   position: $pos;
 }
+
+@mixin round($round-width, $round-height, $round-fill) {
+  width: $round-width;
+  height: $round-height;
+  background-color: $round-fill;
+  border-radius: 50%;
+}

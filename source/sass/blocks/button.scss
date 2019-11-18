@@ -4,7 +4,7 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  width: 80%;
+  width: 280px;
   height: 40px;
   margin: 0 auto;
   padding-left: 44px;
@@ -15,9 +15,11 @@
   background-color: $green-tone;
 
   @include text(#ffffff, 14px, 18px);
+  font-weight: normal;
   cursor: pointer;
 }
 
 .button--more {
   background-color: #f2f2f2;
+  color: gray;
 }
