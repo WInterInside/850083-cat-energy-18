@@ -9,7 +9,7 @@
 .product-card__link--img {
   display: block;
   width: 140px;
-  height:144px;
+  height: 144px;
 }
 
 .product-card__heading {
@@ -31,6 +31,7 @@
   @include text(#444444, 12px, 12px);
   font-family: $sup-font;
 }
+
 .product-card__sign {
   text-align: left;
 }
