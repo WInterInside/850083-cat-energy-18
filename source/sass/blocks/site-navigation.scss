@@ -15,9 +15,9 @@
 }
 
 .site-navigation__link {
-  @include text(#111111, 16px, 20px);
+  @include text(#111111, 20px, 20px);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .site-navigation__button,

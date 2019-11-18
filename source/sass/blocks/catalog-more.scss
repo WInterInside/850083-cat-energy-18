@@ -22,5 +22,11 @@
 
 .catalog-more__text--bigger {
   @include text(#111111, 16px, 20px);
-  font-weight: bold;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.catalog-more__text--smaller {
+  font-family: $sup-font;
+  color: gray;
 }
