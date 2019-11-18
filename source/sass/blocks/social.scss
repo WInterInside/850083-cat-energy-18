@@ -3,6 +3,9 @@
 }
 
 .social__list {
+  display: flex;
+  justify-content: space-between;
+
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
@@ -12,7 +15,6 @@
 
 .social__item {
   list-style: none;
-  margin-left: 37px;
   display: inline-block;
   vertical-align: middle;
 }

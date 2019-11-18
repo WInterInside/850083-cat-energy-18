@@ -40,7 +40,7 @@
 
 .options__text {
   @include text(#444444, 14px, 18px);
-  text-transform: uppercase;
+  font-family: $sup-font;
   border-bottom: 1px solid $border-color;
 }
 

@@ -1,14 +1,17 @@
 .site-promo {
   background-image: url("../img/index-background-mobile@1x.jpg");
-  background-color: $green-tone;
   background-repeat: no-repeat;
-  padding-top: 98px;
-  padding-left: 38px;
+  padding-top: 50px;
+  text-align: center;
+
+
 }
 
 .site-promo__header {
   @include text(#ffffff, 36px, 36px);
   text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 0;
 }
 
 .site-promo__text {

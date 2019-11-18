@@ -9,25 +9,3 @@
 .catalog__list {
   @include list-style;
 }
-
-.catalog__more {
-  border-bottom: 1px solid $border-color;
-
-  @include text(#111111, 12px, 26px);
-  @include lr-paddings;
-}
-
-.catalog__more__text--bigger {
-  @include text(#111111, 16px, 20px);
-  font-weight: bold;
-}
-
-.catalog__more__expansion {
-  position: relative;
-  display: block;
-  width: 46px;
-  height: 48px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/icon-plus.svg");
-}

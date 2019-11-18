@@ -11,8 +11,10 @@
   text-transform: uppercase;
 }
 
-.product-card__data {
+.product-card__sign,
+.product-card__value {
   @include text(#444444, 12px, 16px);
+  font-family: $sup-font;
 }
 
 .product-card__wraper {

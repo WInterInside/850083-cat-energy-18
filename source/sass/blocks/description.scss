@@ -19,6 +19,10 @@
 .description__item {
   display: flex;
   margin-bottom: 20px;
+}
+
+.description__text {
+  font-family: $sup-font;
 
   @include text (#444444, 14px, 16px);
 }

@@ -14,3 +14,10 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+/*Когда вы используете ::before и ::after, вы всегда нуждаетесь в этих трех строчках кода. Используя этот миксин, вы сохраните свое время на их написание*/
+@mixin pseudo($display: block, $pos: absolute, $content: ""){
+  content: $content;
+  display: $display;
+  position: $pos;
+}

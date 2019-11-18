@@ -1,3 +1,50 @@
+.site-navigation {
+  position: relative;
+}
+
 .site-navigation__list {
   @include list-style;
+}
+.site-navigation__item {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.site-navigation__link {
+  @include text(#111111, 16px, 20px);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.site-navigation__button,
+.site-navigation__button::before,
+.site-navigation__button::after {
+  position: absolute;
+  top: -40px;
+  width: 30px;
+  height: 2px;
+  cursor: pointer;
+  background-color: #000000;
+}
+.site-navigation__button {
+  right: 20px;
+}
+
+.site-navigation__button::before {
+  content: "";
+  top: 10px;
+}
+.site-navigation__button::after {
+  content: "";
+  top: 20px;
+}
+
+.site-navigation__item:nth-child(1) {
+  border: 1px solid $border-color;
+}
+
+.site-navigation__item {
+  border: 1px solid $border-color;
+  border-top: none;
 }

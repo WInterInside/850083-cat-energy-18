@@ -1,7 +1,6 @@
 .header {
   display: flex;
+  flex-direction: column;
   padding-top: 10px;
-  padding-bottom: 17px;
   background-color: $header-color;
-  border-bottom: 1px solid $border-color;
 }

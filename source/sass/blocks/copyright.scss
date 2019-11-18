@@ -1,11 +1,14 @@
 .copyright {
   display: flex;
+  justify-content: space-between;
 
   @include lr-paddings;
   padding-top: 20px;
 }
 
 .copyright__text {
+  font-family: $sup-font;
+
   @include text (#444444, 14px, 1px);
   margin-right: 20px;
 }
