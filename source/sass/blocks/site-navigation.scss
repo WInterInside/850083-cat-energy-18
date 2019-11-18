@@ -5,10 +5,12 @@
 .site-navigation__list {
   @include list-style;
 }
+
 .site-navigation__item {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid $border-color;
 }
 
 .site-navigation__link {
@@ -27,6 +29,7 @@
   cursor: pointer;
   background-color: #000000;
 }
+
 .site-navigation__button {
   right: 20px;
 }
@@ -35,16 +38,8 @@
   content: "";
   top: 10px;
 }
+
 .site-navigation__button::after {
   content: "";
   top: 20px;
-}
-
-.site-navigation__item:nth-child(1) {
-  border: 1px solid $border-color;
-}
-
-.site-navigation__item {
-  border: 1px solid $border-color;
-  border-top: none;
 }
