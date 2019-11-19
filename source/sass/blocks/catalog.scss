@@ -1,0 +1,14 @@
+.catalog__heading {
+  @include text(#111111, 36px, 60px);
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: normal;
+  border-bottom: 1px solid $border-color;
+
+  @include lr-paddings;
+}
+
+.catalog__list {
+  @include list-style;
+}
