@@ -1,0 +1,66 @@
+.options {
+  @include lr-paddings;
+}
+
+.options__list {
+  @include list-style;
+}
+
+.options__item {
+  background-color: $oprtions-color;
+  margin-top: 20px;
+  padding-bottom: 23px;
+
+  @include lr-paddings;
+}
+
+.options__wraper {
+  display: flex;
+  align-items: center;
+}
+
+.options__header {
+  @include text(#111111, 24px, 37px);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.options__icon {
+  position: relative;
+  width: 50px;
+  height: 51px;
+  border-radius: 50%;
+  margin-right: 27px;
+  background-color: $green-tone;
+  text-align: center;
+}
+
+.options__icon--pro .oprtions__pic {
+  padding-top: 15px;
+}
+
+.options__text {
+  @include text(#444444, 14px, 18px);
+  font-family: $sup-font;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 23px;
+}
+
+.options__link {
+  @include text(#111111, 16px, 16px);
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+
+.options__link::after {
+  @include pseudo;
+  top: 6px;
+  right: 0;
+  width: 25px;
+  height: 12px;
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}

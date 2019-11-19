@@ -1,0 +1,30 @@
+@mixin list-style () {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin text($text-color, $font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $text-color;
+}
+
+@mixin lr-paddings() {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Когда вы используете ::before и ::after, вы всегда нуждаетесь в этих трех строчках кода. Используя этот миксин, вы сохраните свое время на их написание*/
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin round($round-width, $round-height, $round-fill) {
+  width: $round-width;
+  height: $round-height;
+  background-color: $round-fill;
+  border-radius: 50%;
+}
