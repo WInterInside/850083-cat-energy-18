@@ -20,6 +20,10 @@
 }
 
 .button--more {
-  background-color: $oprtions-color;
-  color: $mr-gray-color;
+  background-color: $border-color;
+  color: #444444;
+}
+
+.button--button {
+  padding-top: 0;
 }

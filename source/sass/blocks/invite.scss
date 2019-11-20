@@ -2,6 +2,11 @@
   background-color: #ffffff;
 }
 
+.invite--in-catalog,
+.invite--in-selection {
+  background-color: $oprtions-color;
+}
+
 .invite__data {
   display: flex;
   align-items: center;
