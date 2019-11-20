@@ -1,0 +1,33 @@
+.invite {
+  background-color: #ffffff;
+}
+
+.invite__data {
+  display: flex;
+  align-items: center;
+  min-height: 114px;
+
+  @include lr-paddings;
+}
+
+.invite__text {
+  width: 125px;
+  margin: 0;
+  margin-right: 19px;
+
+  @include text(#111111, 16px, 20px);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.invite__adress {
+  font-family: $sup-font;
+
+  @include text(#444444, 14px, 20px);
+  font-weight: normal;
+  font-style: normal;
+}
+
+.invite-map__img {
+  vertical-align: bottom;
+}

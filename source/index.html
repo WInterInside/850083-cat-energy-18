@@ -99,39 +99,43 @@
     <section class="example">
       <h2 class="example__heading">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <table class="example__table">
-        <tr class="example__data">
-          <td class="example__data__value">5 кг</td>
-          <td class="example__data__value">60 дней</td>
-        </tr>
-        <tr class="example__data">
-          <td class="example__data__sign">Снижение веса</td>
-          <td class="example__data__sign">Затрачено дней</td>
-        </tr>
-      </table>
-      <div class="example_result">
-        <p class="example__result__sign">Затраты на питание: 15 000 руб.</p>
-      </div>
+        <div class="example__data">
+          <div class="example__block example__block--weight">
+            <div class="example__border"></div>
+            <p class="example__value">5 кг</p>
+            <p class="example__sign">Снижение веса</p>
+          </div>
+          <div class="example__block example__block--time">
+            <div class="example__border"></div>
+            <p class="example__value">60 дней</p>
+            <p class="example__sign">Затрачено дней</p>
+          </div>
+        </div>
+        <p class="example__result">Затраты на питание: 15 000 руб.</p>
       <div class="slider">
-        <button class="button slider__description slider__description--before" type="button" name="button">Было</button>
         <div class="slider__before">
-          <img class="slider__image" src="img/before-mobile@1x.png" alt="Жирный кот"  width="300" height="150">
+          <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" alt="Жирный кот"  width="311" height="232">
         </div>
         <div class="slider__after">
-          <img class="slider__image" src="img/after-mobile@1x.png" alt="Стройный кот"  width="300" height="150">
+          <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" alt="Стройный кот"  width="311" height="232">
         </div>
-        <button class="button slider__description slider__description--after" type="button" name="button">Стало</button>
+        <div class="slider__buttons">
+          <button class="slider__button slider__description--after" type="button" name="button">Стало</button>
+          <button class="slider__button slider__description--before" type="button" name="button">Было</button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
     <section class="invite">
-      <p class="invite__text">Приглашаем к сотрудничеству дилеров!</p>
-      <address class="invite__adress">
-        ул. Большая <br>
-        Конюшенная, д. 19/8 <br>
-        Санкт-Петербург
-      </address>
+      <div class="invite__data">
+        <p class="invite__text">Приглашаем <br>к сотрудничеству дилеров!</p>
+        <address class="invite__adress">
+          ул. Большая <br>
+          Конюшенная, д. 19/8 <br>
+          Санкт-Петербург
+        </address>
+      </div>
       <div class="invite-map" href="index.html">
         <img class="invite-map__pin" src="img/map-pin.png" alt="-отметка магазина" width="55" height="53">
         <img class="invite-map__img" src="img/bg-map-mobile@1x.png" alt="Карта местности с отметкой магазина" width="320" height="400">
@@ -151,13 +155,13 @@
         <li class="social__item">
           <!-- 2 -->
           <a class="social__link social__link--instagram" href="https://www.facebook.com/htmlacademy">
-            <span class="visually-hidden">Фейсбук</span>
+            <span class="visually-hidden">Инстаграм</span>
           </a>
         </li>
         <li class="social__item">
           <!-- 3 -->
           <a class="social__link social__link--facebook" href="https://www.instagram.com/htmlacademy">
-            <span class="visually-hidden">Инстаграм</span>
+            <span class="visually-hidden">Фейсбук</span>
           </a>
         </li>
       </ul>

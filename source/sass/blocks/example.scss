@@ -1,0 +1,89 @@
+.example {
+  @include lr-paddings;
+  padding-top: 33px;
+  background-color: $oprtions-color;
+}
+
+.example__heading {
+  @include text(#111111, 36px, 38px);
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  font-family: $sup-font;
+
+  @include text(#444444, 14px, 16px);
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 27px;
+  padding-right: 13px;
+}
+
+.example__data {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.example__block {
+  position: relative;
+  height: 55px;
+}
+
+.example__block--weight {
+  width: 54px;
+  background-color: $oprtions-color;
+}
+
+.example__block--time {
+  width: 82px;
+}
+
+.example__sign {
+  font-family: $sup-font;
+
+  @include text($mr-gray-color, 12px, 14px);
+  font-weight: normal;
+  text-transform: lowercase;
+  margin: 0;
+}
+
+.example__value {
+  @include text(#111111, 24px, 26px);
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.example__border {
+  position: absolute;
+  top: -8px;
+  width: 124px;
+  height: 53px;
+  border-radius: 3px;
+  border: 1px solid $border-color;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.example__block--time .example__border {
+  left: -20px;
+}
+
+.example__block--weight .example__border {
+  left: -34px;
+}
+
+.example__result {
+  text-align: center;
+
+  @include text(#111111, 14px, 16px);
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 44px;
+}
