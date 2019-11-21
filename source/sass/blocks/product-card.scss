@@ -1,14 +1,14 @@
 .product-card {
   border: 1px solid $border-color;
   border-top: none;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   @include lr-paddings;
 }
 
 .product-card__link--img {
   display: block;
-  width: 140px;
+  width: 137px;
   height: 144px;
 }
 
@@ -21,9 +21,9 @@
 }
 
 .product-card__data {
-  height: 40px;
-  margin-top: 10px;
-  margin-bottom: 28px;
+  width: 145px;
+  margin-bottom: 22px;
+
 }
 
 .product-card__sign,
@@ -46,7 +46,7 @@
 }
 
 .product-card__wraper--column {
-  padding-top: 25px;
+  padding-top: 20px;
   width: 140px;
   flex-direction: column;
 }

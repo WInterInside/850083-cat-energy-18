@@ -6,7 +6,7 @@
 }
 
 .selection__text {
-  @include text(#444444, 14px, 16px);
+  @include text(#111111, 14px, 16px);
   font-weight: normal;
   margin: 0;
   margin-bottom: 27px;
@@ -149,7 +149,7 @@
   padding-top: 11px;
   padding-bottom: 12px;
 
-  @include text(#444444, 12px, 14px);
+  @include text(#444444, 14px, 15px);
   font-family: $sup-font;
   text-decoration: none;
   font-weight: normal;

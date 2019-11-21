@@ -11,8 +11,7 @@
   @include text(#222222, 16px, 16px);
   font-weight: normal;
   text-transform: uppercase;
-  padding-top: 2px;
-  padding-bottom: 2px;
+
 }
 
 .additional-card__option {
@@ -23,4 +22,8 @@
   font-weight: normal;
   justify-content: space-between;
   margin-bottom: 14px;
+}
+
+.additional-card__option--price {
+  text-transform: uppercase;
 }

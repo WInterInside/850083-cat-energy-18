@@ -2,14 +2,19 @@
   display: none;
 }
 
+.slider__before {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .slider {
   text-align: center;
 }
 
 .slider__buttons {
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 38px;
+  margin-top: 38px;
+  margin-left: 38px;
 }
 
 .slider__button {
@@ -19,4 +24,7 @@
   @include text(#111111, 16px, 16px);
   font-weight: normal;
   text-transform: uppercase;
+}
+.slider__button:first-child {
+  margin-right: 108px;
 }

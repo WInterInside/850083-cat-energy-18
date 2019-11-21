@@ -1,18 +1,25 @@
 .copyright {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   @include lr-paddings;
-  padding-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 22px;
 }
 
 .copyright__text {
   font-family: $sup-font;
 
-  @include text (#444444, 14px, 1px);
-  margin-right: 20px;
+  @include text (#444444, 16px, 1px);
+}
+
+.copyright__link--logo {
+  margin-right: -5px;
+  width: 38px;
+  height: 48px;
 }
 
 .copyright__logo {
-  padding-bottom: 10px;
+
 }

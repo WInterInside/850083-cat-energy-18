@@ -20,10 +20,16 @@
 }
 
 .button--more {
-  background-color: $border-color;
+  background-color: $oprtions-color;
   color: #444444;
+  font-size: 16px;
 }
 
 .button--button {
   padding-top: 0;
+  font-size: 16px;
+}
+
+.button--order {
+  font-size: 16px;
 }
