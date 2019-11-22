@@ -31,3 +31,28 @@
   display: none;
   background-image: url("../img/icon-close.svg");
 }
+
+@media (min-width: $tablet-widths) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: $header-color;
+    padding-top: 13px;
+
+    @include lr-paddings;
+    height: 59px;
+  }
+
+  .header__menu--lines {
+    display: none;
+    height: 19px;
+    width: 25px;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+}
+@media (min-width: $desktop-widths) {
+  .header {
+    margin-bottom: -150px;
+  }
+}

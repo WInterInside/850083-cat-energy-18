@@ -21,3 +21,20 @@
 .site-promo__wraper {
   margin-bottom: 29px;
 }
+
+@media (min-width: $tablet-widths) {
+  .site-promo {
+    background-image: none;
+    background-color: white;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .site-promo {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: right;
+    background-color: white;
+    background-size: 50%;
+  }
+
+}
