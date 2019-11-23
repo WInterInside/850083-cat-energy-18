@@ -126,6 +126,7 @@
 
 .selection-form__wraper--contacts {
   @include lr-paddings;
+  margin-bottom: 15px;
 }
 
 .selection-form__input--comment {
@@ -143,15 +144,11 @@
 }
 
 .selection-form__button--tel {
-  right: 26px ;
+  right: 26px;
 }
 
 .selection-form__button--email {
   right: 30px;
-}
-
-.selection-form__wraper--contacts {
-  margin-bottom: 15px;
 }
 
 .selection-form__input--tel,
