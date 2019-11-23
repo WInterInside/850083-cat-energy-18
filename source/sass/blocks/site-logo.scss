@@ -3,13 +3,10 @@
 }
 
 .site-logo--header {
-  padding-bottom: 15px;
-
-  @include lr-paddings;
+  padding-right: 12px;
 }
 
 .site-logo--footer {
-  margin-top: 39px;
-  margin-bottom: 31px;
+  padding-bottom: 17px;
   margin-left: 96px;
 }

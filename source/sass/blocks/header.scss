@@ -2,16 +2,19 @@
   display: flex;
   flex-direction: column;
   background-color: $header-color;
+  padding-bottom: 7px;
+
+  @include lr-paddings;
 }
 
-.header_wraper {
+.header__wraper {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .header__menu {
-  margin-top: 20px;
-  margin-right: 10px;
+  margin-left: 53px;
+  margin-top: 2px;
   height: 19px;
   width: 25px;
   background-position: center;
@@ -20,12 +23,12 @@
 }
 
 .header__menu--lines {
-  display: none;
   height: 19px;
   width: 25px;
   background-image: url("../img/icon-mobile-menu.svg");
 }
 
 .header__menu--x {
+  display: none;
   background-image: url("../img/icon-close.svg");
 }

@@ -1,0 +1,185 @@
+.selection__heading {
+  @include lr-paddings;
+  @include text(#111111, 36px, 38px);
+  font-weight: normal;
+  margin-bottom: 38px;
+}
+
+.selection__text {
+  @include lr-paddings;
+  @include text(#111111, 14px, 17px);
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 38px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+
+.selection-form__cat {
+  @include lr-paddings;
+  display: flex;
+  flex-direction: column;
+  min-height: 163px;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+}
+
+.selection-form__wraper {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selection-form__wraper:last-child {
+  margin-bottom: 0;
+}
+
+.selection-form__label {
+  @include text(#222222, 16px, 18px);
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-right: 14px;
+}
+
+.selection-form__input {
+  @include text(#444444, 16px, 17px);
+  font-weight: normal;
+  text-transform: uppercase;
+  flex-grow: 1;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  padding-right: 38px;
+}
+
+.selection-form__input--age {
+  width: 172px;
+}
+
+.selection-form__raioblock {
+  border: 1px solid $border-color;
+
+  @include list-style;
+  padding-top: 28px;
+  padding-left: 33px;
+}
+
+.selection-form__option {
+  margin-bottom: 24px;
+}
+
+.selection-form__radio {
+  margin-right: 16px;
+}
+
+.selection-form__heading {
+  position: relative;
+
+  @include text(#111111, 24px, 24px);
+  font-weight: normal;
+  padding-left: 20px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.selection-form__label--comment {
+  position: relative;
+
+  @include text(#111111, 24px, 24px);
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 31px;
+  margin-top: 14px;
+}
+
+.selection-form__heading--contacts::after,
+.selection-form__label--comment::after,
+.selection-form__heading--options::after {
+  @include pseudo;
+  top: 35%;
+  right: 0;
+  width: 99px;
+  height: 3px;
+  background-color: $green-tone;
+}
+
+.selection-form__label--comment::after {
+  width: 158px;
+  top: 50%;
+  right: -35px;
+}
+
+.selection-form__heading--options::after {
+  width: 136px;
+  top: 50%;
+}
+
+.selection-form__wraper--comment {
+  @include lr-paddings;
+  flex-direction: column;
+  margin-bottom: 14px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.selection-form__wraper--contacts {
+  @include lr-paddings;
+  margin-bottom: 15px;
+}
+
+.selection-form__input--comment {
+  resize: none;
+  min-height: 150px;
+  padding-right: 0;
+}
+
+.selection-form__button {
+  position: absolute;
+  top: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.selection-form__button--tel {
+  right: 26px;
+}
+
+.selection-form__button--email {
+  right: 30px;
+}
+
+.selection-form__input--tel,
+.selection-form__input--email {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 11px;
+  padding-right: 38px;
+}
+
+.selection-form__options {
+  @include list-style();
+  @include lr-paddings;
+  margin-bottom: 41px;
+}
+
+.selection-form__heading--options {
+  margin-bottom: 29px;
+}
+
+.selection-form__checkbox {
+  margin-right: 29px;
+}
+
+.selection__explanation {
+  text-align: center;
+  padding-top: 7px;
+  padding-bottom: 17px;
+
+  @include text(#444444, 14px, 15px);
+  font-family: $sup-font;
+  text-decoration: none;
+  font-weight: normal;
+}

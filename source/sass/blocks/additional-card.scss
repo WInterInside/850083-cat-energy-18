@@ -1,0 +1,28 @@
+.additional-card:first-child {
+  border-top: 1px solid $border-color;
+}
+
+.additional-card {
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 17px;
+}
+
+.additional-card__heading {
+  @include text(#222222, 16px, 16px);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.additional-card__option {
+  display: flex;
+
+  @include text(#444444, 14px, 14px);
+  font-family: $sup-font;
+  font-weight: normal;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.additional-card__option--price {
+  text-transform: uppercase;
+}

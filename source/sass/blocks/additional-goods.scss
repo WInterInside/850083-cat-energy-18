@@ -1,0 +1,25 @@
+.additional-goods {
+  @include lr-paddings;
+}
+
+.additional-goods__heading {
+  position: relative;
+
+  @include text(#111111, 24px, 26px);
+  font-weight: normal;
+  padding-top: 11px;
+  padding-bottom: 13px;
+}
+
+.additional-goods__heading::after {
+  @include pseudo;
+  top: 53%;
+  right: -20px;
+  width: 53px;
+  height: 3px;
+  background-color: $green-tone;
+}
+
+.additional-goods__list {
+  @include list-style;
+}

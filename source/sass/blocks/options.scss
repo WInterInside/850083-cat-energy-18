@@ -8,10 +8,15 @@
 
 .options__item {
   background-color: $oprtions-color;
-  margin-top: 20px;
-  padding-bottom: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
 
   @include lr-paddings;
+}
+
+.options__item:last-child {
+  margin-bottom: 32px;
 }
 
 .options__wraper {
@@ -30,7 +35,7 @@
   width: 50px;
   height: 51px;
   border-radius: 50%;
-  margin-right: 27px;
+  margin-right: 21px;
   background-color: $green-tone;
   text-align: center;
 }
@@ -43,7 +48,9 @@
   @include text(#444444, 14px, 18px);
   font-family: $sup-font;
   border-bottom: 1px solid $border-color;
-  padding-bottom: 23px;
+  margin-top: 10px;
+  margin-bottom: 17px;
+  padding-bottom: 21px;
 }
 
 .options__link {
@@ -51,7 +58,7 @@
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  padding-right: 30px;
+  padding-right: 35px;
 }
 
 .options__link::after {
