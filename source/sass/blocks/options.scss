@@ -8,9 +8,14 @@
 
 .options__item {
   background-color: $oprtions-color;
-  margin-bottom: 50px;
-
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   @include lr-paddings;
+}
+
+.options__item:last-child {
+  margin-bottom: 32px;
 }
 
 .options__wraper {
@@ -43,7 +48,7 @@
   font-family: $sup-font;
   border-bottom: 1px solid $border-color;
   margin-top: 10px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   padding-bottom: 21px;
 }
 

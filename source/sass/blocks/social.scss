@@ -4,12 +4,12 @@
 
 .social__list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
 
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
   padding-top: 24px;
   padding-left: 73px;
 }
@@ -31,26 +31,25 @@
 .social__link {
   position: relative;
   display: block;
-  width: 46px;
-  height: 48px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .social__link--vkontakte {
-  background-image: url("../img/icon-vk.svg");
+  margin-top: -3px;
   width: 22px;
   height: 12px;
 }
 
-.social__link--instagram {
-  background-image: url("../img/icon-insta.svg");
+.social__link--inst {
+  margin-top: -1px;
   width: 19px;
   height: 19px;
 }
 
-.social__link--facebook {
-  background-image: url("../img/icon-fb.svg");
+.social__link--fb {
+  margin-top: -3px;
+  margin-left: -3px;
   width: 10px;
   height: 19px;
 }

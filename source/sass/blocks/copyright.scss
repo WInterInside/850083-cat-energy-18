@@ -2,16 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding-top: 14px;
   @include lr-paddings;
-  padding-top: 12px;
-  padding-bottom: 22px;
 }
 
 .copyright__text {
   font-family: $sup-font;
 
-  @include text (#444444, 16px, 1px);
+  @include text (#444444, 16px, 16px);
 }
 
 .copyright__link--logo {
