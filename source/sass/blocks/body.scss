@@ -20,15 +20,15 @@ body {
 
 @media (min-width: $tablet-widths) {
   body {
-  width:  $tablet-widths;
-  background-color: cyan;
+    width: $tablet-widths;
+    background-color: cyan;
   }
 }
 
 @media (min-width: $desktop-widths) {
   body {
-  width:  $desktop-widths;
-  background-color: green;
+    width: $desktop-widths;
+    background-color: green;
   }
 }
 

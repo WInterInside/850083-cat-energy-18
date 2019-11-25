@@ -52,3 +52,65 @@
 .description__icon--clock {
   background-image: url("../img/advantage-clock@1x.png");
 }
+
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .description {
+    min-height: 300px;
+
+    @include lr-paddings;
+  }
+
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include list-style;
+  }
+
+  .description__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 250px;
+    min-height: 260px;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .description {
+    min-height: 500px;
+
+    @include lr-paddings;
+  }
+
+  .description__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include list-style;
+  }
+
+  .description__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 260px;
+  }
+}

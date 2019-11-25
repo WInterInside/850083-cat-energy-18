@@ -3,8 +3,9 @@
 }
 
 .site-navigation__list {
-  display:flex;
+  display: flex;
   flex-direction: column;
+
   @include list-style;
 }
 

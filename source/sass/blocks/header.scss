@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  background-color: $header-color;
+  background-color: transparent;
   padding-bottom: 7px;
 
   @include lr-paddings;
@@ -52,6 +52,7 @@
     background-image: url("../img/icon-mobile-menu.svg");
   }
 }
+
 @media (min-width: $desktop-widths) {
   .header {
     margin-bottom: -150px;

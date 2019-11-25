@@ -91,3 +91,48 @@
   margin: 0;
   margin-bottom: 35px;
 }
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .example__result {
+    text-align: right;
+    @include text(#111111, 20px, 20px);
+    margin-left: 200px;
+    }
+
+    .example__wraper--row {
+      display: flex;
+    }
+
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .example {
+    display: flex;
+    min-height: 400px;
+  }
+
+  .example__result {
+    text-align: right;
+    @include text(#111111, 20px, 20px);
+    margin-left: 0;
+    }
+
+  .example__wraper--column {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+}

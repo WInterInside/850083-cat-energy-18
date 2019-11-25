@@ -34,3 +34,44 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .invite__text {
+    margin-right: auto;
+  }
+
+  .invite-map__img--mob,
+  .invite-map__img--desk {
+    display: none;
+  }
+
+  .invite-map__img--tab {
+    display: block;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .invite-map__img--tab,
+  .invite-map__img--mob {
+    display: none;
+  }
+
+  .invite-map__img--desk {
+    display: block;
+  }
+}
