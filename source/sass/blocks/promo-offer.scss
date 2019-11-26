@@ -3,6 +3,9 @@
   height: 328px;
   padding-top: 39px;
   margin-bottom: 35px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 
   @include lr-paddings;
 }
@@ -20,13 +23,63 @@
   text-align: center;
   font-family: $sup-font;
   font-weight: normal;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+
 }
 
 .promo-offer__icon {
   position: absolute;
   top: 32%;
   right: 40%;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .promo-offer {
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .promo-offer__text {
+    width: 740px;
+    height: 289px;
+    margin: 0;
+
+    @include text(#ffffff, 16px, 18px);
+    text-align: right;
+    font-family: $sup-font;
+    font-weight: normal;
+  }
+
+  .promo-offer__icon {
+    position: absolute;
+    top: 32%;
+    left: 20%;
+  }
+
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .promo-offer {
+    align-self: center;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .promo-offer__text {
+    width: 240px;
+  }
 }

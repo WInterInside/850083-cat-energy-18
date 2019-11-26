@@ -49,3 +49,74 @@
   width: 140px;
   flex-direction: column;
 }
+
+/* МАКСИМ - СДЕЛАЙ ЭТО МИКСИНОМ!!! */
+.product-card__image--tab,
+.product-card__image--desk {
+  display: none;
+}
+
+.product-card__image--mob {
+  display: block;
+}
+ /* МАКСИМ - СДЕЛАЙ ЭТО МИКСИНОМ!!! */
+
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .product-card__wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-card__image--mob,
+  .product-card__image--desk {
+    display: none;
+  }
+
+  .product-card__image--tab {
+    display: block;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .product-card__wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .product-card__image--tab,
+  .product-card__image--mob {
+    display: none;
+  }
+
+  .product-card__image--desk {
+    display: block;
+  }
+}

@@ -13,3 +13,53 @@
 .catalog__list {
   @include list-style;
 }
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .catalog__list {
+    @include list-style;
+    margin: 0 auto;
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .catalog__heading {
+    @include text(#111111, 36px, 60px);
+    margin: 0;
+    margin-top: 153px;
+    padding-top: 10px;
+    padding-bottom: 27px;
+    font-weight: normal;
+    border-bottom: 1px solid $border-color;
+
+    @include lr-paddings;
+  }
+
+  .catalog__list {
+    @include list-style;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__wraper {
+    display: flex;
+  }
+}

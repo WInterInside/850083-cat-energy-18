@@ -26,3 +26,39 @@
 .additional-card__option--price {
   text-transform: uppercase;
 }
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .additional-card__wraper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .additional-card__link {
+    margin-right: auto;
+  }
+
+  .additional-card__option--price {
+    margin-left: 100px;
+  }
+
+  .additional-card .button--order {
+    width: 100%;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+
+}

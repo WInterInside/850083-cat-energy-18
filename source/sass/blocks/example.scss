@@ -101,14 +101,14 @@
 @media (min-width: $tablet-widths) {
   .example__result {
     text-align: right;
+
     @include text(#111111, 20px, 20px);
     margin-left: 200px;
-    }
+  }
 
-    .example__wraper--row {
-      display: flex;
-    }
-
+  .example__wraper--row {
+    display: flex;
+  }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
@@ -126,9 +126,10 @@
 
   .example__result {
     text-align: right;
+
     @include text(#111111, 20px, 20px);
     margin-left: 0;
-    }
+  }
 
   .example__wraper--column {
     width: 300px;

@@ -23,3 +23,27 @@
 .additional-goods__list {
   @include list-style;
 }
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .additional-goods {
+    @include lr-paddings;
+    width: 1000px;
+  }
+}

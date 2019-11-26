@@ -21,11 +21,21 @@
   margin-bottom: 27px;
 }
 
+.site-promo__img--tab,
+.site-promo__img--desk {
+  display: none;
+}
+
+.site-promo__img--mob {
+  display: block;
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
 @media (min-width: $tablet-widths) {
   .site-promo {
     min-height: 750px;
@@ -59,7 +69,6 @@
   .site-promo__img--tab {
     display: block;
   }
-
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
@@ -97,16 +106,15 @@
     @include text(#000000, 14px, 20px);
     text-transform: uppercase;
     text-align: left;
-
   }
 
   .site-promo__wraper--text {
     margin-top: 250px;
   }
 
-  .site-promo__wraper--order {      ;
-      width: 900px;
-      display: flex;
-      flex-direction: row-reverse;
-    }
+  .site-promo__wraper--order {
+    width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
