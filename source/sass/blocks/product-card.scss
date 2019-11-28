@@ -1,7 +1,11 @@
 .product-card {
   border: 1px solid $border-color;
   border-top: none;
+  width: $mobile-widths-only;
+
+  @include lr-paddings;
   padding-bottom: 24px;
+  margin: 0 auto;
 }
 
 .product-card__link--img {
