@@ -1,12 +1,10 @@
 .selection__heading {
-  @include lr-paddings;
   @include text(#111111, 36px, 38px);
   font-weight: normal;
   margin-bottom: 38px;
 }
 
 .selection__text {
-  @include lr-paddings;
   @include text(#111111, 14px, 17px);
   font-weight: normal;
   margin: 0;
@@ -16,7 +14,6 @@
 }
 
 .selection-form__cat {
-  @include lr-paddings;
   display: flex;
   flex-direction: column;
   min-height: 163px;
@@ -117,7 +114,6 @@
 }
 
 .selection-form__wraper--comment {
-  @include lr-paddings;
   flex-direction: column;
   margin-bottom: 14px;
   justify-content: space-between;
@@ -125,7 +121,6 @@
 }
 
 .selection-form__wraper--contacts {
-  @include lr-paddings;
   margin-bottom: 15px;
 }
 
@@ -161,7 +156,6 @@
 
 .selection-form__options {
   @include list-style();
-  @include lr-paddings;
   margin-bottom: 41px;
 }
 

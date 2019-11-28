@@ -4,10 +4,8 @@
   padding-top: 39px;
   margin-bottom: 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
 
-  @include lr-paddings;
+  @include background (center, no-repeat);
 }
 
 .promo-offer__text {
@@ -19,7 +17,7 @@
   padding-right: 60px;
   margin: 0;
 
-  @include text(#ffffff, 16px, 18px);
+  @include text(#ffffff, 16px, 20px);
   text-align: center;
   font-family: $sup-font;
   font-weight: normal;
@@ -31,10 +29,6 @@
   right: 40%;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
@@ -62,11 +56,6 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {

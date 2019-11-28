@@ -1,20 +1,15 @@
 .invite {
   padding-top: 2px;
   margin-bottom: 17px;
-  background-color: #ffffff;
-}
-
-.invite--in-catalog,
-.invite--in-selection {
   background-color: $oprtions-color;
 }
 
 .invite__data {
   display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 114px;
-
-  @include lr-paddings;
+  background-color: #ffffff;
 }
 
 .invite__text {
@@ -45,10 +40,6 @@
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .invite__text {
@@ -65,11 +56,6 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {

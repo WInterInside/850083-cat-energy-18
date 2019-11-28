@@ -1,7 +1,3 @@
-.description {
-  @include lr-paddings;
-}
-
 .description__header {
   @include text (#111111, 36px, 60px);
   font-weight: normal;
@@ -21,6 +17,7 @@
 }
 
 .description__text {
+  position: relative;
   width: 200px;
   font-family: $sup-font;
   margin: 0;
@@ -28,7 +25,10 @@
   @include text (#444444, 14px, 19px);
 }
 
-.description__icon {
+.description__text::before {
+  @include pseudo;
+  top: 0; /* временно */
+  right: -85px; /* временно */
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -37,34 +37,27 @@
   background-position: center;
 }
 
-.description__icon--leaf {
+.description__text--leaf::before {
   background-image: url("../img/advantage-leaf@1x.png");
 }
 
-.description__icon--powder {
+.description__text--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
 }
 
-.description__icon--dining {
+.description__text--dining::before {
   background-image: url("../img/advantage-dining@1x.png");
 }
 
-.description__icon--clock {
+.description__text--clock::before {
   background-image: url("../img/advantage-clock@1x.png");
 }
 
-
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .description {
     min-height: 300px;
-
-    @include lr-paddings;
   }
 
   .description__list {
@@ -86,17 +79,10 @@
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .description {
     min-height: 500px;
-
-    @include lr-paddings;
   }
 
   .description__list {

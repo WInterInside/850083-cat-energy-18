@@ -3,8 +3,6 @@
   flex-direction: column;
   background-color: transparent;
   padding-bottom: 7px;
-
-  @include lr-paddings;
 }
 
 .header__wraper {
@@ -40,8 +38,6 @@
     flex-direction: row;
     background-color: $header-color;
     padding-top: 13px;
-
-    @include lr-paddings;
     height: 59px;
   }
 

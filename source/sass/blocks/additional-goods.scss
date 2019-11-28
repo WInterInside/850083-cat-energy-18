@@ -1,7 +1,3 @@
-.additional-goods {
-  @include lr-paddings;
-}
-
 .additional-goods__heading {
   position: relative;
 
@@ -38,7 +34,7 @@
 
 @media (min-width: $desktop-widths) {
   .additional-goods {
-    @include lr-paddings;
+
     width: 1000px;
   }
 }

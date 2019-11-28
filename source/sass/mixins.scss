@@ -28,3 +28,8 @@
   background-color: $round-fill;
   border-radius: 50%;
 }
+
+@mixin background ($background-position, $background-repeat) {
+  background-position: $background-position;
+  background-repeat: $background-repeat;
+}

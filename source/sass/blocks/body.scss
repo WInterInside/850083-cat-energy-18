@@ -13,23 +13,9 @@ html {
 }
 
 body {
-  width: 320px;
+  min-width: $mobile-widths-only;
   font-family: $main-font;
   margin: 0 auto;
-}
-
-@media (min-width: $tablet-widths) {
-  body {
-    width: $tablet-widths;
-    background-color: cyan;
-  }
-}
-
-@media (min-width: $desktop-widths) {
-  body {
-    width: $desktop-widths;
-    background-color: green;
-  }
 }
 
 a {
