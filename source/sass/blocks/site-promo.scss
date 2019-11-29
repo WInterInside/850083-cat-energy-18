@@ -44,7 +44,7 @@
 
 @media (min-width: $tablet-widths) {
   .site-promo {
-    min-height: 750px;
+
     background-image: none;
     background-color: #ffffff;
   }
@@ -84,6 +84,12 @@
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
+  .site-promo {
+    height: 696px;
+    padding: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(104,183,56,1) 50%);
+  }
+
   .site-logo__img--tab,
   .site-logo__img--mob {
     display: none;
@@ -111,13 +117,13 @@
     margin: 0 auto;
     background-image: url("../img/index-background-desktop@1x.jpg");
     min-height: 696px;
-
     @include background(top right, no-repeat);
-    margin-bottom: -500px;
+    margin-bottom: -600px;
   }
 
   .site-promo__wraper--order {
     width: 900px;
+    height: 450px;
     display: flex;
     flex-direction: row-reverse;
   }
