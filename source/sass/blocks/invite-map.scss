@@ -1,5 +1,8 @@
 .invite-map {
   position: relative;
+  z-index: 1;
+  width: $mobile-widths-only;
+  margin: 0 auto;
 }
 
 .invite-map__pin {
@@ -10,4 +13,57 @@
 
 .invite-map__img {
   vertical-align: bottom;
+}
+
+.invite-map__img--tab,
+.invite-map__img--desk {
+  display: none;
+}
+
+.invite-map__img--mob {
+  display: block;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .invite-map {
+    width: $tablet-widths;
+  }
+
+  .invite-map__pin {
+    position: absolute;
+    right: 50%;
+  }
+
+  .invite-map__img--mob,
+  .invite-map__img--desk {
+    display: none;
+  }
+
+  .invite-map__img--tab {
+    display: block;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .invite-map {
+    width: $desktop-widths;
+  }
+
+  .invite-map__pin {
+    position: absolute;
+    right: 30%;
+  }
+
+  .invite-map__img--tab,
+  .invite-map__img--mob {
+    display: none;
+  }
+
+  .invite-map__img--desk {
+    display: block;
+  }
 }

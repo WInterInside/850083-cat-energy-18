@@ -5,6 +5,8 @@
 }
 
 .invite__data {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,41 +32,21 @@
   font-style: normal;
 }
 
-.invite-map__img--tab,
-.invite-map__img--desk {
-  display: none;
-}
-
-.invite-map__img--mob {
-  display: block;
-}
-
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .invite__text {
-    margin-right: auto;
-  }
-
-  .invite-map__img--mob,
-  .invite-map__img--desk {
-    display: none;
-  }
-
-  .invite-map__img--tab {
-    display: block;
+    margin-right: 318px;
   }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
-  .invite-map__img--tab,
-  .invite-map__img--mob {
-    display: none;
-  }
-
-  .invite-map__img--desk {
-    display: block;
+  .invite__data {
+    width: 600px;
+    background-color: red; /*временно, на этом компе не видно почти фонов*/
+    margin-bottom: -200px;
+    margin-left: 150px;
   }
 }

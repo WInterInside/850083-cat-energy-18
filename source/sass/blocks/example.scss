@@ -111,7 +111,6 @@
 @media (min-width: $desktop-widths) {
   .example {
     display: flex;
-    min-height: 400px;
   }
 
   .example__result {
@@ -125,5 +124,9 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+  }
+
+  .example__wraper--desk {
+    display: flex;
   }
 }

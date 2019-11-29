@@ -40,6 +40,8 @@
   .catalog__list {
     @include list-style;
     width: $desktop-widths;
+    padding: 0 40px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

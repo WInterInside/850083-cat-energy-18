@@ -5,7 +5,6 @@
 
   @include lr-paddings;
   padding-bottom: 24px;
-  margin: 0 auto;
 }
 
 .product-card__link--img {
@@ -96,6 +95,8 @@
   }
 
   .product-card {
+    width: 245px;
+    height: 431px;
     margin-right: 20px;
     margin-bottom: 20px;
   }
