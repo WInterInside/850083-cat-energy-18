@@ -93,12 +93,6 @@
     display: block;
   }
 
-  .site-promo {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-
-    @include background(top right, no-repeat);
-  }
-
   .site-promo__header {
     @include text(#000000, 60px, 60px);
     font-weight: normal;
@@ -113,7 +107,13 @@
   }
 
   .site-promo__wraper--text {
-    margin-top: 250px;
+    width: $desktop-widths;
+    margin: 0 auto;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    min-height: 696px;
+
+    @include background(top right, no-repeat);
+    margin-bottom: -500px;
   }
 
   .site-promo__wraper--order {
