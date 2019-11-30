@@ -48,15 +48,14 @@
     position: relative;
     min-height: 400px;
     width: $desktop-widths;
+    padding: 0 40px;
     margin: 0 auto;
   }
 
   .invite__data {
-    position: absolute;
-    top: 90px;
-    left: 40px;
     width: 570px;
     min-height: 201px;
+    margin-top: 40px;
     background-color: red; /*временно, на этом компе не видно почти фонов*/
   }
 }

@@ -2,6 +2,7 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
+
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;

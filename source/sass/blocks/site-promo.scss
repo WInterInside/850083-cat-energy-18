@@ -2,6 +2,9 @@
   padding-top: 28px;
   margin-bottom: 23px;
   text-align: center;
+  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, rgba(104, 183, 56, 1) 305px, rgba(255, 255, 255, 1) 50%);
+  background-position: top center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .site-promo__header {
@@ -13,10 +16,6 @@
 .site-promo__text {
   @include text(#ffffff, 14px, 20px);
   text-transform: uppercase;
-}
-
-.site-promo__wraper {
-  margin-bottom: -67px;
 }
 
 .site-promo__wraper--order {
@@ -37,6 +36,7 @@
 
 @media (min-width: $tablet-widths) {
   .site-promo {
+    min-height: 700px;
     background-image: none;
     background-color: #ffffff;
   }
@@ -55,8 +55,21 @@
   }
 
   .site-promo__wraper--order {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .site-promo__link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+
+  .site-promo__button {
+    z-index: 2;
+    margin-right: 900px;
   }
 
   .site-promo__wraper--text {
@@ -117,11 +130,6 @@
     @include text(#000000, 14px, 20px);
     text-transform: uppercase;
     text-align: left;
-  }
-
-  .site-promo__wraper--text {
-    width: $desktop-widths;
-    margin: 0 auto;
   }
 
   .site-promo__wraper--order {

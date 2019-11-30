@@ -40,6 +40,13 @@
     height: 59px;
   }
 
+  .header__container {
+    display: flex;
+    width: $tablet-widths;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .header__menu--lines {
     display: none;
     height: 19px;
@@ -48,9 +55,11 @@
   }
 }
 
-
 @media (min-width: $desktop-widths) {
-  .header {
-
+  .header__container {
+    display: flex;
+    width: $desktop-widths;
+    padding: 0 40px;
+    margin: 0 auto;
   }
 }
