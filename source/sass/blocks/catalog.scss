@@ -10,6 +10,8 @@
 
 .catalog__list {
   @include list-style;
+  width: $mobile-widths-only;
+  margin: 0 auto;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
@@ -30,7 +32,6 @@
   .catalog__heading {
     @include text(#111111, 36px, 60px);
     margin: 0;
-    margin-top: 153px;
     padding-top: 10px;
     padding-bottom: 27px;
     font-weight: normal;

@@ -51,6 +51,9 @@
 @media (min-width: $desktop-widths) {
   .invite-map {
     width: $desktop-widths;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   .invite-map__pin {

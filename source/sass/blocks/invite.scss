@@ -1,4 +1,5 @@
 .invite {
+  position: relative;
   padding-top: 2px;
   margin-bottom: 17px;
   background-color: $oprtions-color;
@@ -36,17 +37,26 @@
 
 @media (min-width: $tablet-widths) {
   .invite__text {
-    margin-right: 318px;
+    margin-right: 308px;
   }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
+  .invite__wraper {
+    position: relative;
+    min-height: 400px;
+    width: $desktop-widths;
+    margin: 0 auto;
+  }
+
   .invite__data {
-    width: 600px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+    width: 570px;
+    min-height: 201px;
     background-color: red; /*временно, на этом компе не видно почти фонов*/
-    margin-bottom: -200px;
-    margin-left: 150px;
   }
 }

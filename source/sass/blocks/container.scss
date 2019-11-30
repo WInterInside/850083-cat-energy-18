@@ -22,7 +22,8 @@
 }
 
 @media (min-width: $tablet-widths) {
-  .container {
+  .container,
+  .container--tablet {
     width: $tablet-widths;
     padding: 0 30px;
     margin: 0 auto;

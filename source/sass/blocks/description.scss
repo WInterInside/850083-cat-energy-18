@@ -28,7 +28,7 @@
 .description__text::before {
   @include pseudo;
   top: 0; /* временно */
-  right: -85px; /* временно */
+  right: 0; /* временно */
   width: 60px;
   height: 60px;
   margin-right: 20px;
