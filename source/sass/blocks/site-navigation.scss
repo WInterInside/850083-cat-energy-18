@@ -1,4 +1,5 @@
 .site-navigation {
+  display: none;
   position: relative;
 }
 
@@ -28,6 +29,11 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .site-navigation {
+    display: block;
+    position: relative;
+  }
+
   .site-navigation__list {
     flex-direction: row;
   }
@@ -54,6 +60,7 @@
 
 @media (min-width: $desktop-widths) {
   .site-navigation {
+    display: block;
     position: relative;
     background-color: transparent;
     z-index: 1;
