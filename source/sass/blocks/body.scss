@@ -13,9 +13,10 @@ html {
 }
 
 body {
-  width: 320px;
+  min-width: $mobile-widths-only;
   font-family: $main-font;
   margin: 0 auto;
+  background-color: cyan;
 }
 
 a {

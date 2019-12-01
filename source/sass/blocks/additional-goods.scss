@@ -1,7 +1,3 @@
-.additional-goods {
-  @include lr-paddings;
-}
-
 .additional-goods__heading {
   position: relative;
 
@@ -22,4 +18,23 @@
 
 .additional-goods__list {
   @include list-style;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+/*
+@media (min-width: $tablet-widths) {
+} */
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .additional-goods {
+
+    width: 1000px;
+  }
 }

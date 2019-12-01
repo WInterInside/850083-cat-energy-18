@@ -1,20 +1,18 @@
 .invite {
+  position: relative;
   padding-top: 2px;
   margin-bottom: 17px;
-  background-color: #ffffff;
-}
-
-.invite--in-catalog,
-.invite--in-selection {
   background-color: $oprtions-color;
 }
 
 .invite__data {
+  position: relative;
+  z-index: 2;
   display: flex;
+  justify-content: center;
   align-items: center;
   min-height: 114px;
-
-  @include lr-paddings;
+  background-color: #ffffff;
 }
 
 .invite__text {
@@ -33,4 +31,31 @@
   @include text(#444444, 14px, 20px);
   font-weight: normal;
   font-style: normal;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .invite__text {
+    margin-right: 308px;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .invite__wraper {
+    position: relative;
+    min-height: 400px;
+    width: $desktop-widths;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+  .invite__data {
+    width: 570px;
+    min-height: 201px;
+    margin-top: 40px;
+    background-color: red; /*временно, на этом компе не видно почти фонов*/
+  }
 }

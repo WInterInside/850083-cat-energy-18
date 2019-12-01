@@ -1,17 +1,13 @@
-.social {
-  @include lr-paddings;
-}
-
 .social__list {
   display: flex;
   align-items: stretch;
+  justify-content: center;
 
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
   padding-bottom: 19px;
   padding-top: 24px;
-  padding-left: 73px;
 }
 
 .social__item {

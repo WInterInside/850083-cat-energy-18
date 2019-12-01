@@ -1,9 +1,10 @@
 .site-promo {
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
   padding-top: 28px;
   margin-bottom: 23px;
   text-align: center;
+  background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, rgba(104, 183, 56, 1) 305px, rgba(255, 255, 255, 1) 50%);
+  background-position: top center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .site-promo__header {
@@ -13,10 +14,128 @@
 }
 
 .site-promo__text {
-  @include text(#ffffff, 14px, 16px);
+  @include text(#ffffff, 14px, 20px);
   text-transform: uppercase;
 }
 
-.site-promo__wraper {
-  margin-bottom: 27px;
+.site-promo__wraper--order {
+  align-items: center;
+  margin-bottom: 67px;
+}
+
+.site-promo__img--tab,
+.site-promo__img--desk {
+  display: none;
+}
+
+.site-promo__img--mob {
+  display: block;
+}
+
+/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
+
+@media (min-width: $tablet-widths) {
+  .site-promo {
+    min-height: 700px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .site-promo__header {
+    @include text(#000000, 36px, 36px);
+    font-weight: normal;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .site-promo__text {
+    @include text(#000000, 14px, 20px);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .site-promo__wraper--order {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .site-promo__link {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+
+  .site-promo__button {
+    z-index: 2;
+    margin-right: 900px;
+  }
+
+  .site-promo__wraper--text {
+    background: none;
+  }
+
+  .site-promo__img--mob,
+  .site-promo__img--desk {
+    display: none;
+  }
+
+  .site-promo__img--tab {
+    display: block;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+
+@media (min-width: $desktop-widths) {
+  .site-promo {
+    position: relative;
+    min-height: 696px;
+    padding: 0;
+    padding-top: 80px;
+    background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%);
+    background-position: left calc(50% + 350px) top, 0 0;
+    background-repeat: no-repeat, repeat;
+  }
+
+  .site-logo__img--tab,
+  .site-logo__img--mob {
+    display: none;
+  }
+
+  .site-logo__img--desk {
+    display: block;
+  }
+
+  .site-promo__header {
+    position: relative;
+
+    @include text(#000000, 60px, 60px);
+    font-weight: normal;
+    text-align: left;
+    padding-right: 750px;
+  }
+
+  .site-promo__text {
+    @include text(#000000, 14px, 20px);
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .site-promo__wraper--order {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .site-promo__link {
+    position: absolute;
+    top: -165px;
+    right: 230px;
+  }
+
+  .site-promo__button {
+    margin-right: 900px;
+  }
 }

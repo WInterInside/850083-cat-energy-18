@@ -2,11 +2,34 @@
   display: flex;
 }
 
-.site-logo--header {
-  padding-right: 12px;
-}
-
 .site-logo--footer {
   padding-bottom: 17px;
   margin-left: 96px;
+}
+
+.site-logo__img--desk,
+.site-logo__img--tab {
+  display: none;
+}
+
+@media (min-width: $tablet-widths) {
+  .site-logo__img--mob,
+  .site-logo__img--desk {
+    display: none;
+  }
+
+  .site-logo__img--tab {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .site-logo__img--tab,
+  .site-logo__img--mob {
+    display: none;
+  }
+
+  .site-logo__img--desk {
+    display: block;
+  }
 }
