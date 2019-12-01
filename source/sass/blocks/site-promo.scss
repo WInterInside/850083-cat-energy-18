@@ -94,7 +94,9 @@
     min-height: 696px;
     padding: 0;
     padding-top: 80px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%);
+    background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%);
+    background-position: left calc(50% + 350px) top, 0 0;
+    background-repeat: no-repeat, repeat;
   }
 
   .site-logo__img--tab,
@@ -113,17 +115,6 @@
     font-weight: normal;
     text-align: left;
     padding-right: 750px;
-  }
-
-  .site-promo__header::after {
-    @include pseudo;
-    top: -80px;
-    right: -40px;
-    width: 720px;
-    height: 696px;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-
-    @include background (center top, no-repeat);
   }
 
   .site-promo__text {
