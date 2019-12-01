@@ -1,18 +1,3 @@
-.selection__heading {
-  @include text(#111111, 36px, 38px);
-  font-weight: normal;
-  margin-bottom: 38px;
-}
-
-.selection__text {
-  @include text(#111111, 14px, 17px);
-  font-weight: normal;
-  margin: 0;
-  margin-bottom: 38px;
-  padding-right: 30px;
-  text-transform: uppercase;
-}
-
 .selection-form__cat {
   display: flex;
   flex-direction: column;
@@ -26,11 +11,12 @@
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
-  align-items: center;
 }
 
-.selection-form__wraper:last-child {
-  margin-bottom: 0;
+.selection-form__wraper--contacts,
+.selection-form__wraper--submit,
+.selection-form__wraper--comment {
+  flex-direction: column;
 }
 
 .selection-form__label {
@@ -38,6 +24,7 @@
   font-weight: normal;
   text-transform: uppercase;
   margin-right: 14px;
+  padding-top: 13px;
 }
 
 .selection-form__input {
@@ -60,7 +47,6 @@
 
   @include list-style;
   padding-top: 28px;
-  padding-left: 33px;
 }
 
 .selection-form__option {
@@ -76,58 +62,53 @@
 
   @include text(#111111, 24px, 24px);
   font-weight: normal;
-  padding-left: 20px;
   padding-top: 11px;
   padding-bottom: 13px;
 }
 
 .selection-form__label--comment {
-  position: relative;
-
   @include text(#111111, 24px, 24px);
   font-weight: normal;
   text-transform: none;
-  margin-bottom: 31px;
-  margin-top: 14px;
 }
 
-.selection-form__heading--contacts::after,
-.selection-form__label--comment::after,
-.selection-form__heading--options::after {
+.selection-form__wraper--contacts,
+.selection-form__wraper--options,
+.selection-form__wraper--comment {
+  position: relative;
+}
+
+.selection-form__wraper--contacts::after,
+.selection-form__wraper--comment::after,
+.selection-form__wraper--options::after {
   @include pseudo;
-  top: 35%;
-  right: 0;
-  width: 99px;
+  left: 50%;
+  width: 100%;
   height: 3px;
   background-color: $green-tone;
 }
 
-.selection-form__label--comment::after {
-  width: 158px;
-  top: 50%;
-  right: -35px;
+.selection-form__wraper--contacts::after {
+  top: 44px;
+  transform: translateX(70px);
 }
 
-.selection-form__heading--options::after {
-  width: 136px;
-  top: 50%;
+.selection-form__wraper--comment::after {
+  top: 24px;
+  transform: translateX(10px);
 }
 
-.selection-form__wraper--comment {
-  flex-direction: column;
-  margin-bottom: 14px;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.selection-form__wraper--contacts {
-  margin-bottom: 15px;
+.selection-form__wraper--options::after {
+  top: 12px;
+  transform: translateX(24px);
 }
 
 .selection-form__input--comment {
   resize: none;
   min-height: 150px;
+  width: 280px;
   padding-right: 0;
+  margin-top: 20px;
 }
 
 .selection-form__button {
@@ -139,11 +120,11 @@
 }
 
 .selection-form__button--tel {
-  right: 26px;
+  right: 0;
 }
 
 .selection-form__button--email {
-  right: 30px;
+  right: 5px;
 }
 
 .selection-form__input--tel,
@@ -160,6 +141,8 @@
 }
 
 .selection-form__heading--options {
+  padding: 0;
+  margin: 0;
   margin-bottom: 29px;
 }
 
@@ -167,7 +150,7 @@
   margin-right: 29px;
 }
 
-.selection__explanation {
+.selection-form__explanation {
   text-align: center;
   padding-top: 7px;
   padding-bottom: 17px;
@@ -176,4 +159,68 @@
   font-family: $sup-font;
   text-decoration: none;
   font-weight: normal;
+}
+
+/* СТИЛИ ДЛЯ taba */
+@media (min-width: $tablet-widths) {
+  .selection-form__wraper--contacts::after {
+    transform: translateX(-130px);
+  }
+
+  .selection-form__wraper--comment::after {
+    transform: translateX(-200px);
+  }
+
+  .selection-form__wraper--options::after {
+    transform: translateX(-190px);
+  }
+
+  .selection-form__wraper--contacts::before,
+  .selection-form__wraper--comment::before,
+  .selection-form__wraper--options::before {
+    @include pseudo;
+    right: 50%;
+    transform: translateX(-380px);
+    width: 100%;
+    height: 3px;
+    background-color: $green-tone;
+  }
+
+  .selection-form__wraper--contacts::before {
+    top: 44px;
+  }
+
+  .selection-form__wraper--comment::before{
+    top: 24px;
+  }
+
+  .selection-form__wraper--options::before {
+    top: 12px;
+  }
+}
+
+/* СТИЛИ ДЛЯ ДЕСКА */
+@media (min-width: $desktop-widths) {
+  .selection-form__wraper--contacts::before,
+  .selection-form__wraper--comment::before,
+  .selection-form__wraper--options::before {
+    @include pseudo;
+    right: 50%;
+    transform: translateX(-640px);
+    width: 100%;
+    height: 3px;
+    background-color: $green-tone;
+  }
+
+  .selection-form__wraper--contacts::after {
+    transform: translateX(-400px);
+  }
+
+  .selection-form__wraper--comment::after {
+    transform: translateX(-460px);
+  }
+
+  .selection-form__wraper--options::after {
+    transform: translateX(-440px);
+  }
 }
