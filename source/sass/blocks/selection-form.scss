@@ -1,3 +1,14 @@
+.selection-form__heading,
+.selection-form__label--comment {
+  display: inline-block;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  position: relative;
+  background: #fff;
+  @include text(#111111, 24px, 24px);
+  font-weight: normal;
+}
+
 .selection-form__cat {
   display: flex;
   flex-direction: column;
@@ -21,7 +32,8 @@
 
 .selection-form__wraper--contacts,
 .selection-form__wraper--submit,
-.selection-form__wraper--comment {
+.selection-form__wraper--comment,
+.selection-form__wraper--column {
   flex-direction: column;
 }
 
@@ -62,15 +74,6 @@
   margin-right: 16px;
 }
 
-.selection-form__heading {
-  position: relative;
-
-  @include text(#111111, 24px, 24px);
-  font-weight: normal;
-  padding-top: 11px;
-  padding-bottom: 13px;
-}
-
 .selection-form__label--comment {
   @include text(#111111, 24px, 24px);
   font-weight: normal;
@@ -83,29 +86,26 @@
   position: relative;
 }
 
-.selection-form__wraper--contacts::after,
-.selection-form__wraper--comment::after,
-.selection-form__wraper--options::after {
+.selection-form__wraper--contacts::before,
+.selection-form__wraper--comment::before,
+.selection-form__wraper--options::before {
   @include pseudo;
-  left: 50%;
+  left: 0;
   width: 100%;
   height: 3px;
   background-color: $green-tone;
 }
 
-.selection-form__wraper--contacts::after {
-  top: 44px;
-  transform: translateX(70px);
+.selection-form__wraper--contacts::before {
+  top: 45px;
 }
 
-.selection-form__wraper--comment::after {
-  top: 24px;
-  transform: translateX(10px);
+.selection-form__wraper--comment::before {
+  top: 27px;
 }
 
-.selection-form__wraper--options::after {
-  top: 12px;
-  transform: translateX(24px);
+.selection-form__wraper--options::before {
+  top: 37px;
 }
 
 .selection-form__input--comment {
@@ -145,12 +145,6 @@
   margin-bottom: 41px;
 }
 
-.selection-form__heading--options {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 29px;
-}
-
 .selection-form__checkbox {
   margin-right: 29px;
 }
@@ -185,41 +179,6 @@
     width: 708px;
   }
 
-  .selection-form__wraper--contacts::after {
-    transform: translateX(-130px);
-  }
-
-  .selection-form__wraper--comment::after {
-    transform: translateX(-200px);
-  }
-
-  .selection-form__wraper--options::after {
-    transform: translateX(-190px);
-  }
-
-  .selection-form__wraper--contacts::before,
-  .selection-form__wraper--comment::before,
-  .selection-form__wraper--options::before {
-    @include pseudo;
-    right: 50%;
-    transform: translateX(-380px);
-    width: 100%;
-    height: 3px;
-    background-color: $green-tone;
-  }
-
-  .selection-form__wraper--contacts::before {
-    top: 44px;
-  }
-
-  .selection-form__wraper--comment::before {
-    top: 24px;
-  }
-
-  .selection-form__wraper--options::before {
-    top: 12px;
-  }
-
   .selection-form__options {
     display: flex;
     flex-wrap: wrap;
@@ -242,39 +201,27 @@
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 @media (min-width: $desktop-widths) {
-  .selection-form__catwrap {
+  .selection-form__catwrap,
+  .selection-form__contactwrap {
     display: flex;
     justify-content: space-between;
     width: 1200px;
     margin: 0 auto;
   }
 
+  .selection-form__input--email,
+  .selection-form__input--tel {
+    width: 486px;
+  }
+
+  .selection-form__input--comment {
+    width: 1210px;
+  }
+
+
   .selection-form__catwrap .container {
     padding: 0;
     margin-right: 30px;
-  }
-
-  .selection-form__wraper--contacts::before,
-  .selection-form__wraper--comment::before,
-  .selection-form__wraper--options::before {
-    @include pseudo;
-    right: 50%;
-    transform: translateX(-640px);
-    width: 100%;
-    height: 3px;
-    background-color: $green-tone;
-  }
-
-  .selection-form__wraper--contacts::after {
-    transform: translateX(-400px);
-  }
-
-  .selection-form__wraper--comment::after {
-    transform: translateX(-460px);
-  }
-
-  .selection-form__wraper--options::after {
-    transform: translateX(-440px);
   }
 
   .selection-form__wraper--submit {
