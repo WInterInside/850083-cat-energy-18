@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   min-height: 163px;
-  border-bottom: 1px solid $border-color;
   padding-bottom: 20px;
 }
 
@@ -11,6 +10,13 @@
   display: flex;
   margin-bottom: 10px;
   justify-content: space-between;
+}
+
+.selection-form__wraper--radio {
+  width: $mobile-widths-only;
+  padding: 0 20px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .selection-form__wraper--contacts,
@@ -42,11 +48,10 @@
   width: 172px;
 }
 
-.selection-form__raioblock {
+.selection-form__radioblock {
   border: 1px solid $border-color;
 
   @include list-style;
-  padding-top: 28px;
 }
 
 .selection-form__option {
@@ -163,6 +168,23 @@
 
 /* СТИЛИ ДЛЯ taba */
 @media (min-width: $tablet-widths) {
+  .selection-form__radioblock {
+    border: none;
+  }
+
+  .selection-form__wraper--radio {
+    width: 708px;
+    border: 1px solid $border-color;
+    padding: 0;
+    padding-left: 28px;
+    padding-top: 28px;
+    margin: 0 auto;
+  }
+
+  .selection-form__input--comment {
+    width: 708px;
+  }
+
   .selection-form__wraper--contacts::after {
     transform: translateX(-130px);
   }
@@ -197,10 +219,41 @@
   .selection-form__wraper--options::before {
     top: 12px;
   }
+
+  .selection-form__options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .selection-form__option {
+    width: 300px;
+    margin-bottom: 24px;
+  }
+
+  .selection-form__wraper--submit {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .button--button { /* временно тут */
+    margin: 0; /* временно тут */
+  } /* временно тут */
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 @media (min-width: $desktop-widths) {
+  .selection-form__catwrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .selection-form__catwrap .container {
+    padding: 0;
+    margin-right: 30px;
+  }
+
   .selection-form__wraper--contacts::before,
   .selection-form__wraper--comment::before,
   .selection-form__wraper--options::before {
@@ -223,4 +276,15 @@
   .selection-form__wraper--options::after {
     transform: translateX(-440px);
   }
+
+  .selection-form__wraper--submit {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .button--button { /* временно тут */
+    margin: 40px; /* временно тут */
+  } /* временно тут */
+
 }

@@ -42,6 +42,7 @@
       <p class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
     <form class="selection-form" action="https://echo.htmlacademy.ru" method="get">
+      <div class="selection-form__catwrap">
       <!--первая группа импутов, текстовые поля-->
       <div class="selection-form__cat container">
         <div class="selection-form__wraper">
@@ -58,8 +59,8 @@
         </div>
       </div>
         <!--вторая группа импутов, radio -->
-        <ul class="selection-form__raioblock">
-          <div class="selection__wraper container">
+        <ul class="selection-form__radioblock">
+          <div class="selection-form__wraper selection-form__wraper--radio">
           <li class="selection-form__option">
             <input class="selection-form__radio" id="option-1" type="radio" name="option" value="Похудение" checked>
             <label class="selection-form__label" for="option-1">
@@ -78,7 +79,7 @@
               <span class="selection-form__indicator">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
-        </div>
+        </div> </div>
       </ul>
       <!--третья группа импутов, поля контактных данных-->
       <div class="selection-form__wraper selection-form__wraper--contacts">
@@ -119,7 +120,7 @@
       </div>
       <!--третья группа импутов, чекбоксы-->
       <div class="selection-form__wraper selection-form__wraper--options">
-        <div class="sselection-form__wraper container">
+        <div class="container">
           <h2 class="selection-form__heading selection-form__heading--options">Дополнительно</h2>
           <ul class="selection-form__options">
             <li class="selection-form__option">
