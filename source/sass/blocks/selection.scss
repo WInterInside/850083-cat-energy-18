@@ -1,1 +1,14 @@
-/* stylelint-disable */
+.selection__heading {
+  @include text(#111111, 36px, 38px);
+  font-weight: normal;
+  margin-bottom: 38px;
+}
+
+.selection__text {
+  @include text(#111111, 14px, 17px);
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 38px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
