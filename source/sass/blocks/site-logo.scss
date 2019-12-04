@@ -13,6 +13,10 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .site-logo {
+    margin-right: 94px;
+  }
+
   .site-logo__img--mob,
   .site-logo__img--desk {
     display: none;

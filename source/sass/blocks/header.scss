@@ -2,42 +2,73 @@
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  padding-bottom: 7px;
+  padding-bottom: 17px;
+  padding-top: 10px;
 }
 
 .header__wraper {
   display: flex;
-  align-items: center;
 }
 
 .header__menu {
+  position: relative;
   margin-left: auto;
-  margin-top: 2px;
-  height: 19px;
+  margin-top: 10px;
+  height: 25px;
   width: 25px;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 
-.header__menu--lines {
-  height: 19px;
+.header__lines,
+.header__lines::before,
+.header__lines::after {
+  margin-top: 2px;
   width: 25px;
-  background-image: url("../img/icon-mobile-menu.svg");
+  height: 3px;
+  background-color: $mr-gray-color;
 }
 
-.header__menu--x {
+.header__lines::before,
+.header__lines::after {
+  @include pseudo;
+  top: 7px;
+  left: 0;
+}
+
+.header__lines::after {
+  top: 14px;
+}
+
+.header__x {
   display: none;
-  background-image: url("../img/icon-close.svg");
+  width: 3px;
+  height: 25px;
+  background-color: $mr-gray-color;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+
+.header__x::before {
+  @include pseudo;
+  top: 11px;
+  right: -11px;
+  width: 25px;
+  height: 3px;
+  background-color: $mr-gray-color;
 }
 
 @media (min-width: $tablet-widths) {
+  .header__menu {
+    display: none;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
     background-color: $header-color;
     padding-top: 13px;
-    height: 59px;
   }
 
   .header__container {
@@ -46,13 +77,6 @@
     padding: 0 30px;
     margin: 0 auto;
   }
-
-  .header__menu--lines {
-    display: none;
-    height: 19px;
-    width: 25px;
-    background-image: url("../img/icon-mobile-menu.svg");
-  }
 }
 
 @media (min-width: $desktop-widths) {
@@ -60,10 +84,29 @@
     padding-bottom: 20px;
   }
 
+  .header--index {
+    margin-bottom: -134px;
+    padding-top: 54px;
+  }
+
+  .header__wraper {
+    z-index: 1;
+    margin-right: 444px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
   .header__container {
     display: flex;
     width: $desktop-widths;
     padding: 0 40px;
     margin: 0 auto;
+  }
+
+  .container--header {
+    display: flex;
+    width: 174px;
   }
 }

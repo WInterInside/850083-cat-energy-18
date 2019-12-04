@@ -21,6 +21,14 @@
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .container__mobile {
+    width: $mobile-widths-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-widths) {
   .container {
     width: $tablet-widths;
