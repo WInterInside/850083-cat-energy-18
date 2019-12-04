@@ -14,8 +14,13 @@
 }
 
 .site-promo__text {
-  @include text(#ffffff, 14px, 20px);
+  @include text(#ffffff, 14px, 14px);
   text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.site-promo__button {
+  margin-top: 4px;
 }
 
 .site-promo__wraper--order {
@@ -93,9 +98,10 @@
     position: relative;
     min-height: 696px;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 223px;
+    padding-left: 159px;
     background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
-    background-position: left calc(50% + 357px) top, 0 0;
+    background-position: left calc(50% + 359px) top, 0 0;
     background-repeat: no-repeat, repeat;
   }
 
@@ -118,9 +124,10 @@
   }
 
   .site-promo__text {
-    @include text(#000000, 14px, 20px);
+    @include text(#000000, 20px, 20px);
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 53px;
   }
 
   .site-promo__wraper--order {
@@ -131,11 +138,18 @@
 
   .site-promo__link {
     position: absolute;
-    top: -165px;
-    right: 230px;
+    top: -312px;
+    right: 337px;
   }
 
   .site-promo__button {
-    margin-right: 900px;
+    z-index: 2;
+    margin-right: 975px;
+
+    @include text(#ffffff, 20px, 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 38px;
+    padding-top: 15px;
   }
 }

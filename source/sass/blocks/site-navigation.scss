@@ -48,7 +48,7 @@
   }
 
   .site-navigation__item:nth-child(2) {
-  margin-right: 37px;
+    margin-right: 37px;
   }
 
   .site-navigation__item:last-child {
@@ -71,7 +71,7 @@
 @media (min-width: $desktop-widths) {
   .site-navigation {
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 57px;
   }
 
   .site-navigation__link {
@@ -104,5 +104,4 @@
   .site-navigation__item:last-child {
     margin-right: 0;
   }
-
 }
