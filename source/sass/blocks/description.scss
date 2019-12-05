@@ -1,8 +1,8 @@
 .description__header {
   @include text (#111111, 36px, 60px);
   font-weight: normal;
-  margin-top: -13px;
-  margin-bottom: 28px;
+  margin-top: 19px;
+  margin-bottom: 26px;
 }
 
 .description__list {
@@ -13,7 +13,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  padding-left: 80px;
   height: 60px;
+}
+
+.description__item:last-child {
+  margin-bottom: 0;
 }
 
 .description__text {
@@ -22,13 +27,13 @@
   font-family: $sup-font;
   margin: 0;
 
-  @include text (#444444, 14px, 19px);
+  @include text (#444444, 14px, 18px);
 }
 
 .description__text::before {
   @include pseudo;
-  top: 0; /* временно */
-  right: 0; /* временно */
+  top: 0;
+  left: -80px;
   width: 60px;
   height: 60px;
   margin-right: 20px;

@@ -12,6 +12,7 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
+
   @include text(#ffffff, 14px, 18px);
   font-weight: normal;
   cursor: pointer;
