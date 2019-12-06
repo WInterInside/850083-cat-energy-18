@@ -1,7 +1,7 @@
 .invite {
   position: relative;
-  margin-bottom: 21px;
   background-color: $oprtions-color;
+  margin-bottom: 39px;
 }
 
 .invite__data {
@@ -11,13 +11,15 @@
   justify-content: center;
   align-items: center;
   min-height: 116px;
+  padding-top: 2px;
+  margin-bottom: -5px;
   background-color: #ffffff;
 }
 
 .invite__text {
   width: 125px;
   margin: 0;
-  margin-right: 16px;
+  margin-right: 17px;
 
   @include text(#111111, 16px, 20px);
   font-weight: normal;
@@ -30,6 +32,7 @@
   @include text(#444444, 14px, 20px);
   font-weight: normal;
   font-style: normal;
+  padding-right: 5px;
 }
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 

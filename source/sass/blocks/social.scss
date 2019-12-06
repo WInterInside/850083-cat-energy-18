@@ -1,7 +1,6 @@
 .social__list {
   display: flex;
   align-items: stretch;
-  justify-content: center;
 
   @include list-style;
   border-top: 1px solid $border-color;
@@ -14,14 +13,16 @@
   list-style: none;
   display: inline-block;
   margin-right: 36px;
+  margin-left: 74px;
 }
 
 .social__item:nth-child(2) {
   margin-right: 40px;
+  margin-left: 0;
 }
 
 .social__item:last-child {
-  margin-right: 0;
+  margin: 0;
 }
 
 .social__link {
