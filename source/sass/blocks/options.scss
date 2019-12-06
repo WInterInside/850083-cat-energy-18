@@ -101,8 +101,7 @@
 
 @media (min-width: $tablet-widths) {
   .options__list {
-    padding-left: 33px;
-    margin-bottom: 85px;
+    margin-bottom: 42px;
   }
 
   .options__wraper {
@@ -114,6 +113,7 @@
   .options__header {
     @include text(#111111, 36px, 37px);
     margin: 0;
+    padding-left: 32px;
   }
 
   .options__text {
@@ -121,6 +121,7 @@
 
     @include text(#444444, 16px, 24px);
     margin-top: 25px;
+    padding-left: 32px;
     padding-right: 200px;
     margin-bottom: 33px;
   }
@@ -130,14 +131,16 @@
   }
 
   .options__item {
+    padding-top: 76px;
     padding-right: 80px;
-    margin-bottom: 137px;
+    padding-bottom: 62px;
+    margin-bottom: 30px;
   }
 
   .options__item::before {
     @include pseudo;
-    top: 25px;
-    left: 414px;
+    top: 93px;
+    left: 448px;
 
     @include round(200px, 200px, $green-tone);
     text-align: center;
@@ -148,7 +151,7 @@
     width: 65px;
     height: 65px;
     top: 95px;
-    left: 480px;
+    left: 485px;
 
     @include background (center, no-repeat);
   }
@@ -167,6 +170,7 @@
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 45px;
+    padding-left: 32px;
   }
 
   .options__link::before {

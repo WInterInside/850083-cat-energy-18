@@ -44,8 +44,7 @@
     min-height: 700px;
     background-image: none;
     background-color: #ffffff;
-    padding-left: 88px;
-    margin-bottom: 222px;
+    margin-bottom: 155px;
   }
 
   .site-promo__header {
@@ -61,11 +60,14 @@
     text-transform: uppercase;
     text-align: left;
     margin-bottom: 45px;
+    margin-left: 88px;
   }
 
   .site-promo__button {
     z-index: 2;
     width: 245px;
+    margin-right: 374px;
+
     @include text(#ffffff, 20px, 20px);
     padding-left: 23px;
     padding-right: 23px;
@@ -83,12 +85,7 @@
     position: absolute;
     z-index: 1;
     top: -25px;
-    left: -60px;
-  }
-
-  .site-promo__button {
-    z-index: 2;
-    margin-right: 900px;
+    left: 30px;
   }
 
   .site-promo__wraper--text {
@@ -153,7 +150,7 @@
   .site-promo__link {
     position: absolute;
     top: -312px;
-    right: 337px;
+    left: 337px;
   }
 
   .site-promo__button {
