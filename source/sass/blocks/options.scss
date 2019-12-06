@@ -30,7 +30,6 @@
   @include pseudo;
   width: 65px;
   height: 65px;
-  background-image: url("../img/icon-cat-pro.svg");
 
   @include background (center, no-repeat);
 }
@@ -64,8 +63,8 @@
   font-family: $sup-font;
   border-bottom: 1px solid $border-color;
   margin-top: 28px;
-  margin-bottom: 19px;
-  padding-bottom: 21px;
+  margin-bottom: 18px;
+  padding-bottom: 23px;
 }
 
 .options__link {
@@ -74,30 +73,108 @@
   text-decoration: none;
   text-transform: uppercase;
   padding-right: 35px;
+  cursor: pointer;
+}
+
+.options__link::before {
+  @include pseudo;
+  background-color: $mr-gray-color;
+  top: 11px;
+  right: 0;
+  width: 22px;
+  height: 2px;
 }
 
 .options__link::after {
   @include pseudo;
+  background-color: transparent;
   top: 6px;
   right: 0;
-  width: 25px;
-  height: 12px;
-  background-image: url("../img/icon-right-arrow-long.svg");
 
-  @include background (center, no-repeat);
+  border: 6px solid;
+  border-color: transparent;
+  border-left-color: $mr-gray-color;
+  border-right: 0;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .options__list {
+    padding-left: 33px;
+    margin-bottom: 85px;
+  }
+
   .options__wraper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
+  .options__header {
+    @include text(#111111, 36px, 37px);
+    margin: 0;
+  }
+
   .options__text {
+    border: none;
+
+    @include text(#444444, 16px, 24px);
+    margin-top: 25px;
     padding-right: 200px;
+    margin-bottom: 33px;
+  }
+
+  .options__text--pro {
+    padding-right: 235px;
+  }
+
+  .options__item {
+    padding-right: 80px;
+    margin-bottom: 137px;
+  }
+
+  .options__item::before {
+    @include pseudo;
+    top: 25px;
+    left: 414px;
+
+    @include round(200px, 200px, $green-tone);
+    text-align: center;
+  }
+
+  .options__item::after {
+    @include pseudo;
+    width: 65px;
+    height: 65px;
+    top: 95px;
+    left: 480px;
+
+    @include background (center, no-repeat);
+  }
+
+  .options__item--slim::after {
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  .options__item--pro::after {
+    background-image: url("../img/icon-cat-pro.svg");
+  }
+
+  .options__link {
+    @include text(#111111, 20px, 20px);
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 45px;
+  }
+
+  .options__link::before {
+    top: 14px;
+  }
+
+  .options__link::after {
+    top: 9px;
   }
 }
 

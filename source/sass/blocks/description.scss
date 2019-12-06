@@ -14,7 +14,6 @@
   align-items: center;
   margin-bottom: 20px;
   padding-left: 80px;
-  height: 60px;
 }
 
 .description__item:last-child {
@@ -61,25 +60,52 @@
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
-  .description {
-    min-height: 300px;
+  .description__header {
+    @include text (#111111, 60px, 60px);
+    font-weight: normal;
+    margin-bottom: 184px;
   }
 
   .description__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @include list-style;
   }
 
   .description__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    width: 250px;
-    min-height: 260px;
+    margin-bottom: 245px;
+    margin-right: 129px;
+    padding: 0;
+  }
+
+  .description__item:nth-child(2n){
+    margin-right: 0;
+  }
+
+  .description__item:nth-child(3),
+  .description__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .description__text {
+    @include text (#444444, 16px, 24px);
+    padding-right: 0;
+    width: 255px;
+  }
+
+  .description__text::before {
+    @include pseudo;
+    top: -111px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: $green-tone;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -102,6 +128,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
-    height: 260px;
+    min-height: 260px;
   }
 }
