@@ -12,8 +12,17 @@
 }
 
 @media (min-width: $tablet-widths) {
-  .site-logo {
+  .header .site-logo {
+    margin-left: 0;
     margin-right: 94px;
+  }
+
+  .site-logo {
+    margin: 0;
+  }
+
+  .footer .site-logo__img {
+    margin-bottom: 0;
   }
 
   .site-logo__img--mob,

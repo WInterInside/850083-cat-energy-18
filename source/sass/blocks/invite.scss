@@ -19,7 +19,8 @@
 .invite__text {
   width: 125px;
   margin: 0;
-  margin-right: 17px;
+  margin-left: 2px;
+  margin-right: 19px;
 
   @include text(#111111, 16px, 20px);
   font-weight: normal;

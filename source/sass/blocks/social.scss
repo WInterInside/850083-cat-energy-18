@@ -50,3 +50,11 @@
   width: 10px;
   height: 19px;
 }
+
+@media (min-width: $tablet-widths) {
+  .social__list {
+    display: flex;
+    border: none;
+    padding: 0;
+  }
+}

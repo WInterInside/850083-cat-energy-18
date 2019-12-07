@@ -1,6 +1,6 @@
 .example {
   padding-bottom: 37px;
-  padding-top: 27px;
+  padding-top: 29px;
   margin-top: 44px;
   background-color: $oprtions-color;
 }
@@ -37,7 +37,6 @@
 
 .example__block--weight {
   width: 54px;
-  background-color: $oprtions-color;
 }
 
 .example__block--time {
@@ -94,15 +93,89 @@
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .example {
+    padding-bottom: 37px;
+    padding-top: 43px;
+    margin-top: 102px;
+    border-top: 1px solid $border-color;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 57%, rgba(242, 242, 242, 1) 57%);
+  }
+
+  .example__heading {
+    @include text(#111111, 60px, 60px);
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 65px;
+  }
+
+  .example__text {
+    @include text(#444444, 16px, 24px);
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
   .example__result {
     text-align: right;
 
-    @include text(#111111, 20px, 20px);
-    margin-left: 200px;
+    @include text(#111111, 20px, 30px);
+    padding-top: 11px;
+    margin-left: 0;
   }
 
   .example__wraper--row {
     display: flex;
+    width: 708px;
+  }
+
+  .example__data {
+    display: flex;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 150px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 250px;
+  }
+
+  .example__sign {
+    font-family: $sup-font;
+
+    @include text($mr-gray-color, 14px, 14px);
+    font-weight: normal;
+    text-transform: lowercase;
+    margin: 0;
+  }
+
+  .example__value {
+    @include text(#111111, 30px, 37px);
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .example__block--weight {
+    width: 120px;
+  }
+
+  .example__block--time {
+    margin-left: 80px;
+    width: 130px;
+  }
+
+  .example__block::after {
+    top: -14px;
+    width: 162px;
+    height: 72px;
+    background-color: transparent;
+  }
+
+  .example__block--time::after {
+    left: -17px;
+  }
+
+  .example__block--weight::after {
+    left: -20px;
   }
 }
 

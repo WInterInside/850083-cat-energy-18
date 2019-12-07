@@ -34,12 +34,22 @@
 
 @media (min-width: $tablet-widths) {
   .slider {
-    width: 600px;
+    width: 708px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 135px;
+    background-color: transparent;
   }
 
-  .slider__button:first-child {
+  .slider__buttons {
+    display: flex;
+    margin-top: 138px;
+    margin-left: 38px;
+  }
+
+  .slider__button {
+    @include text(#111111, 20px, 20px);
+    border-bottom: 2px dotted red;
     margin-right: 348px;
   }
 }
