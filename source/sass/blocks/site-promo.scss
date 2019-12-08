@@ -112,6 +112,7 @@
     padding: 0;
     padding-top: 223px;
     padding-left: 159px;
+    margin-bottom: 78px;
     background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
     background-position: left calc(50% + 359px) top, 0 0;
     background-repeat: no-repeat, repeat;
@@ -127,19 +128,14 @@
   }
 
   .site-promo__header {
-    position: relative;
-
-    @include text(#000000, 60px, 60px);
-    font-weight: normal;
-    text-align: left;
     padding-right: 750px;
+    margin: 0;
+    margin-bottom: 40px;
   }
 
   .site-promo__text {
-    @include text(#000000, 20px, 20px);
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 53px;
+    margin: 0;
+    margin-bottom: 48px;
   }
 
   .site-promo__wraper--order {
@@ -150,8 +146,8 @@
 
   .site-promo__link {
     position: absolute;
-    top: -312px;
-    left: 337px;
+    top: -310px;
+    left: 410px;
   }
 
   .site-promo__button {

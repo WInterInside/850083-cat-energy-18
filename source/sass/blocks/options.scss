@@ -4,7 +4,7 @@
 
 .options__item {
   position: relative;
-  background-color: $oprtions-color;
+  background-color: $options-color;
   margin-bottom: 20px;
   padding-bottom: 20px;
   padding-top: 10px;
@@ -188,26 +188,66 @@
   .options__list {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    margin-bottom: 42px;
 
     @include list-style;
   }
 
-  .options__item {
-    width: 400px;
-    background-color: $oprtions-color;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+  .options__header {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   .options__text {
-    @include text(#444444, 14px, 18px);
+    @include text(#444444, 16px, 24px);
     font-family: $sup-font;
-    border-bottom: 1px solid $border-color;
-    margin-top: 10px;
-    margin-bottom: 17px;
-    padding-bottom: 21px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .options__item {
+    width: 570px;
+    min-height: 370px;
+    padding-left: 52px;
+    padding-right: 40px;
+    padding-top: 79px;
+    margin-bottom: 0;
+  }
+
+  .options__item:first-child {
+    margin-right: 80px;
+  }
+
+  .options__item::before {
+    @include pseudo;
+    top: 47px;
+    left: 52px;
+
+    @include round(100px, 100px, $green-tone);
+    text-align: center;
+  }
+
+  .options__item::after {
+    @include pseudo;
+    width: 65px;
+    height: 65px;
+    top: 47px;
+    left: 52px;
+
+    @include background (center, no-repeat);
+  }
+
+  .options__link {
+    padding-left: 0;
+  }
+
+  .options__link::before {
+    top: 15px;
+  }
+
+  .options__link::after {
+    top: 10px;
   }
 }

@@ -112,22 +112,53 @@
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
-  .description {
-    min-height: 500px;
-  }
-
   .description__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 1200px;
 
     @include list-style;
   }
 
+  .description__header {
+    @include text (#111111, 60px, 60px);
+    font-weight: normal;
+    margin-top: 72px;
+    margin-bottom: 184px;
+  }
+
   .description__item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    min-height: 260px;
+    margin-bottom: 0;
+    margin-right: 70px;
+    padding: 0;
+  }
+
+  .description__item:nth-child(2n),
+  .description__item:nth-child(3) {
+    margin-right: 70px;
+  }
+
+  .description__item:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .description__text {
+    @include text (#444444, 16px, 24px);
+    padding-right: 0;
+    width: 255px;
+  }
+
+  .description__text::before {
+    @include pseudo;
+    top: -111px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: $green-tone;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

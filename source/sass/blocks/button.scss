@@ -19,7 +19,7 @@
 }
 
 .button--more {
-  background-color: $oprtions-color;
+  background-color: $options-color;
   color: #444444;
   font-size: 16px;
 }
@@ -32,4 +32,11 @@
 
 .button--order {
   font-size: 16px;
+}
+
+@media (min-width: $tablet-widths) {
+  .product-card .button {
+    margin-top: 10px;
+    width: 249px;
+  }
 }
