@@ -40,11 +40,6 @@
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
-  .catalog__list {
-    width: 1200px;
-    min-height: 2000px;
-  }
-
   .catalog__heading {
     @include text(#111111, 60px, 60px);
     width: 1220px;
@@ -56,6 +51,8 @@
   }
 
   .catalog__list {
+    min-height: 2000px;
+
     @include list-style;
     width: $desktop-widths;
     padding: 0 40px;
