@@ -40,3 +40,10 @@
     width: 249px;
   }
 }
+
+@media (min-width: $desktop-widths) {
+  .product-card .button {
+    margin-top: 10px;
+    width: 169px;
+  }
+}

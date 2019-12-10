@@ -16,11 +16,15 @@
   background-color: #ffffff;
 }
 
+.invite__data--graybg {
+  background-color: $options-color;
+}
+
 .invite__text {
   width: 125px;
   margin: 0;
-  margin-left: 2px;
-  margin-right: 19px;
+  margin-left: 4px;
+  margin-right: 18px;
 
   @include text(#111111, 16px, 20px);
   font-weight: normal;

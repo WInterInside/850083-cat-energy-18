@@ -51,7 +51,6 @@
   }
 
   .catalog__list {
-    min-height: 2000px;
 
     @include list-style;
     width: $desktop-widths;
