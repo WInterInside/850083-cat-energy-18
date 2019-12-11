@@ -12,14 +12,16 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <div class="header__wraper container">
+      <div class="header__wraper container-mobile">
         <a class="site-logo site-logo--header" href="index.html">
           <img class="site-logo__img site-logo__img--mob" src="img/logo-mobile.svg" alt="Логотип магазина  CAT ENERGY" width="191" height="39">
           <img class="site-logo__img site-logo__img--tab" src="img/logo-tablet.svg" alt="Логотип магазина  CAT ENERGY" width="174" height="59">
           <img class="site-logo__img site-logo__img--desk" src="img/logo-desktop.svg" alt="Логотип магазина  CAT ENERGY" width="203" height="60">
         </a>
-        <div class="header__menu header__menu--lines"></div>
-        <div class="header__menu header__menu--x"></div>
+        <div class="header__menu">
+          <div class="header__lines"></div>
+          <div class="header__x"></div>
+        </div>
       </div>
       <nav class="site-navigation site-navigation--modal">
         <ul class="site-navigation__list">
@@ -30,7 +32,7 @@
             <a class="site-navigation__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link">Подбор программы</a>
+            <a class="site-navigation__link site-navigation__link--сurrent">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -160,8 +162,7 @@
           <address class="invite__adress">
             ул. Большая <br>
             Конюшенная, д. 19/8 <br>
-            <br>
-            Санкт-Петербург
+            <span class="invite__city">Санкт-Петербург</span>
           </address>
         </div>
       </div>

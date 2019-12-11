@@ -1,19 +1,15 @@
 .additional-goods__heading {
-  position: relative;
-
-  @include text(#111111, 24px, 26px);
-  font-weight: normal;
-  padding-top: 11px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 9px;
   padding-bottom: 13px;
-}
+  margin-left: -20px;
+  position: relative;
+  background: #ffffff;
 
-.additional-goods__heading::after {
-  @include pseudo;
-  top: 53%;
-  right: -20px;
-  width: 53px;
-  height: 3px;
-  background-color: $green-tone;
+  @include text(#111111, 24px, 24px);
+  font-weight: normal;
 }
 
 .additional-goods__list {
@@ -34,7 +30,6 @@
 
 @media (min-width: $desktop-widths) {
   .additional-goods {
-
     width: 1000px;
   }
 }

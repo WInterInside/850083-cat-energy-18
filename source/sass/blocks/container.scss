@@ -21,6 +21,14 @@
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .container-mobile {
+    width: $mobile-widths-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-widths) {
   .container {
     width: $tablet-widths;
@@ -34,5 +42,10 @@
     width: $desktop-widths;
     padding: 0 40px;
     margin: 0 auto;
+  }
+
+  .container--header {
+    display: flex;
+    width: 174px;
   }
 }

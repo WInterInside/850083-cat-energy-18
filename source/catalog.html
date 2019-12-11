@@ -12,14 +12,16 @@
 <body>
   <header class="header">
     <div class="header__container">
-      <div class="header__wraper container">
+      <div class="header__wraper container-mobile">
         <a class="site-logo site-logo--header" href="index.html">
           <img class="site-logo__img site-logo__img--mob" src="img/logo-mobile.svg" alt="Логотип магазина  CAT ENERGY" width="191" height="39">
           <img class="site-logo__img site-logo__img--tab" src="img/logo-tablet.svg" alt="Логотип магазина  CAT ENERGY" width="174" height="59">
           <img class="site-logo__img site-logo__img--desk" src="img/logo-desktop.svg" alt="Логотип магазина  CAT ENERGY" width="203" height="60">
         </a>
-        <div class="header__menu header__menu--lines"></div>
-        <div class="header__menu header__menu--x"></div>
+        <div class="header__menu">
+          <div class="header__lines"></div>
+          <div class="header__x"></div>
+        </div>
       </div>
       <nav class="site-navigation site-navigation--modal">
         <ul class="site-navigation__list">
@@ -27,7 +29,7 @@
             <a class="site-navigation__link" href="index.html">Главная</a>
           </li>
           <li class="site-navigation__item">
-            <a class="site-navigation__link">Каталог продукции</a>
+            <a class="site-navigation__link site-navigation__link--сurrent">Каталог продукции</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="selection_form.html">Подбор программы</a>
@@ -37,13 +39,13 @@
     </div>
   </header>
   <main class="catalog">
-    <h1 class="catalog__heading  container">Каталог продукции</h1>
+    <h1 class="catalog__heading">Каталог продукции</h1>
     <ul class="catalog__list">
       <li class="product-card">
         <!-- 1 -->
         <a class="product-card__bookmark" name="pro"></a>
         <div class="product-card__wraper product-card__wraper--row">
-          <a class="product-card__link product-card__link--img" href="#">
+          <a class="product-card__link" href="#">
             <img class="product-card__image product-card__image--mob" src="img/chicken-small-mobile@1x.jpg" alt="Упаковка кошачего корма со вкусом курицы" width="140" height="144">
             <img class="product-card__image product-card__image--tab" src="img/chicken-small-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="161" height="172">
             <img class="product-card__image product-card__image--desk" src="img/chicken-small-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="161" height="172">
@@ -75,8 +77,8 @@
         <div class="product-card__wraper product-card__wraper--row">
           <a class="product-card__link" href="#">
             <img class="product-card__image product-card__image--mob" src="img/chicken-big-mobile@1x.jpg" alt="Упаковка кошачего корма со вкусом курицы" width="140" height="144">
-            <img class="product-card__image product-card__image--tab" src="img/chicken-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
-            <img class="product-card__image product-card__image--desk" src="img/chicken-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--tab product-card__image--big" src="img/chicken-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--desk product-card__image--big" src="img/chicken-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
           </a>
           <div class="product-card__wraper product-card__wraper--column">
             <a class="product-card__link" href="#">
@@ -135,8 +137,8 @@
         <div class="product-card__wraper product-card__wraper--row">
           <a class="product-card__link" href="#">
             <img class="product-card__image product-card__image--mob" src="img/fish-big-mobile@1x.jpg" alt="Упаковка кошачего корма со вкусом рыбы" width="140" height="144">
-            <img class="product-card__image product-card__image--tab" src="img/fish-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
-            <img class="product-card__image product-card__image--desk" src="img/fish-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--tab product-card__image--big" src="img/fish-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--desk product-card__image--big" src="img/fish-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
           </a>
           <div class="product-card__wraper product-card__wraper--column">
             <a class="product-card__link" href="#">
@@ -196,8 +198,8 @@
         <div class="product-card__wraper product-card__wraper--row">
           <a class="product-card__link" href="#">
             <img class="product-card__image product-card__image--mob" src="img/buckwheat-big-mobile@1x.jpg" alt="Упаковка кошачего корма со вкусом гречки" width="140" height="144">
-            <img class="product-card__image product-card__image--tab" src="img/buckwheat-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
-            <img class="product-card__image product-card__image--desk" src="img/buckwheat-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--tab product-card__image--big" src="img/buckwheat-big-tablet@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
+            <img class="product-card__image product-card__image--desk product-card__image--big" src="img/buckwheat-big-desktop@1x.png" alt="Упаковка кошачего корма со вкусом курицы" width="195" height="208">
           </a>
           <div class="product-card__wraper product-card__wraper--column">
             <a class="product-card__link" href="#">
@@ -251,14 +253,14 @@
         </div>
         <a class="button  button--order" href="#">Заказать</a>
       </li>
-      <li class="product-card product-card__more">
-        <span class="catalog-more__expansion"></span>
+      <li class="product-card product-card--more catalog-more">
         <p class="catalog-more__text catalog-more__text--bigger">Показать еще 100500 товаров</p>
         <p class="catalog-more__text catalog-more__text--smaller">На самом деле вкусов гораздо больше!</p>
         <a class="button button--more catalog-more_show" href="#">Показать все</a>
       </li>
     </ul>
-    <div class="catalog__wraper container">
+    <div class="catalog__wraper catalog__wraper--line">
+      <div class="catalog__wraper  container">
       <section class="additional-goods">
         <h2 class="additional-goods__heading">Дополнительные товары</h2>
         <ul class="additional-goods__list">
@@ -269,8 +271,8 @@
                 <h2 class="additional-card__heading">Cахарозаменитель</h2>
               </a>
               <div class="additional-card__option">
-                <span class="additional-card__option__sign">1 упаковка(100 г)</span>
-                <span class="additional-card__option--price">200 р.</span>
+                <span class="additional-card__sign">1 упаковка(100 г)</span>
+                <span class="additional-card__price">200 р.</span>
               </div>
             </div>
             <a class="button button--order" href="#">Заказать</a>
@@ -282,8 +284,8 @@
                 <h2 class="additional-card__heading">Питьевая вода</h2>
               </a>
               <div class="additional-card__option">
-                <span class="additional-card__option__sign">5 литров</span>
-                <span class="additional-card__option--price">50 р.</span>
+                <span class="additional-card__sign">5 литров</span>
+                <span class="additional-card__price">50 р.</span>
               </div>
             </div>
             <a class="button button--order" href="#">Заказать</a>
@@ -295,8 +297,8 @@
                 <h2 class="additional-card__heading">Молоко</h2>
               </a>
               <div class="additional-card__option">
-                <span class="additional-card__option__sign">1 литр</span>
-                <span class="additional-card__option--price">100 р.</span>
+                <span class="additional-card__sign">1 литр</span>
+                <span class="additional-card__price">100 р.</span>
               </div>
             </div>
             <a class="button button--order" href="#">Заказать</a>
@@ -308,8 +310,8 @@
                 <h2 class="additional-card__heading">Витамины</h2>
               </a>
               <div class="additional-card__option">
-                <span class="additional-card__option__sign">1 упаковка(30 г)</span>
-                <span class="additional-card__option--price">300 р.</span>
+                <span class="additional-card__sign">1 упаковка(30 г)</span>
+                <span class="additional-card__price">300 р.</span>
               </div>
             </div>
             <a class="button button--order" href="#">Заказать</a>
@@ -323,17 +325,17 @@
         </a>
       </section>
     </div>
+  </div>
   </main>
   <footer class="footer">
     <section class="invite">
-      <div class="invite__wraper">
-        <div class="invite__data">
+      <div class="invite__wraper invite__wraper--graybg">
+        <div class="invite__data invite__data--graybg">
           <p class="invite__text">Приглашаем <br>к сотрудничеству дилеров!</p>
           <address class="invite__adress">
             ул. Большая <br>
             Конюшенная, д. 19/8 <br>
-            <br>
-            Санкт-Петербург
+            <span class="invite__city">Санкт-Петербург</span>
           </address>
         </div>
       </div>

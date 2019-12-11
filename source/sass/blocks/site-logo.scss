@@ -1,10 +1,9 @@
-.site-logo {
-  display: flex;
+.site-logo--footer {
+  margin-left: 74px;
 }
 
-.site-logo--footer {
-  padding-bottom: 17px;
-  margin-left: 96px;
+.footer .site-logo__img {
+  margin-bottom: 30px;
 }
 
 .site-logo__img--desk,
@@ -13,6 +12,19 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .header .site-logo {
+    margin-left: 0;
+    margin-right: 94px;
+  }
+
+  .site-logo {
+    margin: 0;
+  }
+
+  .footer .site-logo__img {
+    margin-bottom: 0;
+  }
+
   .site-logo__img--mob,
   .site-logo__img--desk {
     display: none;
@@ -24,6 +36,11 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .header .site-logo {
+    margin-top: 37px;
+    margin-right: 94px;
+  }
+
   .site-logo__img--tab,
   .site-logo__img--mob {
     display: none;

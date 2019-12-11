@@ -4,20 +4,22 @@
 
 .options__item {
   position: relative;
-  background-color: $oprtions-color;
+  background-color: $options-color;
   margin-bottom: 20px;
   padding-bottom: 20px;
   padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .options__item:last-child {
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .options__item::before {
   @include pseudo;
-  top: 0;
-  left: 0;
+  top: 23px;
+  left: 22px;
 
   @include round(50px, 51px, $green-tone);
   margin-right: 21px;
@@ -26,21 +28,24 @@
 
 .options__item::after {
   @include pseudo;
-  top: 0;
-  left: 0;
-  width: 65px;
-  height: 65px;
-  background-image: url("../img/icon-cat-pro.svg");
+  width: 52px;
+  height: 52px;
 
   @include background (center, no-repeat);
 }
 
 .options__item--slim::after {
   background-image: url("../img/icon-cat-slim.svg");
+  top: 19px;
+  left: 22px;
 }
 
 .options__item--pro::after {
   background-image: url("../img/icon-cat-pro.svg");
+  top: 22px;
+  left: 12px;
+  width: 70px;
+  height: 52px;
 }
 
 .options__wraper {
@@ -52,15 +57,16 @@
   @include text(#111111, 24px, 37px);
   text-transform: uppercase;
   font-weight: normal;
+  margin-left: 70px;
 }
 
 .options__text {
   @include text(#444444, 14px, 18px);
   font-family: $sup-font;
   border-bottom: 1px solid $border-color;
-  margin-top: 10px;
-  margin-bottom: 17px;
-  padding-bottom: 21px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  padding-bottom: 23px;
 }
 
 .options__link {
@@ -69,30 +75,115 @@
   text-decoration: none;
   text-transform: uppercase;
   padding-right: 35px;
+  cursor: pointer;
+}
+
+.options__link::before {
+  @include pseudo;
+  background-color: $mr-gray-color;
+  top: 11px;
+  right: 0;
+  width: 22px;
+  height: 2px;
 }
 
 .options__link::after {
   @include pseudo;
+  background-color: transparent;
   top: 6px;
   right: 0;
-  width: 25px;
-  height: 12px;
-  background-image: url("../img/icon-right-arrow-long.svg");
 
-  @include background (center, no-repeat);
+  border: 6px solid;
+  border-color: transparent;
+  border-left-color: $mr-gray-color;
+  border-right: 0;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .options__list {
+    margin-bottom: 42px;
+  }
+
   .options__wraper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 
+  .options__header {
+    @include text(#111111, 36px, 37px);
+    margin: 0;
+    padding-left: 32px;
+  }
+
   .options__text {
+    border: none;
+
+    @include text(#444444, 16px, 24px);
+    margin-top: 25px;
+    padding-left: 32px;
     padding-right: 200px;
+    margin-bottom: 33px;
+  }
+
+  .options__text--pro {
+    padding-right: 235px;
+  }
+
+  .options__item {
+    padding-top: 76px;
+    padding-right: 80px;
+    padding-bottom: 62px;
+    margin-bottom: 30px;
+  }
+
+  .options__item::before {
+    @include pseudo;
+    top: 93px;
+    left: 448px;
+
+    @include round(200px, 200px, $green-tone);
+    text-align: center;
+  }
+
+  .options__item::after {
+    @include pseudo;
+    width: 205px;
+    height: 205px;
+    top: 85px;
+    left: 445px;
+
+    @include background (center, no-repeat);
+  }
+
+  .options__item--slim::after {
+    background-image: url("../img/icon-cat-slim.svg");
+  }
+
+  .options__item--pro::after {
+    background-image: url("../img/icon-cat-pro.svg");
+    left: 420px;
+    width: 255px;
+    height: 255px;
+  }
+
+  .options__link {
+    @include text(#111111, 20px, 20px);
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 45px;
+    padding-left: 32px;
+  }
+
+  .options__link::before {
+    top: 14px;
+  }
+
+  .options__link::after {
+    top: 9px;
   }
 }
 
@@ -102,26 +193,75 @@
   .options__list {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    margin-bottom: 42px;
 
     @include list-style;
   }
 
-  .options__item {
-    width: 400px;
-    background-color: $oprtions-color;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+  .options__header {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 
   .options__text {
-    @include text(#444444, 14px, 18px);
+    @include text(#444444, 16px, 24px);
     font-family: $sup-font;
-    border-bottom: 1px solid $border-color;
-    margin-top: 10px;
-    margin-bottom: 17px;
-    padding-bottom: 21px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 31px;
+  }
+
+  .options__item {
+    width: 570px;
+    min-height: 370px;
+    padding-left: 52px;
+    padding-right: 40px;
+    padding-top: 79px;
+    margin-bottom: 0;
+  }
+
+  .options__item:first-child {
+    margin-right: 80px;
+  }
+
+  .options__item::before {
+    @include pseudo;
+    top: 47px;
+    left: 52px;
+
+    @include round(100px, 100px, $green-tone);
+    text-align: center;
+  }
+
+  .options__item::after {
+    @include pseudo;
+    width: 110px;
+    height: 110px;
+    top: 40px;
+    left: 52px;
+
+    @include background (center, no-repeat);
+  }
+
+  .options__item--pro::after {
+    background-image: url("../img/icon-cat-pro.svg");
+    width: 130px;
+    height: 130px;
+    top: 37px;
+    left: 32px;
+  }
+
+
+  .options__link {
+    padding-left: 0;
+  }
+
+  .options__link::before {
+    top: 15px;
+  }
+
+  .options__link::after {
+    top: 10px;
   }
 }

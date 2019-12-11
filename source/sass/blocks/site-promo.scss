@@ -14,8 +14,13 @@
 }
 
 .site-promo__text {
-  @include text(#ffffff, 14px, 20px);
+  @include text(#ffffff, 14px, 14px);
   text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.site-promo__button {
+  margin-top: 4px;
 }
 
 .site-promo__wraper--order {
@@ -39,19 +44,36 @@
     min-height: 700px;
     background-image: none;
     background-color: #ffffff;
+    margin-bottom: 155px;
   }
 
   .site-promo__header {
-    @include text(#000000, 36px, 36px);
+    @include text(#000000, 60px, 60px);
     font-weight: normal;
     text-align: left;
-    margin-top: 0;
+    margin-top: 18px;
+    padding-right: 150px;
+    margin-left: 88px;
   }
 
   .site-promo__text {
-    @include text(#000000, 14px, 20px);
+    @include text(#000000, 20px, 20px);
     text-transform: uppercase;
     text-align: left;
+    margin-bottom: 45px;
+    margin-left: 88px;
+  }
+
+  .site-promo__button {
+    z-index: 2;
+    width: 245px;
+    margin-right: 374px;
+
+    @include text(#ffffff, 20px, 20px);
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 38px;
+    padding-top: 14px;
   }
 
   .site-promo__wraper--order {
@@ -63,13 +85,8 @@
   .site-promo__link {
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 0;
-  }
-
-  .site-promo__button {
-    z-index: 2;
-    margin-right: 900px;
+    top: -25px;
+    left: 30px;
   }
 
   .site-promo__wraper--text {
@@ -93,34 +110,33 @@
     position: relative;
     min-height: 696px;
     padding: 0;
-    padding-top: 80px;
+    padding-top: 223px;
+    margin-bottom: 78px;
     background: url("../img/index-background-desktop@1x.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(99, 167, 58, 1) 50%);
-    background-position: left calc(50% + 350px) top, 0 0;
+    background-position: left calc(50% + 359px) top, 0 0;
     background-repeat: no-repeat, repeat;
   }
 
-  .site-logo__img--tab,
-  .site-logo__img--mob {
+  .site-promo__img--tab,
+  .site-promo__img--mob {
     display: none;
   }
 
-  .site-logo__img--desk {
+  .site-promo__img--desk {
     display: block;
   }
 
   .site-promo__header {
-    position: relative;
-
-    @include text(#000000, 60px, 60px);
-    font-weight: normal;
-    text-align: left;
-    padding-right: 750px;
+    padding-right: 650px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding-left: 139px;
   }
 
   .site-promo__text {
-    @include text(#000000, 14px, 20px);
-    text-transform: uppercase;
-    text-align: left;
+    margin: 0;
+    margin-bottom: 48px;
+    padding-left: 139px;
   }
 
   .site-promo__wraper--order {
@@ -131,11 +147,19 @@
 
   .site-promo__link {
     position: absolute;
-    top: -165px;
-    right: 230px;
+    top: -310px;
+    left: 490px;
   }
 
   .site-promo__button {
-    margin-right: 900px;
+    z-index: 2;
+    margin-right: 850px;
+    margin-left: 139px;
+
+    @include text(#ffffff, 20px, 20px);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 38px;
+    padding-top: 15px;
   }
 }

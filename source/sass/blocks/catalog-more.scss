@@ -1,27 +1,43 @@
 .catalog-more {
+  min-height: 210px;
   border-bottom: 1px solid $border-color;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  font-weight: normal;
+  padding-top: 40px;
+  padding-bottom: 10px;
 
   @include text(#444444, 12px, 26px);
 }
 
-.catalog-more__expansion {
+.catalog-more__text {
   position: relative;
-  display: block;
-  width: 31px;
+  text-align: center;
+}
+
+.catalog-more__text--bigger::before {
+  @include pseudo;
+  top: -53px;
+  left: 135px;
   height: 31px;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/icon-plus.svg");
+  width: 2px;
+  background-color: $border-color;
+  cursor: pointer;
+}
+
+.catalog-more__text--bigger::after {
+  @include pseudo;
+  top: -40px;
+  left: 122px;
+  height: 2px;
+  width: 31px;
+  background-color: $border-color;
   cursor: pointer;
 }
 
 .catalog-more__text--bigger {
-  margin-top: 23px;
+  margin-top: 78px;
   margin-bottom: 10px;
+  margin-left: 2px;
 
   @include text(#111111, 16px, 20px);
   text-align: center;
@@ -36,4 +52,62 @@
   text-align: center;
 
   @include text(#444444, 12px, 14px);
+}
+
+@media (min-width: $tablet-widths) {
+  .catalog-more__text--bigger {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @include text(#111111, 20px, 20px);
+  }
+
+  .catalog-more__text--bigger::before {
+    top: -110px;
+    left: 124px;
+    height: 61px;
+  }
+
+  .catalog-more__text--bigger::after {
+    top: -80px;
+    left: 95px;
+    width: 61px;
+  }
+
+  .catalog-more__text--smaller {
+    margin: 0;
+    margin-bottom: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include text(#444444, 16px, 20px);
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .catalog-more__text--bigger {
+    margin-top: 18px;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .catalog-more__text--bigger::before {
+    top: -112px;
+    left: 82px;
+    height: 61px;
+  }
+
+  .catalog-more__text--bigger::after {
+    top: -82px;
+    left: 52px;
+    width: 61px;
+  }
+
+  .catalog-more__text--smaller {
+    margin: 0;
+    margin-bottom: 72px;
+    padding: 0;
+  }
 }

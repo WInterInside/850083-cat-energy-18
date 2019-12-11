@@ -30,8 +30,9 @@
 
 @media (min-width: $tablet-widths) {
   .site-navigation {
-    display: block;
+    display: flex;
     position: relative;
+    margin-top: 22px;
   }
 
   .site-navigation__list {
@@ -40,10 +41,14 @@
 
   .site-navigation__item {
     text-align: center;
-    margin-right: 20px;
+    margin-right: 34px;
     padding: 0;
     border: none;
     border-bottom: none;
+  }
+
+  .site-navigation__item:nth-child(2) {
+    margin-right: 37px;
   }
 
   .site-navigation__item:last-child {
@@ -56,13 +61,47 @@
     text-transform: uppercase;
     font-weight: normal;
   }
+
+  .site-navigation__link--сurrent {
+    padding-bottom: 7px;
+    border-bottom: 2px solid $green-tone;
+  }
 }
 
 @media (min-width: $desktop-widths) {
   .site-navigation {
-    display: block;
-    position: relative;
-    background-color: transparent;
     z-index: 1;
+    margin-top: 57px;
+  }
+
+  .site-navigation__link {
+    @include text(#111111, 20px, 25px);
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  .site-navigation__link--white {
+    color: #ffffff;
+  }
+
+  .site-navigation__link--сurrentindex {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .site-navigation__item {
+    text-align: center;
+    margin-right: 36px;
+    padding: 0;
+    border: none;
+    border-bottom: none;
+  }
+
+  .site-navigation__item:nth-child(2) {
+    margin-right: 33px;
+  }
+
+  .site-navigation__item:last-child {
+    margin-right: 0;
   }
 }

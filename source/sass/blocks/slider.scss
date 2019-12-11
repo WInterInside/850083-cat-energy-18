@@ -2,6 +2,10 @@
   display: none;
 }
 
+.slider__image--before {
+  width: $mobile-widths-only;
+}
+
 .slider__before {
   margin-left: -20px;
   margin-right: -20px;
@@ -12,14 +16,35 @@
 }
 
 .slider__buttons {
+  position: relative;
   display: flex;
-  margin-top: 38px;
+  margin-top: 32px;
   margin-left: 38px;
+}
+
+.slider__buttons::before {
+  @include pseudo;
+  top: 2px;
+  left: 60px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $border-color;
+  border-radius: 8px;
+}
+
+.slider__buttons::after {
+  @include pseudo;
+  left: 66px;
+  top: 6px;
+  width: 35px;
+  height: 6px;
+  background-color: $green-tone;
+  border-radius: 8px;
 }
 
 .slider__button {
   border: none;
-  background-color: $oprtions-color;
+  background-color: $options-color;
 
   @include text(#111111, 16px, 16px);
   font-weight: normal;
@@ -34,12 +59,22 @@
 
 @media (min-width: $tablet-widths) {
   .slider {
-    width: 600px;
+    width: 708px;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 135px;
+    background-color: transparent;
   }
 
-  .slider__button:first-child {
+  .slider__buttons {
+    display: flex;
+    margin-top: 138px;
+    margin-left: 38px;
+  }
+
+  .slider__button {
+    @include text(#111111, 20px, 20px);
+    border-bottom: 2px dotted red;
     margin-right: 348px;
   }
 }

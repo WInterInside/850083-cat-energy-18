@@ -1,8 +1,8 @@
 .description__header {
   @include text (#111111, 36px, 60px);
   font-weight: normal;
-  margin-top: -13px;
-  margin-bottom: 28px;
+  margin-top: 19px;
+  margin-bottom: 29px;
 }
 
 .description__list {
@@ -12,8 +12,12 @@
 .description__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  height: 60px;
+  margin-bottom: 26px;
+  padding-left: 80px;
+}
+
+.description__item:last-child {
+  margin-bottom: 0;
 }
 
 .description__text {
@@ -22,13 +26,13 @@
   font-family: $sup-font;
   margin: 0;
 
-  @include text (#444444, 14px, 19px);
+  @include text (#444444, 14px, 18px);
 }
 
 .description__text::before {
   @include pseudo;
-  top: 0; /* временно */
-  right: 0; /* временно */
+  top: -2px;
+  left: -80px;
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -56,47 +60,137 @@
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
-  .description {
-    min-height: 300px;
+  .description__header {
+    @include text (#111111, 60px, 60px);
+    font-weight: normal;
+    margin-bottom: 184px;
   }
 
   .description__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     @include list-style;
   }
 
   .description__item {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    width: 250px;
-    min-height: 260px;
+    margin-bottom: 245px;
+    margin-right: 129px;
+    padding: 0;
+  }
+
+  .description__item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .description__item:nth-child(3),
+  .description__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .description__text {
+    @include text (#444444, 16px, 24px);
+    padding-right: 0;
+    width: 255px;
+  }
+
+  .description__text::before {
+    @include pseudo;
+    top: -111px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: $green-tone;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
-  .description {
-    min-height: 500px;
-  }
-
   .description__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 1200px;
 
     @include list-style;
   }
 
+  .description__header {
+    @include text (#111111, 60px, 60px);
+    font-weight: normal;
+    margin-top: 72px;
+    margin-bottom: 185px;
+  }
+
   .description__item {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    height: 260px;
+    margin-bottom: 0;
+    margin-right: 70px;
+    padding: 0;
+  }
+
+  .description__item:nth-child(2n),
+  .description__item:nth-child(3) {
+    margin-right: 70px;
+  }
+
+  .description__item:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .description__text {
+    @include text (#444444, 16px, 24px);
+    padding-right: 0;
+    width: 255px;
+    z-index: 2;
+  }
+
+  .description__text::before {
+    @include pseudo;
+    top: -111px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    background-color: $green-tone;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .description__item::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+
+    @include text ($options-color, 281px, 281px);
+    top: -150px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .description__item--1::after {
+    content: "1";
+    right: 25px;
+  }
+
+  .description__item--2::after {
+    content: "2";
+  }
+
+  .description__item--3::after {
+    content: "3";
+    right: 8px;
+  }
+
+  .description__item--4::after {
+    content: "4";
+    right: 7px;
   }
 }

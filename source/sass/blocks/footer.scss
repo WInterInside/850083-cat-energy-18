@@ -1,5 +1,5 @@
 .footer {
-  background-color: $oprtions-color;
+  background-color: $options-color;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
@@ -7,15 +7,10 @@
 @media (min-width: $tablet-widths) {
   .footer__wraper {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
   }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
-
-@media (min-width: $desktop-widths) {
-  .footer__wraper {
-    display: flex;
-    justify-content: space-around;
-  }
-}

@@ -1,8 +1,9 @@
 .catalog__heading {
   @include text(#111111, 36px, 60px);
-  margin: 0;
-  margin-top: 3px;
-  padding-top: 10px;
+  width: $mobile-widths-only;
+  padding: 0 20px;
+  margin: 0 auto;
+  padding-top: 15px;
   padding-bottom: 27px;
   font-weight: normal;
   border-bottom: 1px solid $border-color;
@@ -14,15 +15,37 @@
   margin: 0 auto;
 }
 
+.catalog__wraper--line {
+  position: relative;
+}
+
+.catalog__wraper::before {
+  @include pseudo;
+  left: 0;
+  top: 42px;
+  width: 100%;
+  height: 3px;
+  background-color: $green-tone;
+}
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .catalog__list {
     @include list-style;
     margin: 0 auto;
-    width: 700px;
+    width: 708px;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .catalog__heading {
+    @include text(#111111, 60px, 60px);
+    width: 708px;
+    padding: 0;
+    padding-top: 45px;
+    margin-bottom: 165px;
+    font-weight: normal;
+    border-bottom: none;
   }
 }
 
@@ -30,12 +53,13 @@
 
 @media (min-width: $desktop-widths) {
   .catalog__heading {
-    @include text(#111111, 36px, 60px);
-    margin: 0;
-    padding-top: 10px;
-    padding-bottom: 27px;
+    @include text(#111111, 60px, 60px);
+    width: 1220px;
+    padding: 0;
+    padding-top: 55px;
+    margin-bottom: 165px;
     font-weight: normal;
-    border-bottom: 1px solid $border-color;
+    border-bottom: none;
   }
 
   .catalog__list {
