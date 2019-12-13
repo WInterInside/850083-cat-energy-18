@@ -4,13 +4,19 @@
 
 .additional-card {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
+}
+
+.additional-card:last-child {
+  margin-bottom: 38px;
 }
 
 .additional-card__heading {
   @include text(#222222, 16px, 16px);
   font-weight: normal;
   text-transform: uppercase;
+  margin-top: 12px;
+  margin-left: 2px;
 }
 
 .additional-card__option {
@@ -20,11 +26,12 @@
   font-family: $sup-font;
   font-weight: normal;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .additional-card__price {
   text-transform: uppercase;
+  margin-right: -2px;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */

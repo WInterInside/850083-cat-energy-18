@@ -3,7 +3,6 @@
   border-bottom: 1px solid $border-color;
   text-align: center;
   font-weight: normal;
-  padding-top: 40px;
   padding-bottom: 10px;
 
   @include text(#444444, 12px, 26px);
@@ -16,8 +15,8 @@
 
 .catalog-more__text--bigger::before {
   @include pseudo;
-  top: -53px;
-  left: 135px;
+  top: 25px;
+  left: 136px;
   height: 31px;
   width: 2px;
   background-color: $border-color;
@@ -26,7 +25,7 @@
 
 .catalog-more__text--bigger::after {
   @include pseudo;
-  top: -40px;
+  top: 40px;
   left: 122px;
   height: 2px;
   width: 31px;
@@ -35,10 +34,10 @@
 }
 
 .catalog-more__text--bigger {
-  margin-top: 78px;
-  margin-bottom: 10px;
-  margin-left: 2px;
-
+  margin: 0;
+  margin-left: 3px;
+  padding-top: 79px;
+  padding-bottom: 10px;
   @include text(#111111, 16px, 20px);
   text-align: center;
   font-weight: normal;

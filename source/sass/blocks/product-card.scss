@@ -2,10 +2,10 @@
   border: 1px solid $border-color;
   border-top: none;
   width: $mobile-widths-only;
-  padding-top: 2px;
 
-  @include lr-paddings;
-  padding-bottom: 24px;
+  padding-left: 19px;
+  padding-right: 20px;
+  padding-bottom: 23px;
 }
 
 .product-card__heading {
@@ -13,12 +13,13 @@
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 12px;
   padding-right: 55px;
 }
 
 .product-card__data {
   width: 145px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .product-card__sign,
@@ -37,7 +38,6 @@
 
 .product-card__wraper {
   display: flex;
-  justify-content: space-between;
 }
 
 .product-card__wraper--column {

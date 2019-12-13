@@ -7,11 +7,14 @@
 
 .invite-map__pin {
   position: absolute;
-  top: 140px;
-  right: 133px;
+  width: 65px;
+  height: 55px;
+  top: 136px;
+  right: 127px;
 }
 
 .invite-map__img {
+  margin-top: -5px;
   vertical-align: bottom;
 }
 

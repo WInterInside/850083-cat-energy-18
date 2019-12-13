@@ -5,8 +5,9 @@
   @include list-style;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
-  padding-bottom: 19px;
+  padding-bottom: 21px;
   padding-top: 24px;
+  margin-bottom: 18px;
 }
 
 .social__item {
@@ -17,7 +18,7 @@
 }
 
 .social__item:nth-child(2) {
-  margin-right: 40px;
+  margin-right: 38px;
   margin-left: 0;
 }
 
@@ -33,6 +34,7 @@
 }
 
 .social__link--vkontakte {
+  margin-top: -2px;
   width: 22px;
   height: 12px;
 }
@@ -43,6 +45,7 @@
 }
 
 .social__link--fb {
+  margin-top: -2px;
   width: 10px;
   height: 19px;
 }

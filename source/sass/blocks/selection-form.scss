@@ -21,7 +21,7 @@
 .selection-form__wraper {
   position: relative;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   justify-content: space-between;
 }
 
@@ -47,31 +47,46 @@
   padding-top: 13px;
 }
 
+.selection-form__label--weight {
+  margin-right: 16px;
+}
+
 .selection-form__input {
-  @include text(#444444, 16px, 17px);
+  @include text(#444444, 16px, 18px);
+  width: 229px;
   font-weight: normal;
   text-transform: uppercase;
-  flex-grow: 1;
-  padding-top: 15px;
-  padding-bottom: 13px;
-  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 14px;
+  padding-left: 14px;
   padding-right: 38px;
 }
 
+.selection-form__input--weight {
+  padding-left: 16px;
+  width: 204px;
+}
+
 .selection-form__input--age {
+  padding-left: 16px;
   width: 172px;
 }
 
 .selection-form__radioblock {
   border: 1px solid $border-color;
-  border-left: none;
-  border-right: none;
 
   @include list-style;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 11px;
 }
 
 .selection-form__option {
   margin-bottom: 24px;
+}
+
+.selection-form__option:last-child {
+  margin-bottom: 0;
 }
 
 .selection-form__radio {
@@ -101,7 +116,7 @@
 }
 
 .selection-form__wraper--contacts::before {
-  top: 45px;
+  top: 33px;
 }
 
 .selection-form__wraper--comment::before {

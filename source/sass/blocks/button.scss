@@ -3,12 +3,12 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  width: 278px;
+  width: 280px;
   height: 40px;
   margin: 0 auto;
-  padding-left: 43px;
+  padding-left: 45px;
   padding-right: 43px;
-  padding-top: 12px;
+  padding-top: 10px;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
@@ -22,6 +22,7 @@
   background-color: $options-color;
   color: #444444;
   font-size: 16px;
+  padding-top: 12px;
 }
 
 .button--button {
@@ -31,6 +32,7 @@
 }
 
 .button--order {
+  margin-top: 2px;
   font-size: 16px;
 }
 

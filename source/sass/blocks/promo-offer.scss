@@ -1,7 +1,5 @@
 .promo-offer {
   position: relative;
-  height: 328px;
-  padding-top: 39px;
   margin-bottom: 35px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
@@ -12,9 +10,9 @@
   display: flex;
   width: 280px;
   height: 289px;
-  padding-top: 190px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 186px;
+  padding-left: 54px;
+  padding-right: 55px;
   margin: 0;
 
   @include text(#ffffff, 16px, 20px);
@@ -23,10 +21,15 @@
   font-weight: normal;
 }
 
-.promo-offer__icon {
-  position: absolute;
-  top: 32%;
-  right: 40%;
+.promo-offer__text::before{
+  @include pseudo;
+  background-image: url("../img/icon-gift.svg");
+
+  @include background (center, no-repeat);
+  width: 56px;
+  height: 61px;
+  top: 63px;
+  right: 112px;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
