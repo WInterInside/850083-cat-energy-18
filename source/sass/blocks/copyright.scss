@@ -7,7 +7,7 @@
 
 .copyright__text {
   font-family: $sup-font;
-
+  margin-left: -2px;
   @include text (#444444, 16px, 16px);
 }
 
