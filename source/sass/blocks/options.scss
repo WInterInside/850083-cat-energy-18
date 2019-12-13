@@ -28,23 +28,23 @@
 
 .options__item::after {
   @include pseudo;
-  width: 52px;
-  height: 52px;
+  width: 53px;
+  height: 50px;
 
   @include background (center, no-repeat);
 }
 
 .options__item--slim::after {
   background-image: url("../img/icon-cat-slim.svg");
-  top: 19px;
-  left: 22px;
+  top: 22px;
+  left: 20px;
 }
 
 .options__item--pro::after {
   background-image: url("../img/icon-cat-pro.svg");
   top: 22px;
   left: 12px;
-  width: 70px;
+  width: 69px;
   height: 52px;
 }
 
