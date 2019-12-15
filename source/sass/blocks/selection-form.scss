@@ -3,7 +3,7 @@
   display: inline-block;
   padding: 0 20px;
   padding-bottom: 10px;
-  margin-left: -20px;
+  margin-left: -21px;
   position: relative;
   background: #ffffff;
 
@@ -26,9 +26,8 @@
 }
 
 .selection-form__wraper--radio {
-  width: $mobile-widths-only;
-  padding: 0 20px;
-  margin: 0 auto;
+  padding-top: 29px;
+  padding-bottom: 26px;
   flex-direction: column;
 }
 
@@ -43,7 +42,8 @@
   @include text(#222222, 16px, 18px);
   font-weight: normal;
   text-transform: uppercase;
-  margin-right: 14px;
+  margin-right: 13px;
+  margin-left: -1px;
   padding-top: 13px;
 }
 
@@ -64,33 +64,74 @@
 
 .selection-form__input--weight {
   padding-left: 16px;
-  width: 204px;
+  width: 205px;
 }
 
 .selection-form__input--age {
   padding-left: 16px;
-  width: 172px;
+  width: 173px;
+
+  margin-bottom: 9px;
 }
 
 .selection-form__radioblock {
   border: 1px solid $border-color;
 
   @include list-style;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  padding-left: 11px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  width: $mobile-widths-only;
+  margin: 0 auto;
+  margin-bottom: 9px;
 }
 
 .selection-form__option {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .selection-form__option:last-child {
   margin-bottom: 0;
 }
 
-.selection-form__radio {
-  margin-right: 16px;
+.selection-form__radio  {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.selection-form__radio + label {
+  position: relative;
+  padding-left: 46px;
+  cursor: pointer;
+}
+
+/*кольцо радиокнопки*/
+.selection-form__radio + label::before {
+  @include pseudo;
+  top: 10px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+/*точка радиокнопки*/
+.selection-form__radio + label::after {
+  @include pseudo;
+  top: 20px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: $green-tone;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.selection-form__radio:checked + label::after {
+  opacity: 1;
 }
 
 .selection-form__label--comment {
@@ -133,22 +174,6 @@
   width: 280px;
   padding-right: 0;
   margin-top: 20px;
-}
-
-.selection-form__button {
-  position: absolute;
-  top: 12px;
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-
-.selection-form__button--tel {
-  right: 0;
-}
-
-.selection-form__button--email {
-  right: 5px;
 }
 
 .selection-form__input--tel,
