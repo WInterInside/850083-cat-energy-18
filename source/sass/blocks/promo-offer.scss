@@ -21,7 +21,7 @@
   font-weight: normal;
 }
 
-.promo-offer__text::before{
+.promo-offer__text::before {
   @include pseudo;
   background-image: url("../img/icon-gift.svg");
 
