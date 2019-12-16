@@ -11,6 +11,23 @@
   font-weight: normal;
 }
 
+.selection-form__heading--contacts {
+  margin-bottom: 23px;
+  padding-right: 22px;
+}
+
+.selection-form__heading--comment {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 22px;
+}
+
+.selection-form__heading--options {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  padding-right: 24px;
+}
+
 .selection-form__cat {
   display: flex;
   flex-direction: column;
@@ -37,6 +54,14 @@
 .selection-form__wraper--column {
   flex-direction: column;
 }
+
+.selection-form__wraper--contacts,
+.selection-form__wraper--comment,
+.selection-form__wraper--submit,
+.selection-form__wraper--options {
+  margin-bottom: 0;
+}
+
 
 .selection-form__label {
   @include text(#222222, 16px, 18px);
@@ -93,7 +118,7 @@
   margin-bottom: 0;
 }
 
-.selection-form__radio  {
+.selection-form__radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -161,11 +186,50 @@
 }
 
 .selection-form__wraper--comment::before {
-  top: 27px;
+  top: 15px;
 }
 
 .selection-form__wraper--options::before {
-  top: 37px;
+  top: 40px;
+}
+
+.selection-form__label--tel,
+.selection-form__label--email {
+  margin-right: 11px;
+}
+
+.selection-form__label--tel::before,
+.selection-form__label--email::before {
+  @include pseudo;
+  top: 8px;
+  right: 16px;
+  width: 17px;
+  height: 30px;
+  background-color: red;
+}
+
+.selection-form__label--tel::before {
+  background: url("../img/icon-phone.svg");
+  right: 10px;
+  width: 24px;
+  height: 32px;
+
+  @include background(center, no-repeat);
+}
+
+.selection-form__label--email::before {
+  background: url("../img/icon-mail.svg");
+
+  @include background(center, no-repeat);
+}
+
+.selection-form__input--tel,
+.selection-form__input--email {
+  width: 219px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+  padding-right: 38px;
 }
 
 .selection-form__input--comment {
@@ -173,15 +237,7 @@
   min-height: 150px;
   width: 280px;
   padding-right: 0;
-  margin-top: 20px;
-}
-
-.selection-form__input--tel,
-.selection-form__input--email {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 11px;
-  padding-right: 38px;
+  margin-top: 26px;
 }
 
 .selection-form__options {
@@ -189,9 +245,46 @@
   margin-bottom: 41px;
 }
 
+/*cтилизация чекбоксов*/
+/*cтилизация чекбоксов*/
 .selection-form__checkbox {
-  margin-right: 29px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
 }
+
+.selection-form__checkbox + label {
+  position: relative;
+  padding: 0 0 0 47px;
+  cursor: pointer;
+}
+
+/*маркер бокса!*/
+.selection-form__checkbox + label::after {
+  @include pseudo;
+  top: -2px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $border-color;
+}
+
+.selection-form__checkbox:checked + label::before {
+  @include pseudo;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 11px;
+  border-left: 2px solid $green-tone;
+  border-bottom: 2px solid $green-tone;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  transition: 0.2s;
+}
+
+/*cтилизация чекбоксов*/
+/*cтилизация чекбоксов*/
 
 .selection-form__explanation {
   text-align: center;
@@ -202,6 +295,7 @@
   font-family: $sup-font;
   text-decoration: none;
   font-weight: normal;
+  margin-bottom: 16px;
 }
 
 /* СТИЛИ ДЛЯ taba */
