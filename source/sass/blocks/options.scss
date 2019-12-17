@@ -103,7 +103,7 @@
 
 @media (min-width: $tablet-widths) {
   .options__list {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   .options__wraper {
@@ -151,9 +151,9 @@
   .options__item::after {
     @include pseudo;
     width: 205px;
-    height: 205px;
-    top: 85px;
-    left: 445px;
+    height: 194px;
+    top: 84px;
+    left: 444px;
 
     @include background (center, no-repeat);
   }
@@ -164,9 +164,10 @@
 
   .options__item--pro::after {
     background-image: url("../img/icon-cat-pro.svg");
-    left: 420px;
-    width: 255px;
-    height: 255px;
+    top: 70px;
+    left: 410px;
+    width: 268px;
+    height: 244px;
   }
 
   .options__link {
@@ -251,7 +252,6 @@
     top: 37px;
     left: 32px;
   }
-
 
   .options__link {
     padding-left: 0;

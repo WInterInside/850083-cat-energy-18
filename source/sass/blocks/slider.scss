@@ -55,10 +55,24 @@
   margin-right: 108px;
 }
 
+.slider__image--tab,
+.slider__image--desk {
+  display: none;
+}
+
+.slider__image--mobile {
+  display: block;
+}
+
+.slider__image--after {
+  display: none;
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .slider {
+    position: relative;
     width: 708px;
     text-align: center;
     margin: 0 auto;
@@ -77,6 +91,55 @@
     border-bottom: 2px dotted red;
     margin-right: 348px;
   }
+
+  .slider__after,
+  .slider__before {
+    position: relative;
+    width: 683px;
+    height: 520px;
+    margin-left: 19px;
+
+  }
+
+  .slider__before {
+    display: none;
+    background-color: red;
+    clip-path: polygon(0px 520px, 335px 520px, 335px 0px, 0px 0px);
+  }
+
+  .slider__after {
+    background-color: green;
+    clip-path: polygon(0px 520px, 335px 520px, 335px 0px, 0px 0px);
+  }
+
+  .slider__image--mobile,
+  .slider__image--desk {
+    display: none;
+  }
+
+  .slider__image--tab {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 683px;
+    height: 520px;
+  }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
+@media (min-width: $desktop-widths) {
+  .slider__image--tab,
+  .slider__image--mobile {
+    display: none;
+  }
+
+  .slider__image--desk {
+    display: block;
+  }
+
+  .slider__image--after {
+    display: none;
+  }
+}
