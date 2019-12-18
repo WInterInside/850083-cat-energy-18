@@ -73,6 +73,7 @@
 @media (min-width: $tablet-widths) {
   .slider {
     position: relative;
+    overflow: hidden;
     width: 708px;
     text-align: center;
     margin: 0 auto;
@@ -91,25 +92,27 @@
     border-bottom: 2px dotted red;
     margin-right: 348px;
   }
+  .slider__content {
+    display: flex;
+  }
 
   .slider__after,
   .slider__before {
     position: relative;
+    overflow: hidden;
     width: 683px;
     height: 520px;
-    margin-left: 19px;
-
   }
 
   .slider__before {
-    display: none;
     background-color: red;
-    clip-path: polygon(0px 520px, 335px 520px, 335px 0px, 0px 0px);
+    margin-left: -330px;
+    margin-right: 0;
   }
 
   .slider__after {
+    margin-right: -337px;
     background-color: green;
-    clip-path: polygon(0px 520px, 335px 520px, 335px 0px, 0px 0px);
   }
 
   .slider__image--mobile,
@@ -120,11 +123,13 @@
   .slider__image--tab {
     position: absolute;
     display: block;
-    overflow: hidden;
     top: 0;
-    left: 0;
+    left: 350px;
     width: 683px;
     height: 520px;
+  }
+  .slider__image--after {
+    left: -333px;
   }
 }
 
