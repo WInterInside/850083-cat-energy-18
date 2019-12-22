@@ -58,16 +58,21 @@
 
 @media (min-width: $desktop-widths) {
   .invite-map {
-    width: $desktop-widths;
+    width: 1440px;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 50%;
     transform: translateX(-50%);
   }
 
+  .invite-map__img {
+    margin-top: 0;
+    vertical-align: bottom;
+  }
+
   .invite-map__pin {
     position: absolute;
-    right: 30%;
+    right: 320px;
   }
 
   .invite-map__img--tab,

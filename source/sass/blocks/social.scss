@@ -86,3 +86,18 @@
     height: 28px;
   }
 }
+
+@media (min-width: $desktop-widths) {
+  .social__list {
+    margin-right: 393px;
+  }
+
+  .social__item {
+    margin-top: -10px;
+    margin-right: 28px;
+  }
+
+  .social__link--fb {
+    margin-top: -12px;
+  }
+}

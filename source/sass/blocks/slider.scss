@@ -182,6 +182,103 @@
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 @media (min-width: $desktop-widths) {
+  .slider {
+    position: relative;
+    width: 50%;
+    min-height: 508px;
+    padding-bottom: 65px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+
+  .slider::before {
+    @include pseudo;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 463px;
+    background: linear-gradient(90deg, rgba(242, 242, 242, 1) 53.2%, rgba(237, 237, 237, 1) 53.2%);
+  }
+
+  .slider__description--after {
+    background-color: #ebebeb;
+  }
+
+  .slider__button:first-child {
+    margin-right: 73px;
+    margin-left: 8px;
+  }
+
+  .slider__content {
+    position: relative;
+    display: flex;
+    width: 610px;
+    height: 610px;
+    margin: 0 auto;
+    padding-right: 102px;
+    margin-bottom: -70px;
+  }
+
+  .slider__buttons {
+    display: flex;
+    width: 610px;
+    padding: 0;
+    margin: 0;
+    height: 53px;
+    padding-top: 13px;
+    padding-bottom: 10px;
+  }
+
+  /*серая линия*/
+  .slider__buttons::before {
+    top: 27px;
+    left: 110px;
+    width: 429px;
+  }
+
+  /*белый маркер*/
+  .slider__buttons::after {
+    left: 308px;
+    top: 12px;
+  }
+
+  .slider__button:first-child {
+    margin-right: 472px;
+    margin-left: 40px;
+  }
+
+  .slider__after,
+  .slider__before {
+    position: relative;
+    overflow: hidden;
+    height: 620px;
+    width: 610px;
+  }
+
+  .slider__before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30.5%, rgba(242, 242, 242, 1) 30.5%);
+  }
+
+  .slider__after {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30.5%, rgba(237, 237, 237, 1) 30.5%);
+    width: 305px;
+  }
+
+  .slider__image--desk {
+    position: absolute;
+    display: block;
+    max-width: none;
+    width: 685px;
+    height: 518px;
+    top: 0px;
+    left: -18px;
+  }
+
+  .slider__image--after {
+    left: -362px;
+  }
+
   .slider__image--tab,
   .slider__image--mobile {
     display: none;
@@ -189,9 +286,5 @@
 
   .slider__image--desk {
     display: block;
-  }
-
-  .slider__image--after {
-    display: none;
   }
 }

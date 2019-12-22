@@ -228,7 +228,7 @@
 
   .options__item::before {
     @include pseudo;
-    top: 47px;
+    top: 50px;
     left: 52px;
 
     @include round(100px, 100px, $green-tone);
@@ -237,21 +237,21 @@
 
   .options__item::after {
     @include pseudo;
-    width: 110px;
-    height: 110px;
-    top: 40px;
-    left: 52px;
+    width: 100px;
+    height: 95px;
+    top: 45px;
+    left: 50px;
 
     @include background (center, no-repeat);
   }
 
   .options__item--pro::after {
-    background-image: url("../img/icon-cat-pro.svg");
-    width: 130px;
-    height: 130px;
-    top: 37px;
-    left: 32px;
+    width: 135px;
+    height: 140px;
+    top: 30px;
+    left: 34px;
   }
+
 
   .options__link {
     padding-left: 0;

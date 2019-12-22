@@ -48,4 +48,10 @@
     display: flex;
     width: 174px;
   }
+
+  .container-desctop {
+    width: $desktop-widths;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
 }

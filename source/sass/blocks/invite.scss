@@ -86,13 +86,24 @@
     min-height: 400px;
     width: $desktop-widths;
     padding: 0 40px;
+    padding-top: 90px;
     margin: 0 auto;
   }
 
   .invite__data {
     width: 570px;
     min-height: 201px;
-    margin-top: 40px;
-    background-color: red; /*временно, на этом компе не видно почти фонов*/
+    background-color: #ffffff;
+  }
+
+  .invite__text {
+    margin-top: 3px;
+    margin-right: 86px;
+  }
+
+  .invite__adress {
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 6px;
   }
 }
