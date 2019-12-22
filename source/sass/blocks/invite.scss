@@ -40,6 +40,10 @@
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .invite {
+    margin-bottom: 0px;
+  }
+
   .invite__data {
     display: flex;
     min-height: 201px;

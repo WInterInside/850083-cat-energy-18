@@ -53,12 +53,25 @@
 @media (min-width: $tablet-widths) {
   .social__list {
     display: flex;
-    align-items: center;
     border: none;
     padding: 0;
+    margin: 0;
+    margin-right: 136px;
+  }
+
+  .social__item {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 153px;
+  }
+
+  .social__item:nth-child(2) {
+    margin-right: 28px;
   }
 
   .social__link--vkontakte {
+    margin-top: 2px;
     width: 30px;
     height: 16px;
   }

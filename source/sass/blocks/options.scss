@@ -142,7 +142,7 @@
   .options__item::before {
     @include pseudo;
     top: 93px;
-    left: 448px;
+    left: 447px;
 
     @include round(200px, 200px, $green-tone);
     text-align: center;
@@ -152,7 +152,7 @@
     @include pseudo;
     width: 205px;
     height: 194px;
-    top: 84px;
+    top: 82px;
     left: 444px;
 
     @include background (center, no-repeat);
@@ -165,7 +165,7 @@
   .options__item--pro::after {
     background-image: url("../img/icon-cat-pro.svg");
     top: 70px;
-    left: 410px;
+    left: 412px;
     width: 268px;
     height: 244px;
   }

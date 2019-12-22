@@ -36,7 +36,10 @@
 
   .invite-map__pin {
     position: absolute;
-    right: 50%;
+    width: 120px;
+    height: 107px;
+    top: 150px;
+    right: 324px;
   }
 
   .invite-map__img--mob,
@@ -46,6 +49,8 @@
 
   .invite-map__img--tab {
     display: block;
+    margin-top: -6px;
+    width: $tablet-widths;
   }
 }
 

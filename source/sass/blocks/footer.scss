@@ -7,9 +7,8 @@
 @media (min-width: $tablet-widths) {
   .footer__wraper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     min-height: 150px;
+    align-items: center;
   }
 }
 
