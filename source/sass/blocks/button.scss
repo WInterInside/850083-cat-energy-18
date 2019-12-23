@@ -36,6 +36,12 @@
   font-size: 16px;
 }
 
+@media (max-width: 767px) {
+  .button {
+    padding-left: 43px;
+  }
+}
+
 @media (min-width: $tablet-widths) {
   .product-card .button {
     margin-top: 10px;

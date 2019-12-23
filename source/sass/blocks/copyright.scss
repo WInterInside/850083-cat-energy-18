@@ -1,22 +1,29 @@
 .copyright {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-bottom: 25px;
 }
 
 .copyright__text {
+  display: block;
   font-family: $sup-font;
   padding: 0;
   margin: 0;
+  margin-top: -2px;
+  margin-left: -2px;
+  margin-right: 132px;
 
   @include text (#444444, 16px, 16px);
 }
 
 .copyright__link--logo {
-  width: 42px;
-  height: 35px;
-  margin-right: -6px;
+  width: 35px;
+  height: 41px;
+}
+
+.copyright__logo {
+  width: 43px;
+  height: 41px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -26,18 +33,28 @@
 
   .copyright__text {
     margin: 0;
-    margin-right: 15px;
+    margin-top: 2px;
+    margin-right: 13px;
   }
 
   .copyright__link--logo {
     display: block;
-    width: 40px;
-    height: 37px;
+    margin-top: 4px;
+    width: 35px;
+    height: 41px;
   }
 }
 
 @media (min-width: $desktop-widths) {
+  .copyright__link--logo {
+    margin-top: 2px;
+  }
+
+  .copyright__text {
+    margin-right: 14px;
+  }
+
   .copyright {
-    padding-top: 14px;
+    padding-top: 13px;
   }
 }

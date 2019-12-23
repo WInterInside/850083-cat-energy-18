@@ -207,7 +207,7 @@
     border: none;
   }
 
- .example::before {
+  .example::before {
     @include pseudo;
     z-index: 0;
     bottom: 0px;

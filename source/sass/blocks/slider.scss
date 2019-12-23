@@ -14,14 +14,14 @@
 .slider__buttons {
   position: relative;
   display: flex;
-  margin-top: 32px;
+  margin-top: 33px;
   margin-left: 38px;
 }
 
 .slider__buttons::before {
   @include pseudo;
-  top: 2px;
-  left: 60px;
+  top: 3px;
+  left: 61px;
   width: 84px;
   height: 14px;
   border: 1px solid $border-color;
@@ -31,7 +31,7 @@
 .slider__buttons::after {
   @include pseudo;
   left: 66px;
-  top: 6px;
+  top: 7px;
   width: 35px;
   height: 6px;
   background-color: $green-tone;
@@ -48,7 +48,7 @@
 }
 
 .slider__button:first-child {
-  margin-right: 108px;
+  padding-right: 113px;
 }
 
 .slider__image--tab,
@@ -108,6 +108,7 @@
   .slider__button:first-child {
     margin-right: 473px;
     margin-left: 68px;
+    padding: 0;
   }
 
   /*серая линия*/
