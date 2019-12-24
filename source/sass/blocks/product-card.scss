@@ -72,10 +72,16 @@
   }
 
   .product-card--more {
+    padding-top: 20px;
     width: 323px;
-    min-height: 432px;
     background-color: #ffffff;
     border: 1px solid $border-color;
+  }
+
+  .product-card:nth-last-child(1),
+  .product-card:nth-last-child(2) {
+    margin-bottom: 0;
+    height: 263px;
   }
 
   .product-card__heading {
@@ -87,7 +93,8 @@
 
   .product-card__data {
     width: 252px;
-    min-height: 100px;
+    min-height: 97px;
+    margin-bottom: 22px;
     border-collapse: collapse;
   }
 
@@ -95,8 +102,8 @@
   .product-card__value {
     @include text(#444444, 16px, 16px);
     border-bottom: 1px solid $border-color;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 
   .product-card:nth-child(even) {
@@ -119,8 +126,8 @@
     display: block;
     position: absolute;
     width: 324px;
-    height: 169px;
-    top: -46px;
+    height: 170px;
+    top: -44px;
     left: 0;
   }
 

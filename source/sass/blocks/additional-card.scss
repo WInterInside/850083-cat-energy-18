@@ -35,12 +35,31 @@
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .additional-card {
+    border: 1px solid $border-color;
+    padding-top: 28px;
+    padding-right: 34px;
+    padding-bottom: 28px;
+    padding-left: 34px;
+  }
+
+  .additional-card__heading {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    @include text(#222222, 20px, 20px);
+  }
+
+  .additional-card__option {
+    margin: 0;
+
+    @include text(#444444, 16px, 20px);
+  }
+
   .additional-card__wraper {
     display: flex;
     align-items: baseline;
