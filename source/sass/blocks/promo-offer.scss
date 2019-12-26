@@ -1,15 +1,13 @@
 .promo-offer {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
   @include background (center, no-repeat);
 }
 
 .promo-offer__text {
-  display: flex;
-  width: 280px;
-  height: 289px;
+  min-height: 289px;
   padding-top: 186px;
   padding-left: 54px;
   padding-right: 55px;
@@ -42,20 +40,25 @@
   }
 
   .promo-offer__text {
-    width: 740px;
-    height: 289px;
     margin: 0;
+    padding: 0;
+    padding-top: 116px;
+    padding-left: 424px;
+    padding-right: 100px;
 
-    @include text(#ffffff, 16px, 18px);
-    text-align: right;
-    font-family: $sup-font;
-    font-weight: normal;
+    @include text(#ffffff, 16px, 20px);
+    text-align: left;
   }
 
-  .promo-offer__icon {
-    position: absolute;
-    top: 32%;
-    left: 20%;
+  .promo-offer__text::before {
+    @include pseudo;
+    background-image: url("../img/icon-gift.svg");
+
+    @include background (center, no-repeat);
+    width: 56px;
+    height: 61px;
+    top: 107px;
+    left: 90px;
   }
 }
 

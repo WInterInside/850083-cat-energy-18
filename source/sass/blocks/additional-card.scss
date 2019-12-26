@@ -1,5 +1,6 @@
 .additional-card:first-child {
   border-top: 1px solid $border-color;
+  padding-bottom: 16px;
 }
 
 .additional-card {
@@ -8,7 +9,7 @@
 }
 
 .additional-card:last-child {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .additional-card__heading {
@@ -39,15 +40,21 @@
 @media (min-width: $tablet-widths) {
   .additional-card {
     border: 1px solid $border-color;
-    padding-top: 28px;
-    padding-right: 34px;
-    padding-bottom: 28px;
-    padding-left: 34px;
+    border-bottom: none;
+    padding-top: 26px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 38px;
+  }
+
+  .additional-card:last-child {
+    margin-bottom: 26px;
+    border-bottom: 1px solid $border-color;
   }
 
   .additional-card__heading {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 23px;
     margin-left: 0;
     margin-right: 0;
 
@@ -70,11 +77,16 @@
   }
 
   .additional-card__price {
-    margin-left: 100px;
+    margin-left: 52px;
+  }
+  .additional-card__price--water {
+    margin-left: 62px;
   }
 
   .additional-card .button--order {
     width: 100%;
+    padding-left: 40px;
+    padding-top: 11px;
   }
 }
 

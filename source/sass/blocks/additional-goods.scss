@@ -35,6 +35,14 @@
 
 @media (min-width: $desktop-widths) {
   .additional-goods {
-    width: 1000px;
+    width: 893px;
+  }
+
+  .additional-goods__heading {
+    padding-left: 39px;
+    padding-right: 35px;
+    margin-left: -40px;
+    margin-top: 66px;
+    margin-bottom: 65px;
   }
 }

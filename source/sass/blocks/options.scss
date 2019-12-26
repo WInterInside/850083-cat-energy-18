@@ -259,18 +259,11 @@
 
   .options__link::before {
     right: -2px;
-  }
-
-  .options__link::after {
-    right: -3px;
-  }
-
-
-  .options__link::before {
     top: 14px;
   }
 
   .options__link::after {
+    right: -3px;
     top: 10px;
   }
 }

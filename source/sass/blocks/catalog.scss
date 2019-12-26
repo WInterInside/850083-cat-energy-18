@@ -22,7 +22,7 @@
 .catalog__wraper::before {
   @include pseudo;
   left: 0;
-  top: 90px;
+  top: 42px;
   width: 100%;
   height: 3px;
   background-color: $green-tone;
@@ -46,6 +46,12 @@
     margin-bottom: 165px;
     font-weight: normal;
     border-bottom: none;
+  }
+
+  .catalog__wraper::before {
+    @include pseudo;
+    left: 0;
+    top: 90px;
   }
 }
 
@@ -74,5 +80,11 @@
 
   .catalog__wraper {
     display: flex;
+  }
+
+  .catalog__wraper::before {
+    @include pseudo;
+    left: 0;
+    top: 96px;
   }
 }

@@ -207,8 +207,8 @@
   }
 
   .slider__button:first-child {
-    margin-right: 73px;
-    margin-left: 8px;
+    margin-right: 472px;
+    margin-left: 40px;
   }
 
   .slider__content {
@@ -244,11 +244,6 @@
     top: 12px;
   }
 
-  .slider__button:first-child {
-    margin-right: 472px;
-    margin-left: 40px;
-  }
-
   .slider__after,
   .slider__before {
     position: relative;
@@ -272,7 +267,7 @@
     max-width: none;
     width: 685px;
     height: 518px;
-    top: 0px;
+    top: 0;
     left: -18px;
   }
 
@@ -283,9 +278,5 @@
   .slider__image--tab,
   .slider__image--mobile {
     display: none;
-  }
-
-  .slider__image--desk {
-    display: block;
   }
 }
