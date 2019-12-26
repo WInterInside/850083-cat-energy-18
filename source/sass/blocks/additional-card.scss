@@ -79,6 +79,7 @@
   .additional-card__price {
     margin-left: 52px;
   }
+
   .additional-card__price--water {
     margin-left: 62px;
   }
@@ -91,9 +92,53 @@
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* СТИЛИ ДЛЯ ДЕСКА */
-/* @media (min-width: $desktop-widths) {
-} */
+@media (min-width: $desktop-widths) {
+  .additional-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 895px;
+    border: 1px solid $border-color;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    padding-top: 17px;
+    padding-right: 0;
+    padding-bottom: 15px;
+    padding-left: 0;
+  }
+
+  .additional-card:first-child {
+    padding-bottom: 16px;
+  }
+
+  .additional-card__heading {
+    margin: 0;
+    margin-left: 1px;
+  }
+
+  .additional-card__wraper {
+    display: flex;
+    width: 610px;
+    align-items: baseline;
+  }
+
+  .additional-card__price--water {
+    margin-right: 6px;
+  }
+
+  .additional-card__option {
+    width: 285px;
+    margin: 0;
+  }
+
+  .additional-card .button--order {
+    @include text(#ffffff, 16px, 20px);
+    width: 245px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: 39px;
+    padding-left: 43px;
+    padding-top: 10px;
+  }
+}
