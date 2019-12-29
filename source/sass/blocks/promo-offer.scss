@@ -1,6 +1,6 @@
 .promo-offer {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
   @include background (center, no-repeat);
@@ -42,7 +42,7 @@
   .promo-offer__text {
     margin: 0;
     padding: 0;
-    padding-top: 116px;
+    padding-top: 117px;
     padding-left: 424px;
     padding-right: 100px;
 
@@ -57,7 +57,7 @@
     @include background (center, no-repeat);
     width: 56px;
     height: 61px;
-    top: 107px;
+    top: 109px;
     left: 90px;
   }
 }
@@ -80,8 +80,8 @@
     width: 240px;
     text-align: center;
     margin: 0;
-    padding-top: 189px;
-    padding-left: 36px;
+    padding-top: 188px;
+    padding-left: 38px;
     padding-right: 30px;
   }
 

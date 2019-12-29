@@ -300,21 +300,71 @@
 
 /* СТИЛИ ДЛЯ taba */
 @media (min-width: $tablet-widths) {
+  .selection-form__label {
+    @include text(#222222, 20px, 20px);
+    margin-left: 42px;
+    padding-top: 15px;
+    margin-right: 0;
+  }
+
+  .selection-form__label--weight {
+    margin-right: 16px;
+  }
+
+  .selection-form__input {
+    @include text(#444444, 20px, 20px);
+    width: 567px;
+    margin-right: 38px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+  }
+
+  .selection-form__wraper {
+    margin-bottom: 19px;
+  }
+
+  .selection-form__input--weight {
+    padding-left: 17px;
+    width: 536px;
+    margin-right: 37px;
+  }
+
+  .selection-form__input--age {
+    padding-left: 19px;
+    width: 497px;
+    margin-bottom: 9px;
+  }
+
+  .selection-form__label--radio {
+    margin-left: 11px;
+  }
+
+  .selection-form__radioblock {
+    border: 1px solid $border-color;
+
+    @include list-style;
+    padding-top: 44px;
+    padding-bottom: 26px;
+    padding-right: 37px;
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 9px;
+  }
+
   .selection-form__radioblock {
     border: none;
+    display: flex;
+    padding-left: 40px;
+    min-height: 196px;
   }
 
   .selection-form__wraper--radio {
-    width: 708px;
     border: 1px solid $border-color;
     padding: 0;
     padding-left: 28px;
     padding-top: 28px;
     margin: 0 auto;
-  }
-
-  .selection-form__input--comment {
-    width: 708px;
   }
 
   .selection-form__options {
@@ -324,7 +374,28 @@
 
   .selection-form__option {
     width: 300px;
-    margin-bottom: 24px;
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .selection-form__option:last-child {
+    margin-bottom: 33px;
+  }
+
+  /*кольцо радиокнопки*/
+  .selection-form__radio + label::before {
+    top: 11px;
+    left: -13px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /*точка радиокнопки*/
+  .selection-form__radio + label::after {
+    top: 22px;
+    left: -2px;
+    width: 18px;
+    height: 18px;
   }
 
   .selection-form__wraper--submit {

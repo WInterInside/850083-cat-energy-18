@@ -1,11 +1,11 @@
 .additional-card:first-child {
   border-top: 1px solid $border-color;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
 }
 
 .additional-card {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 18px;
+  padding-bottom: 19px;
 }
 
 .additional-card:last-child {
@@ -35,6 +35,10 @@
   margin-right: -2px;
 }
 
+.additional-card .button--order {
+  margin-top: 1px;
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
@@ -47,8 +51,12 @@
     padding-left: 38px;
   }
 
+  .additional-card:first-child {
+    padding-bottom: 27px;
+  }
+
   .additional-card:last-child {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
     border-bottom: 1px solid $border-color;
   }
 
