@@ -342,21 +342,17 @@
 
   .selection-form__radioblock {
     border: 1px solid $border-color;
+    display: flex;
 
     @include list-style;
     padding-top: 44px;
     padding-bottom: 26px;
     padding-right: 37px;
+    padding-left: 40px;
     width: 708px;
+    min-height: 196px;
     margin: 0 auto;
     margin-bottom: 9px;
-  }
-
-  .selection-form__radioblock {
-    border: none;
-    display: flex;
-    padding-left: 40px;
-    min-height: 196px;
   }
 
   .selection-form__wraper--radio {
