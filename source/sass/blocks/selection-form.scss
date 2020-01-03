@@ -327,7 +327,7 @@
     margin-right: 18px;
   }
 
-  .selection-form__label--age{
+  .selection-form__label--age {
     margin-right: 16px;
   }
 
@@ -540,6 +540,7 @@
   .selection-form__explanation {
     padding-top: 1px;
     padding-bottom: 0;
+
     @include text(#444444, 16px, 16px);
     margin-bottom: 16px;
   }
@@ -610,16 +611,13 @@
   }
 
   .selection-form__option:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .selection-form__catwrap {
     display: flex;
     width: 1200px;
     margin: 0 auto;
-  }
-
-  .selection-form__catwrap {
     margin-bottom: 28px;
   }
 
@@ -722,9 +720,6 @@
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-  }
-
-  .selection-form__wraper--submit {
     padding-left: 0;
   }
 
@@ -734,7 +729,7 @@
     margin-bottom: 10px;
   }
 
-  .selection-form__wraper--options{
+  .selection-form__wraper--options {
     margin-bottom: 32px;
   }
 }
