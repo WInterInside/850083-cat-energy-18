@@ -1,3 +1,68 @@
+.error-input {
+  border: 2px solid $error-color;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(205, 205, 205, 0.5);
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid rgba(205, 205, 205, 1);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid $mr-gray-color;
+}
+
+.selection-form__input:focus {
+  padding-top: 10px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+  padding-right: 37px;
+}
+
+.selection-form__input--weight:focus {
+  padding-left: 15px;
+  width: 204px;
+}
+
+.selection-form__input--age:focus {
+  padding-left: 15px;
+  width: 172px;
+  margin-bottom: 9px;
+}
+
+.selection-form__input--tel:focus ,
+.selection-form__input--email:focus {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  padding-right: 37px;
+}
+
+.selection-form__input--comment:focus {
+  padding-right: 0;
+  margin-top: 26px;
+  padding-top: 10px;
+  padding-left: 13px;
+}
+
+/*кольцо радиокнопки*/
+.selection-form__radio:hover + label::before,
+.selection-form__checkbox:hover + label::after  {
+  border: 1px solid #bababa;
+}
+
+.selection-form__label--radio:active,
+.selection-form__checkbox:active + label::after,
+.selection-form__label:active {
+  opacity: 0.3;
+}
+
 .selection-form__heading,
 .selection-form__label--comment {
   display: inline-block;
@@ -142,7 +207,7 @@
 /*точка радиокнопки*/
 .selection-form__radio + label::after {
   @include pseudo;
-  top: 20px;
+  top: 19px;
   left: 9px;
   width: 12px;
   height: 12px;
@@ -299,6 +364,44 @@
 
 /* СТИЛИ ДЛЯ taba */
 @media (min-width: $tablet-widths) {
+  .selection-form__input:focus {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+  }
+
+  .selection-form__input--weight:focus {
+    width: 536px;
+    padding-left: 17px;
+  }
+
+  .selection-form__input--age:focus {
+    width: 497px;
+    padding-left: 18px;
+  }
+
+  .selection-form__input--tel:focus,
+  .selection-form__input--email:focus {
+    width: 535px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 17px;
+    padding-right: 37px;
+  }
+
+  .selection-form__input--email:focus {
+    padding-top: 9px;
+    padding-left: 19px;
+    width: 551px;
+  }
+
+  .selection-form__input--comment:focus {
+    padding-right: 0;
+    padding-top: 13px;
+    padding-left: 17px;
+    width: 631px;
+  }
+
   .selection-form__heading,
   .selection-form__label--comment {
     padding: 0 39px;
@@ -548,6 +651,46 @@
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 @media (min-width: $desktop-widths) {
+  .selection-form__input:focus {
+    padding-top: 9px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    width: 506px;
+    padding-left: 18px;
+    margin-right: 78px;
+  }
+
+  .selection-form__input--weight:focus {
+    padding-left: 17px;
+  }
+
+  .selection-form__input--age:focus {
+    padding-left: 18px;
+  }
+
+  .selection-form__input--tel:focus,
+  .selection-form__input--email:focus {
+    width: 535px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 17px;
+    padding-right: 37px;
+  }
+
+  .selection-form__input--email:focus {
+    padding-top: 9px;
+    padding-left: 19px;
+    width: 551px;
+  }
+
+  .selection-form__input--comment:focus {
+    padding-right: 0;
+    padding-top: 13px;
+    padding-left: 17px;
+    width: 631px;
+  }
+
   .selection-form__heading {
     margin-left: -30px;
   }

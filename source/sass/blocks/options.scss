@@ -78,6 +78,19 @@
   cursor: pointer;
 }
 
+.options__link:active {
+  opacity: 0.3;
+}
+
+.options__link:hover::after {
+  right: -20px;
+}
+
+.options__link:hover::before {
+  width: 32px;
+  right: -15px;
+}
+
 .options__link::before {
   @include pseudo;
   background-color: $mr-gray-color;
@@ -264,6 +277,6 @@
 
   .options__link::after {
     right: -3px;
-    top: 10px;
+    top: 9px;
   }
 }

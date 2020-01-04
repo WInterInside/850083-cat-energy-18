@@ -17,6 +17,15 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: $green-hover;
+}
+
+.button:active {
+  background-color: $green-hover;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--more {
   background-color: $options-color;
   color: #444444;
@@ -24,6 +33,15 @@
   padding-top: 12px;
   padding-left: 95px;
   padding-right: 93px;
+}
+
+.button--more:hover {
+  background-color: $gray-hover;
+}
+
+.button--more:active {
+  background-color: $gray-hover;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .button--button {

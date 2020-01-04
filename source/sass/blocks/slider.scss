@@ -95,6 +95,15 @@
     padding-bottom: 10px;
   }
 
+  .slider__button:hover {
+    border-bottom: 1px solid #b8b8b8;
+  }
+
+  .slider__button:active {
+    border-bottom: none;
+    outline: none;
+  }
+
   .slider__button {
     @include text(#111111, 20px, 20px);
     border-bottom: 1px dotted #b8b8b8;
@@ -122,18 +131,43 @@
     border-radius: 8px;
   }
 
-  /*белый маркер*/
   .slider__buttons::after {
+    display: none;
+  }
+
+  /*маркер*/
+  .slider__button:first-child::before {
     @include pseudo;
-    left: 367px;
-    top: 13px;
+    z-index: 1;
+    left: 365px;
+    top: 12px;
     width: 34px;
     height: 34px;
-    border: 13px solid #ffffff;
+    border: 1px solid #cdcdcd;
     box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  .slider__button:first-child::after {
+    @include pseudo;
+    z-index: 2;
+    left: 378px;
+    top: 25px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: $green-tone;
     cursor: pointer;
+  }
+
+  .slider__button:active:first-child::before {
+    border: 2px solid $green-tone;
+  }
+
+  .slider__button:hover:first-child::before {
+    box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
   }
 
   .slider__content {
@@ -238,10 +272,15 @@
     width: 429px;
   }
 
-  /*белый маркер*/
-  .slider__buttons::after {
+  /*маркер*/
+  .slider__button:first-child::before {
     left: 308px;
     top: 12px;
+  }
+
+  .slider__button:first-child::after {
+    left: 321px;
+    top: 25px;
   }
 
   .slider__after,

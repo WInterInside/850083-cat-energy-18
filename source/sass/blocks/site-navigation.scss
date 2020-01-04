@@ -28,6 +28,16 @@
   font-weight: 500;
 }
 
+.site-navigation__link:hover {
+  opacity: 0.6;
+}
+
+.site-navigation__link:active {
+  opacity: 0.3;
+}
+
+
+
 @media (min-width: $tablet-widths) {
   .site-navigation {
     display: flex;
