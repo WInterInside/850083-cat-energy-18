@@ -2,10 +2,10 @@
   border: 1px solid $border-color;
   border-top: none;
   width: $mobile-widths-only;
-  padding-top: 2px;
 
-  @include lr-paddings;
-  padding-bottom: 24px;
+  padding-left: 19px;
+  padding-right: 20px;
+  padding-bottom: 25px;
 }
 
 .product-card__heading {
@@ -13,12 +13,12 @@
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 12px;
   padding-right: 55px;
 }
 
 .product-card__data {
   width: 145px;
-  margin-bottom: 20px;
 }
 
 .product-card__sign,
@@ -37,11 +37,10 @@
 
 .product-card__wraper {
   display: flex;
-  justify-content: space-between;
 }
 
 .product-card__wraper--column {
-  padding-top: 20px;
+  padding-top: 21px;
   width: 140px;
   flex-direction: column;
 }
@@ -72,10 +71,16 @@
   }
 
   .product-card--more {
+    padding-top: 20px;
     width: 323px;
-    min-height: 432px;
     background-color: #ffffff;
     border: 1px solid $border-color;
+  }
+
+  .product-card:nth-last-child(1),
+  .product-card:nth-last-child(2) {
+    margin-bottom: 0;
+    height: 263px;
   }
 
   .product-card__heading {
@@ -87,7 +92,8 @@
 
   .product-card__data {
     width: 252px;
-    min-height: 100px;
+    min-height: 97px;
+    margin-bottom: 22px;
     border-collapse: collapse;
   }
 
@@ -95,8 +101,8 @@
   .product-card__value {
     @include text(#444444, 16px, 16px);
     border-bottom: 1px solid $border-color;
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 
   .product-card:nth-child(even) {
@@ -119,8 +125,8 @@
     display: block;
     position: absolute;
     width: 324px;
-    height: 169px;
-    top: -46px;
+    height: 170px;
+    top: -44px;
     left: 0;
   }
 
@@ -136,7 +142,13 @@
   .product-card {
     width: 245px;
     margin: 0;
-    margin-top: 144px;
+    margin-top: 142px;
+    padding-top: 142px;
+  }
+
+  .product-card--more {
+    padding-top: 0;
+    width: 245px;
   }
 
   .product-card:nth-child(-n+4) {
@@ -144,11 +156,17 @@
     margin: 0;
   }
 
+  .product-card__heading {
+    margin-bottom: 19px;
+  }
+
   .product-card__wraper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 0;
+    margin-top: 11px;
   }
 
   .product-card__image--tab,
@@ -171,8 +189,15 @@
   }
 
   .product-card__data {
-    width: 174px;
-    min-height: 100px;
+    width: 170px;
+    height: 97px;
     border-collapse: collapse;
+    margin-bottom: 22px;
+  }
+
+  .product-card__sign,
+  .product-card__value {
+    padding-bottom: 6px;
+    padding-top: 6px;
   }
 }

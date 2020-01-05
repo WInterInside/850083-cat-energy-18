@@ -1,20 +1,16 @@
 .promo-offer {
   position: relative;
-  height: 328px;
-  padding-top: 39px;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
   @include background (center, no-repeat);
 }
 
 .promo-offer__text {
-  display: flex;
-  width: 280px;
-  height: 289px;
-  padding-top: 190px;
-  padding-left: 60px;
-  padding-right: 60px;
+  min-height: 289px;
+  padding-top: 186px;
+  padding-left: 54px;
+  padding-right: 55px;
   margin: 0;
 
   @include text(#ffffff, 16px, 20px);
@@ -23,10 +19,15 @@
   font-weight: normal;
 }
 
-.promo-offer__icon {
-  position: absolute;
-  top: 32%;
-  right: 40%;
+.promo-offer__text::before {
+  @include pseudo;
+  background-image: url("../img/icon-gift.svg");
+
+  @include background (center, no-repeat);
+  width: 56px;
+  height: 61px;
+  top: 63px;
+  right: 112px;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
@@ -39,20 +40,25 @@
   }
 
   .promo-offer__text {
-    width: 740px;
-    height: 289px;
     margin: 0;
+    padding: 0;
+    padding-top: 117px;
+    padding-left: 424px;
+    padding-right: 100px;
 
-    @include text(#ffffff, 16px, 18px);
-    text-align: right;
-    font-family: $sup-font;
-    font-weight: normal;
+    @include text(#ffffff, 16px, 20px);
+    text-align: left;
   }
 
-  .promo-offer__icon {
-    position: absolute;
-    top: 32%;
-    left: 20%;
+  .promo-offer__text::before {
+    @include pseudo;
+    background-image: url("../img/icon-gift.svg");
+
+    @include background (center, no-repeat);
+    width: 56px;
+    height: 61px;
+    top: 109px;
+    left: 90px;
   }
 }
 
@@ -60,7 +66,11 @@
 
 @media (min-width: $desktop-widths) {
   .promo-offer {
-    align-self: center;
+    width: 325px;
+    height: 290px;
+    margin-top: 190px;
+    margin-left: 80px;
+    margin-bottom: 92px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -68,5 +78,15 @@
 
   .promo-offer__text {
     width: 240px;
+    text-align: center;
+    margin: 0;
+    padding-top: 188px;
+    padding-left: 38px;
+    padding-right: 30px;
+  }
+
+  .promo-offer__text::before {
+    top: 65px;
+    left: 98px;
   }
 }

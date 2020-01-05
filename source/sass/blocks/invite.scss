@@ -1,7 +1,7 @@
 .invite {
   position: relative;
   background-color: $options-color;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .invite__data {
@@ -11,8 +11,6 @@
   justify-content: center;
   align-items: center;
   min-height: 116px;
-  padding-top: 2px;
-  margin-bottom: -5px;
   background-color: #ffffff;
 }
 
@@ -23,10 +21,11 @@
 .invite__text {
   width: 125px;
   margin: 0;
-  margin-left: 4px;
-  margin-right: 18px;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-right: 16px;
 
-  @include text(#111111, 16px, 20px);
+  @include text(#111111, 16px, 21px);
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -37,13 +36,51 @@
   @include text(#444444, 14px, 20px);
   font-weight: normal;
   font-style: normal;
-  padding-right: 5px;
+  padding-right: 7px;
 }
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
+  .invite {
+    margin-bottom: 0;
+  }
+
+  .invite__data {
+    display: flex;
+    min-height: 201px;
+    background-color: $options-color;
+  }
+
   .invite__text {
-    margin-right: 308px;
+    width: 165px;
+    margin: 0;
+    margin-left: 3px;
+    margin-right: 300px;
+
+    @include text(#111111, 20px, 25px);
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .invite__wraper {
+    background-color: $options-color;
+  }
+
+  .invite__adress {
+    width: 165px;
+    font-family: $sup-font;
+
+    @include text(#444444, 16px, 20px);
+    font-weight: normal;
+    font-style: normal;
+    text-align: right;
+    padding-right: 0;
+  }
+
+  .invite__city {
+    display: block;
+    margin-top: 20px;
+    margin-right: 4px;
   }
 }
 
@@ -55,13 +92,29 @@
     min-height: 400px;
     width: $desktop-widths;
     padding: 0 40px;
+    padding-top: 90px;
     margin: 0 auto;
   }
 
   .invite__data {
     width: 570px;
     min-height: 201px;
-    margin-top: 40px;
-    background-color: red; /*временно, на этом компе не видно почти фонов*/
+    background-color: #ffffff;
+  }
+
+  .invite__text {
+    margin-top: 3px;
+    margin-right: 86px;
+  }
+
+  .invite__adress {
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 6px;
+  }
+
+  iframe {
+    height: 500px;
+    width: 100%;
   }
 }

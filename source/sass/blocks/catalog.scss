@@ -4,7 +4,7 @@
   padding: 0 20px;
   margin: 0 auto;
   padding-top: 15px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
   font-weight: normal;
   border-bottom: 1px solid $border-color;
 }
@@ -47,6 +47,12 @@
     font-weight: normal;
     border-bottom: none;
   }
+
+  .catalog__wraper::before {
+    @include pseudo;
+    left: 0;
+    top: 90px;
+  }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
@@ -74,5 +80,11 @@
 
   .catalog__wraper {
     display: flex;
+  }
+
+  .catalog__wraper::before {
+    @include pseudo;
+    left: 0;
+    top: 96px;
   }
 }

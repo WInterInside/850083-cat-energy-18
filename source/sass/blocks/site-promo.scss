@@ -53,7 +53,7 @@
     text-align: left;
     margin-top: 18px;
     padding-right: 150px;
-    margin-left: 88px;
+    margin-left: 87px;
   }
 
   .site-promo__text {
@@ -130,13 +130,13 @@
     padding-right: 650px;
     margin: 0;
     margin-bottom: 40px;
-    padding-left: 139px;
+    padding-left: 80px;
   }
 
   .site-promo__text {
     margin: 0;
-    margin-bottom: 48px;
-    padding-left: 139px;
+    margin-bottom: 50px;
+    padding-left: 80px;
   }
 
   .site-promo__wraper--order {
@@ -153,11 +153,10 @@
 
   .site-promo__button {
     z-index: 2;
-    margin-right: 850px;
-    margin-left: 139px;
+    margin-right: 895px;
 
     @include text(#ffffff, 20px, 20px);
-    padding-left: 20px;
+    padding-left: 18px;
     padding-right: 20px;
     padding-bottom: 38px;
     padding-top: 15px;

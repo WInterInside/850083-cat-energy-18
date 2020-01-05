@@ -12,6 +12,7 @@
 }
 
 .header__menu {
+  display: none;
   position: relative;
   margin-left: auto;
   margin-top: 10px;
@@ -20,6 +21,20 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.header__menu--block {
+  display: block;
+}
+
+.header__lines--none,
+.header__x--none {
+  display: none;
+}
+
+.header__lines--block,
+.header__x--block {
+  display: block;
 }
 
 .header__lines,
@@ -84,7 +99,7 @@
 @media (min-width: $desktop-widths) {
   .header {
     padding-bottom: 20px;
-    padding-top: 15px;
+    padding-top: 16px;
     border: none;
   }
 

@@ -1,9 +1,22 @@
+.header .site-logo:hover,
+.footer .site-logo__img:hover {
+  opacity: 0.8;
+}
+
+.header .site-logo:active,
+.footer .site-logo__img:active {
+  opacity: 0.6;
+}
+
 .site-logo--footer {
-  margin-left: 74px;
+  display: inline-block;
+  margin-left: 75px;
+  margin-bottom: 30px;
 }
 
 .footer .site-logo__img {
-  margin-bottom: 30px;
+  width: 130px;
+  height: 24px;
 }
 
 .site-logo__img--desk,
@@ -39,6 +52,14 @@
   .header .site-logo {
     margin-top: 37px;
     margin-right: 94px;
+  }
+
+  .footer .site-logo__img {
+    margin-top: -6px;
+    margin-left: -1px;
+    margin-right: 258px;
+    width: 130px;
+    height: 24px;
   }
 
   .site-logo__img--tab,

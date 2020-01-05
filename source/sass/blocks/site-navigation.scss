@@ -1,6 +1,11 @@
 .site-navigation {
-  display: none;
+  display: block;
   position: relative;
+  margin-bottom: -14px;
+}
+
+.site-navigation--none {
+  display: none;
 }
 
 .site-navigation__list {
@@ -14,18 +19,21 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid $border-color;
-  border-bottom: none;
-}
-
-.site-navigation__item:last-child {
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
 }
 
 .site-navigation__link {
   @include text(#111111, 20px, 20px);
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.site-navigation__link:hover {
+  opacity: 0.6;
+}
+
+.site-navigation__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-widths) {

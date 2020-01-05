@@ -28,23 +28,23 @@
 
 .options__item::after {
   @include pseudo;
-  width: 52px;
-  height: 52px;
+  width: 53px;
+  height: 50px;
 
   @include background (center, no-repeat);
 }
 
 .options__item--slim::after {
   background-image: url("../img/icon-cat-slim.svg");
-  top: 19px;
-  left: 22px;
+  top: 21px;
+  left: 20px;
 }
 
 .options__item--pro::after {
   background-image: url("../img/icon-cat-pro.svg");
   top: 22px;
   left: 12px;
-  width: 70px;
+  width: 69px;
   height: 52px;
 }
 
@@ -78,6 +78,19 @@
   cursor: pointer;
 }
 
+.options__link:active {
+  opacity: 0.3;
+}
+
+.options__link:hover::after {
+  right: -20px;
+}
+
+.options__link:hover::before {
+  width: 32px;
+  right: -15px;
+}
+
 .options__link::before {
   @include pseudo;
   background-color: $mr-gray-color;
@@ -103,7 +116,7 @@
 
 @media (min-width: $tablet-widths) {
   .options__list {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
   }
 
   .options__wraper {
@@ -142,7 +155,7 @@
   .options__item::before {
     @include pseudo;
     top: 93px;
-    left: 448px;
+    left: 447px;
 
     @include round(200px, 200px, $green-tone);
     text-align: center;
@@ -151,9 +164,9 @@
   .options__item::after {
     @include pseudo;
     width: 205px;
-    height: 205px;
-    top: 85px;
-    left: 445px;
+    height: 194px;
+    top: 82px;
+    left: 444px;
 
     @include background (center, no-repeat);
   }
@@ -164,9 +177,10 @@
 
   .options__item--pro::after {
     background-image: url("../img/icon-cat-pro.svg");
-    left: 420px;
-    width: 255px;
-    height: 255px;
+    top: 70px;
+    left: 412px;
+    width: 268px;
+    height: 244px;
   }
 
   .options__link {
@@ -193,14 +207,14 @@
   .options__list {
     display: flex;
     flex-direction: row;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 
     @include list-style;
   }
 
   .options__header {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 
   .options__text {
@@ -227,7 +241,7 @@
 
   .options__item::before {
     @include pseudo;
-    top: 47px;
+    top: 50px;
     left: 52px;
 
     @include round(100px, 100px, $green-tone);
@@ -236,20 +250,19 @@
 
   .options__item::after {
     @include pseudo;
-    width: 110px;
-    height: 110px;
-    top: 40px;
-    left: 52px;
+    width: 100px;
+    height: 95px;
+    top: 45px;
+    left: 50px;
 
     @include background (center, no-repeat);
   }
 
   .options__item--pro::after {
-    background-image: url("../img/icon-cat-pro.svg");
-    width: 130px;
-    height: 130px;
-    top: 37px;
-    left: 32px;
+    width: 135px;
+    height: 140px;
+    top: 30px;
+    left: 34px;
   }
 
 
@@ -258,10 +271,12 @@
   }
 
   .options__link::before {
-    top: 15px;
+    right: -2px;
+    top: 14px;
   }
 
   .options__link::after {
-    top: 10px;
+    right: -3px;
+    top: 9px;
   }
 }

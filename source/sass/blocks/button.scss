@@ -3,12 +3,11 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  width: 278px;
   height: 40px;
   margin: 0 auto;
-  padding-left: 43px;
-  padding-right: 43px;
-  padding-top: 12px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 11px;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
@@ -18,37 +17,96 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: $green-hover;
+}
+
+.button:active {
+  background-color: $green-hover;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--more {
   background-color: $options-color;
   color: #444444;
   font-size: 16px;
+  padding-top: 12px;
+  padding-left: 95px;
+  padding-right: 93px;
+}
+
+.button--more:hover {
+  background-color: $gray-hover;
+}
+
+.button--more:active {
+  background-color: $gray-hover;
+  color: rgba(68, 68, 68, 0.3);
 }
 
 .button--button {
   padding-top: 0;
+  padding-left: 79px;
+  padding-right: 77px;
   font-size: 16px;
   font-weight: normal;
 }
 
 .button--order {
+  margin-top: 0;
   font-size: 16px;
+  padding-top: 13px;
+  padding-left: 111px;
+  padding-right: 109px;
 }
 
 @media (min-width: $tablet-widths) {
   .product-card .button {
     margin-top: 10px;
-    width: 249px;
+  }
+
+  .button--button {
+    @include text(#ffffff, 20px, 20px);
+    min-height: 52px;
+    padding-left: 63px;
+    padding-right: 67px;
+    margin: 0;
+    margin-right: 60px;
+  }
+
+  .button--order {
+    padding-top: 12px;
+    padding-left: 95px;
+    padding-right: 92px;
+  }
+
+  .button--more {
+    padding-top: 12px;
+    padding-left: 78px;
+    padding-right: 77px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .product-card .button {
     margin-top: 10px;
-    width: 169px;
   }
 
   .button--more {
     padding-left: 23px;
     padding-right: 23px;
+  }
+
+  .button--button {
+    padding-left: 209px;
+    padding-right: 206px;
+    margin: 0;
+    margin-right: 82px;
+  }
+
+  .button--order {
+    padding-top: 11px;
+    padding-left: 55px;
+    padding-right: 54px;
   }
 }

@@ -3,7 +3,6 @@
   border-bottom: 1px solid $border-color;
   text-align: center;
   font-weight: normal;
-  padding-top: 40px;
   padding-bottom: 10px;
 
   @include text(#444444, 12px, 26px);
@@ -16,28 +15,29 @@
 
 .catalog-more__text--bigger::before {
   @include pseudo;
-  top: -53px;
-  left: 135px;
+  top: 25px;
+  left: 136px;
   height: 31px;
-  width: 2px;
+  width: 1px;
   background-color: $border-color;
   cursor: pointer;
 }
 
 .catalog-more__text--bigger::after {
   @include pseudo;
-  top: -40px;
+  top: 40px;
   left: 122px;
-  height: 2px;
+  height: 1px;
   width: 31px;
   background-color: $border-color;
   cursor: pointer;
 }
 
 .catalog-more__text--bigger {
-  margin-top: 78px;
-  margin-bottom: 10px;
-  margin-left: 2px;
+  margin: 0;
+  margin-left: 3px;
+  padding-top: 79px;
+  padding-bottom: 10px;
 
   @include text(#111111, 16px, 20px);
   text-align: center;
@@ -56,8 +56,9 @@
 
 @media (min-width: $tablet-widths) {
   .catalog-more__text--bigger {
-    margin-top: 20px;
-    margin-bottom: 24px;
+    margin-top: 43px;
+    margin-bottom: 15px;
+    padding-top: 101px;
     padding-left: 40px;
     padding-right: 40px;
 
@@ -65,14 +66,14 @@
   }
 
   .catalog-more__text--bigger::before {
-    top: -110px;
-    left: 124px;
+    top: -5px;
+    left: 121px;
     height: 61px;
   }
 
   .catalog-more__text--bigger::after {
-    top: -80px;
-    left: 95px;
+    top: 22px;
+    left: 92px;
     width: 61px;
   }
 
@@ -88,19 +89,21 @@
 
 @media (min-width: $desktop-widths) {
   .catalog-more__text--bigger {
-    margin-top: 18px;
-    margin-bottom: 24px;
-    padding: 0;
+    padding-top: 163px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    margin-bottom: 14px;
   }
 
   .catalog-more__text--bigger::before {
-    top: -112px;
-    left: 82px;
+    top: 52px;
+    left: 83px;
     height: 61px;
   }
 
   .catalog-more__text--bigger::after {
-    top: -82px;
+    top: 83px;
     left: 52px;
     width: 61px;
   }
