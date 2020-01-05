@@ -183,7 +183,6 @@ textarea:focus {
   @include list-style;
   padding-top: 25px;
   padding-bottom: 26px;
-  width: $mobile-widths-only;
   margin: 0 auto;
   margin-bottom: 9px;
 }
@@ -724,7 +723,7 @@ textarea:focus {
   .selection-form__input {
     width: 506px;
     padding-left: 18px;
-    margin-right: 78px;
+    margin-right: 80px;
   }
 
   .selection-form__input--weight {
@@ -751,7 +750,7 @@ textarea:focus {
     display: flex;
     border: 1px solid $border-color;
     padding: 0;
-    padding-left: 50px;
+    padding-left: 48px;
     padding-top: 34px;
     padding-bottom: 34px;
     width: 570px;
@@ -823,7 +822,7 @@ textarea:focus {
 
   .selection-form__label--tel::before {
     top: 12px;
-    right: 18px;
+    right: 17px;
   }
 
   .selection-form__heading--comment {

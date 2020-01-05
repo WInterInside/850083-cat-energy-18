@@ -1,6 +1,11 @@
 .site-navigation {
-  display: none;
+  display: block;
   position: relative;
+  margin-bottom: -14px;
+}
+
+.site-navigation--none {
+  display: none;
 }
 
 .site-navigation__list {
@@ -14,12 +19,7 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid $border-color;
-  border-bottom: none;
-}
-
-.site-navigation__item:last-child {
-  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
 }
 
 .site-navigation__link {
