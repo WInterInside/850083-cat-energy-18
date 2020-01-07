@@ -191,8 +191,8 @@ textarea:focus {
   margin-bottom: 25px;
 }
 
-.selection-form__option:last-child {
-  margin-bottom: 0;
+.selection-form__option:first-child {
+  margin-top: 25px;
 }
 
 .selection-form__radio {
