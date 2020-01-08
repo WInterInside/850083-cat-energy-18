@@ -43,18 +43,34 @@
 
 .description__text--leaf::before {
   background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
 }
 
 .description__text--powder::before {
   background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
 }
 
 .description__text--dining::before {
   background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
 }
 
 .description__text--clock::before {
   background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
