@@ -71,6 +71,12 @@
     transform: translateX(-50%);
   }
 
+  .invite-map__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .invite-map__img {
     margin-top: 0;
     vertical-align: bottom;
