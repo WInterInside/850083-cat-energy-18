@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+.invite-map__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .invite-map__pin {
   position: absolute;
   width: 65px;
