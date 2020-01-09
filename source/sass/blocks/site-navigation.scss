@@ -1,11 +1,27 @@
 .site-navigation {
-  display: block;
   position: relative;
+  overflow: hidden;
   margin-bottom: -14px;
+  padding-top: 13px;
 }
 
-.site-navigation--none {
-  display: none;
+@media (max-width: $max-mobile-widths) {
+  .site-navigation {
+    transition: all 1s ease;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .site-navigation--nojs,
+  .site-navigation--opened {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .site-navigation--closed {
+    max-height: 0;
+    opacity: 0;
+  }
 }
 
 .site-navigation__list {
@@ -28,11 +44,11 @@
   font-weight: 500;
 }
 
-.site-navigation__link:hover {
+.site-navigation__link[href]:hover {
   opacity: 0.6;
 }
 
-.site-navigation__link:active {
+.site-navigation__link[href]:active {
   opacity: 0.3;
 }
 
@@ -41,6 +57,8 @@
     display: flex;
     position: relative;
     margin-top: 22px;
+    padding-top: 0;
+    opacity: 1;
   }
 
   .site-navigation__list {
@@ -80,6 +98,8 @@
   .site-navigation {
     z-index: 1;
     margin-top: 57px;
+    padding-top: 0;
+    opacity: 1;
   }
 
   .site-navigation__link {

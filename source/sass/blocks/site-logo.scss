@@ -1,10 +1,10 @@
-.header .site-logo:hover,
-.footer .site-logo__img:hover {
+.header .site-logo[href]:hover,
+.footer .site-logo__img[href]:hover {
   opacity: 0.8;
 }
 
-.header .site-logo:active,
-.footer .site-logo__img:active {
+.header .site-logo[href]:active,
+.footer .site-logo__img[href]:active {
   opacity: 0.6;
 }
 

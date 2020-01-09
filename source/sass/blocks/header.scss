@@ -12,7 +12,6 @@
 }
 
 .header__menu {
-  display: none;
   position: relative;
   margin-left: auto;
   margin-top: 10px;
@@ -23,18 +22,16 @@
   cursor: pointer;
 }
 
-.header__menu--block {
-  display: block;
+.header__menu :hover {
+  opacity: 0.6;
 }
 
-.header__lines--none,
-.header__x--none {
+.header__menu :active {
+  opacity: 0.3;
+}
+
+.header__menu--nojs {
   display: none;
-}
-
-.header__lines--block,
-.header__x--block {
-  display: block;
 }
 
 .header__lines,
@@ -73,6 +70,16 @@
   width: 25px;
   height: 3px;
   background-color: $mr-gray-color;
+}
+
+.header__lines--none,
+.header__x--none {
+  display: none;
+}
+
+.header__lines--block,
+.header__x--block {
+  display: block;
 }
 
 @media (min-width: $tablet-widths) {
