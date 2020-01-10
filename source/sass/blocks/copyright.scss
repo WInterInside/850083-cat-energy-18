@@ -1,5 +1,11 @@
-.copyright:active {
-  opacity: 0.3;
+.copyright:hover{
+  path {
+    fill: $green-tone;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright {

@@ -1,5 +1,6 @@
 .social__list {
   display: flex;
+  list-style: none;
   align-items: stretch;
 
   @include list-style;
@@ -11,10 +12,23 @@
 }
 
 .social__item {
-  list-style: none;
   display: inline-block;
   margin-right: 36px;
   margin-left: 74px;
+}
+
+.social__link:hover {
+  path,
+  .st0 {
+    fill: $green-tone;
+  }
+}
+
+.social__link:active {
+  path,
+  .st0 {
+    opacity: 0.3;
+  }
 }
 
 .social__item:nth-child(2) {

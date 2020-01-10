@@ -2,6 +2,10 @@
   border: 2px solid $error-color;
 }
 
+.selection-form__icon--error{
+  fill: $error-color;
+}
+
 ::-webkit-input-placeholder {
   color: $mr-gray-color;
 }
@@ -32,6 +36,10 @@ input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid $mr-gray-color;
+}
+
+input:focus + .selection-form__icon{
+  fill: $green-tone;
 }
 
 .selection-form__input:focus {
@@ -278,28 +286,18 @@ textarea:focus {
   margin-right: 12px;
 }
 
-.selection-form__label--tel::before,
-.selection-form__label--email::before {
-  @include pseudo;
+.selection-form__icon--tel,
+.selection-form__icon--email{
+  position: absolute;
   top: 8px;
   right: 16px;
   width: 17px;
   height: 30px;
 }
 
-.selection-form__label--tel::before {
-  background: url("../img/icon-phone.svg");
+.selection-form__icon--tel{
   right: 10px;
   width: 24px;
-  height: 32px;
-
-  @include background(center, no-repeat);
-}
-
-.selection-form__label--email::before {
-  background: url("../img/icon-mail.svg");
-
-  @include background(center, no-repeat);
 }
 
 .selection-form__input--tel,
@@ -547,28 +545,18 @@ textarea:focus {
     margin-left: 38px;
   }
 
-  .selection-form__label--tel::before,
-  .selection-form__label--email::before {
-    @include pseudo;
-    top: 10px;
-    right: 56px;
+  .selection-form__icon--tel,
+  .selection-form__icon--email{
+    position: absolute;
+    top: 8px;
+    right: 16px;
     width: 17px;
     height: 30px;
   }
 
-  .selection-form__label--tel::before {
-    background: url("../img/icon-phone.svg");
-    right: 51px;
+  .selection-form__icon--tel{
+    right: 10px;
     width: 24px;
-    height: 32px;
-
-    @include background(center, no-repeat);
-  }
-
-  .selection-form__label--email::before {
-    background: url("../img/icon-mail.svg");
-
-    @include background(center, no-repeat);
   }
 
   .selection-form__input--tel,
@@ -814,15 +802,18 @@ textarea:focus {
     width: 472px;
   }
 
-  .selection-form__label--tel::before,
-  .selection-form__label--email::before {
-    top: 11px;
-    right: 106px;
+  .selection-form__icon--tel,
+  .selection-form__icon--email{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 17px;
+    height: 30px;
   }
 
-  .selection-form__label--tel::before {
-    top: 12px;
-    right: 17px;
+  .selection-form__icon--tel{
+    right: 10px;
+    width: 24px;
   }
 
   .selection-form__heading--comment {
