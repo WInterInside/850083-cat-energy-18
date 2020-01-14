@@ -71,7 +71,7 @@ input:focus + .selection-form__icon {
 .selection-form__input--comment:focus {
   padding-right: 0;
   margin-top: 26px;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-left: 13px;
 }
 
@@ -318,10 +318,6 @@ input:focus + .selection-form__icon {
   width: 280px;
   padding-right: 0;
   margin-top: 26px;
-}
-
-.selection-form__input--comment:focus {
-  padding-top: 11px;
 }
 
 .selection-form__options {
