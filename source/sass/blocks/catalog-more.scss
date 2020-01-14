@@ -15,7 +15,7 @@
 
 .catalog-more__text--bigger::before {
   @include pseudo;
-  top: 25px;
+  top: 27px;
   left: 136px;
   height: 31px;
   width: 1px;
@@ -25,7 +25,7 @@
 
 .catalog-more__text--bigger::after {
   @include pseudo;
-  top: 40px;
+  top: 42px;
   left: 122px;
   height: 1px;
   width: 31px;
@@ -36,7 +36,7 @@
 .catalog-more__text--bigger {
   margin: 0;
   margin-left: 3px;
-  padding-top: 79px;
+  padding-top: 80px;
   padding-bottom: 10px;
 
   @include text(#111111, 16px, 20px);

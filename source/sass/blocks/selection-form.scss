@@ -101,8 +101,9 @@ input:focus + .selection-form__icon {
 }
 
 .selection-form__heading--contacts {
+  margin-top: 30px;
   margin-bottom: 23px;
-  margin-right: 77px;
+  margin-right: 79px;
 }
 
 .selection-form__heading--comment {
@@ -113,7 +114,7 @@ input:focus + .selection-form__icon {
 
 .selection-form__heading--options {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 4px;
   padding-right: 24px;
 }
 
@@ -168,8 +169,8 @@ input:focus + .selection-form__icon {
   width: 229px;
   font-weight: normal;
   text-transform: uppercase;
-  padding-top: 11px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 13px;
   padding-left: 14px;
   padding-right: 38px;
 }
@@ -200,7 +201,7 @@ input:focus + .selection-form__icon {
 }
 
 .selection-form__option:first-child {
-  margin-top: 25px;
+  margin-top: 26px;
 }
 
 .selection-form__radio {
@@ -267,7 +268,7 @@ input:focus + .selection-form__icon {
 }
 
 .selection-form__wraper--contacts::before {
-  top: 33px;
+  top: 44px;
 }
 
 .selection-form__wraper--comment::before {
@@ -296,8 +297,10 @@ input:focus + .selection-form__icon {
 }
 
 .selection-form__icon--tel {
-  right: 10px;
-  width: 24px;
+  top: 12px;
+  right: 12px;
+  width: 21px;
+  height: 21px;
 }
 
 .selection-form__input--tel,
@@ -317,12 +320,15 @@ input:focus + .selection-form__icon {
   margin-top: 26px;
 }
 
+.selection-form__input--comment:focus {
+  padding-top: 11px;
+}
+
 .selection-form__options {
   @include list-style();
   margin-bottom: 39px;
 }
 
-/*cтилизация чекбоксов*/
 /*cтилизация чекбоксов*/
 .selection-form__checkbox {
   position: absolute;
@@ -361,12 +367,11 @@ input:focus + .selection-form__icon {
 }
 
 /*cтилизация чекбоксов*/
-/*cтилизация чекбоксов*/
 
 .selection-form__explanation {
   text-align: center;
-  padding-top: 7px;
-  padding-bottom: 17px;
+  padding-top: 8px;
+  padding-bottom: 15px;
 
   @include text(#444444, 14px, 15px);
   font-family: $sup-font;
@@ -410,7 +415,7 @@ input:focus + .selection-form__icon {
 
   .selection-form__input--comment:focus {
     padding-right: 0;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-left: 17px;
     width: 631px;
   }

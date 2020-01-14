@@ -14,7 +14,7 @@
 .slider__buttons {
   position: relative;
   display: flex;
-  margin-top: 33px;
+  margin-top: 31px;
   margin-left: 38px;
 }
 
@@ -54,10 +54,6 @@
 .slider__image--tab,
 .slider__image--desk {
   display: none;
-}
-
-.slider__image--mobile {
-  display: block;
 }
 
 .slider__image--after {
@@ -195,12 +191,7 @@
     width: 50%;
   }
 
-  .slider__image--mobile,
-  .slider__image--desk {
-    display: none;
-  }
-
-  .slider__image--tab {
+  .slider__image {
     position: absolute;
     display: block;
     width: 700px;
@@ -267,7 +258,7 @@
 
   /*серая линия*/
   .slider__buttons::before {
-    top: 27px;
+    top: 26px;
     left: 110px;
     width: 429px;
   }
@@ -300,22 +291,20 @@
     width: 305px;
   }
 
-  .slider__image--desk {
+  .slider__image {
     position: absolute;
     display: block;
     max-width: none;
     width: 685px;
     height: 518px;
     top: 0;
+  }
+
+  .slider__image--before {
     left: -18px;
   }
 
   .slider__image--after {
     left: -362px;
-  }
-
-  .slider__image--tab,
-  .slider__image--mobile {
-    display: none;
   }
 }
