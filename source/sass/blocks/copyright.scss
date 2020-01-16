@@ -1,3 +1,9 @@
+.copyright:hover {
+  .copyright__logo {
+    fill: $green-tone;
+  }
+}
+
 .copyright:active {
   opacity: 0.3;
 }
@@ -26,9 +32,11 @@
 }
 
 .copyright__logo {
+  fill: #444444;
   width: 43px;
   height: 41px;
 }
+
 
 @media (min-width: $tablet-widths) {
   .copyright {
@@ -60,6 +68,6 @@
   }
 
   .copyright {
-    padding-top: 13px;
+    padding-top: 20px;
   }
 }

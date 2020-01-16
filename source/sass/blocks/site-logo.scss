@@ -1,10 +1,10 @@
-.header .site-logo:hover,
-.footer .site-logo__img:hover {
+.header .site-logo[href]:hover,
+.footer .site-logo__img[href]:hover {
   opacity: 0.8;
 }
 
-.header .site-logo:active,
-.footer .site-logo__img:active {
+.header .site-logo[href]:active,
+.footer .site-logo__img[href]:active {
   opacity: 0.6;
 }
 
@@ -17,11 +17,6 @@
 .footer .site-logo__img {
   width: 130px;
   height: 24px;
-}
-
-.site-logo__img--desk,
-.site-logo__img--tab {
-  display: none;
 }
 
 @media (min-width: $tablet-widths) {
@@ -39,37 +34,26 @@
   .footer .site-logo__img {
     margin-bottom: 0;
   }
-
-  .site-logo__img--mob,
-  .site-logo__img--desk {
-    display: none;
-  }
-
-  .site-logo__img--tab {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop-widths) {
   .header .site-logo {
-    margin-top: 37px;
+    margin-top: 38px;
+    margin-left: 0;
     margin-right: 94px;
+    width: 203px;
+    height: 60px;
+  }
+
+  .header .site-logo__img {
+    width: 203px;
+    height: 60px;
   }
 
   .footer .site-logo__img {
-    margin-top: -6px;
     margin-left: -1px;
     margin-right: 258px;
     width: 130px;
     height: 24px;
-  }
-
-  .site-logo__img--tab,
-  .site-logo__img--mob {
-    display: none;
-  }
-
-  .site-logo__img--desk {
-    display: block;
   }
 }

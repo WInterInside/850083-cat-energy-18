@@ -38,6 +38,15 @@
   font-style: normal;
   padding-right: 7px;
 }
+
+.invite__iframe {
+  position: absolute;
+  z-index: 3;
+  top: 110px;
+  left: 0;
+  width: 100%;
+  height: 367px;
+}
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
@@ -82,11 +91,24 @@
     margin-top: 20px;
     margin-right: 4px;
   }
+
+  .invite__iframe {
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+  }
 }
 
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
+  .invite {
+    margin-top: -5px;
+  }
+
   .invite__wraper {
     position: relative;
     min-height: 400px;
@@ -97,24 +119,29 @@
   }
 
   .invite__data {
+    z-index: 3;
     width: 570px;
     min-height: 201px;
     background-color: #ffffff;
   }
 
   .invite__text {
-    margin-top: 3px;
+    margin-top: 11px;
     margin-right: 86px;
   }
 
   .invite__adress {
     text-align: left;
-    margin-top: 5px;
+    margin-top: 13px;
     margin-right: 6px;
   }
 
-  iframe {
-    height: 500px;
+  .invite__iframe {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 400px;
   }
 }

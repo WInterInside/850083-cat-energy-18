@@ -5,32 +5,19 @@
   margin: 0 auto;
 }
 
-.invite-map__iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .invite-map__pin {
   position: absolute;
+  z-index: 2;
   width: 65px;
   height: 55px;
-  top: 140px;
+  top: 135px;
   right: 127px;
 }
 
 .invite-map__img {
+  height: 365px;
   margin-top: -5px;
   vertical-align: bottom;
-}
-
-.invite-map__img--tab,
-.invite-map__img--desk {
-  display: none;
-}
-
-.invite-map__img--mob {
-  display: block;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
@@ -44,17 +31,12 @@
     position: absolute;
     width: 120px;
     height: 107px;
-    top: 150px;
+    top: 143px;
     right: 324px;
   }
 
-  .invite-map__img--mob,
-  .invite-map__img--desk {
-    display: none;
-  }
-
-  .invite-map__img--tab {
-    display: block;
+  .invite-map__img {
+    height: 400px;
     margin-top: -6px;
     width: $tablet-widths;
   }
@@ -66,33 +48,20 @@
   .invite-map {
     width: 1440px;
     position: absolute;
-    top: -5px;
+    z-index: 1;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
   }
 
-  .invite-map__iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
   .invite-map__img {
     margin-top: 0;
+    width: 1440px;
     vertical-align: bottom;
   }
 
   .invite-map__pin {
     position: absolute;
     right: 320px;
-  }
-
-  .invite-map__img--tab,
-  .invite-map__img--mob {
-    display: none;
-  }
-
-  .invite-map__img--desk {
-    display: block;
   }
 }
