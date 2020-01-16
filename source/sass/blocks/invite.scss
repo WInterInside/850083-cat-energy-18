@@ -45,7 +45,7 @@
   top: 110px;
   left: 0;
   width: 100%;
-  height: 375px;
+  height: 367px;
 }
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
@@ -105,6 +105,10 @@
 /* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
+  .invite {
+    margin-top: -5px;
+  }
+
   .invite__wraper {
     position: relative;
     min-height: 400px;
@@ -122,13 +126,13 @@
   }
 
   .invite__text {
-    margin-top: 3px;
+    margin-top: 11px;
     margin-right: 86px;
   }
 
   .invite__adress {
     text-align: left;
-    margin-top: 5px;
+    margin-top: 13px;
     margin-right: 6px;
   }
 

@@ -135,7 +135,7 @@
   .slider__button:first-child::before {
     @include pseudo;
     z-index: 1;
-    left: 365px;
+    left: 367px;
     top: 12px;
     width: 34px;
     height: 34px;
@@ -149,7 +149,7 @@
   .slider__button:first-child::after {
     @include pseudo;
     z-index: 2;
-    left: 378px;
+    left: 380px;
     top: 25px;
     width: 8px;
     height: 8px;

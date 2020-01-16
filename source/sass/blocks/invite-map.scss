@@ -10,11 +10,12 @@
   z-index: 2;
   width: 65px;
   height: 55px;
-  top: 140px;
+  top: 135px;
   right: 127px;
 }
 
 .invite-map__img {
+  height: 365px;
   margin-top: -5px;
   vertical-align: bottom;
 }
@@ -30,11 +31,12 @@
     position: absolute;
     width: 120px;
     height: 107px;
-    top: 150px;
+    top: 143px;
     right: 324px;
   }
 
   .invite-map__img {
+    height: 400px;
     margin-top: -6px;
     width: $tablet-widths;
   }

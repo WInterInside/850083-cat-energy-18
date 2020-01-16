@@ -37,6 +37,14 @@
   }
 }
 
+@media (max-width: 1299px) {
+  .container-tab {
+    width: $tablet-widths;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $desktop-widths) {
   .container {
     width: $desktop-widths;

@@ -1,11 +1,11 @@
 .copyright:hover {
-  path {
+  .copyright__logo {
     fill: $green-tone;
   }
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.copyright:active {
+  opacity: 0.3;
 }
 
 .copyright {
@@ -32,6 +32,7 @@
 }
 
 .copyright__logo {
+  fill: #444444;
   width: 43px;
   height: 41px;
 }
@@ -67,6 +68,6 @@
   }
 
   .copyright {
-    padding-top: 13px;
+    padding-top: 20px;
   }
 }
