@@ -45,15 +45,6 @@
   flex-direction: column;
 }
 
-.product-card__image--tab,
-.product-card__image--desk {
-  display: none;
-}
-
-.product-card__image--mob {
-  display: block;
-}
-
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {

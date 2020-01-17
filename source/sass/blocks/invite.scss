@@ -30,7 +30,7 @@
   text-transform: uppercase;
 }
 
-.invite__adress {
+.invite__address {
   font-family: $sup-font;
 
   @include text(#444444, 14px, 20px);
@@ -41,7 +41,7 @@
 
 .invite__iframe {
   position: absolute;
-  frameborder: 0;
+  // frameborder: 0;
   z-index: 3;
   top: 110px;
   left: 0;
@@ -76,7 +76,7 @@
     background-color: $options-color;
   }
 
-  .invite__adress {
+  .invite__address {
     width: 165px;
     font-family: $sup-font;
 
@@ -131,7 +131,7 @@
     margin-right: 86px;
   }
 
-  .invite__adress {
+  .invite__address {
     text-align: left;
     margin-top: 13px;
     margin-right: 6px;
