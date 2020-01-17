@@ -11,7 +11,7 @@
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -38,18 +38,15 @@
   </svg>
   <header class="header header--index">
     <div class="header__container">
-      <div class="header__wraper container-mobile">
+      <div class="header__wraper header__mobile">
         <a class="site-logo site-logo--header">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="site-logo__img" src="img/logo-mobile.svg" alt="Логотип магазина  CAT ENERGY" width="191" height="39">
+            <img class="site-logo__img site-logo__img--header" src="img/logo-mobile.svg" alt="Логотип магазина  CAT ENERGY" width="191" height="39">
           </picture>
         </a>
-        <div class="header__menu header__menu--nojs">
-          <div class="header__lines"><span class="visually-hidden">Открыть меню</span></div>
-          <div class="header__x"><span class="visually-hidden">Закрыть меню</span></div>
-        </div>
+        <button class="header__menu header__menu--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="site-navigation site-navigation--nojs">
         <ul class="site-navigation__list">
@@ -92,18 +89,14 @@
     <section class="options container">
       <ul class="options__list">
         <li class="options__item options__item--slim">
-          <!-- 1 -->
           <h2 class="options__header">Похудение</h2>
           <p class="options__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="options__link" href="catalog.html#slim">Каталог Slim</a>
-          <!--эту будeт ссылка на страницу с подборкой товаров категории Slim -->
         </li>
         <li class="options__item options__item--pro">
-          <!-- 2 -->
           <h2 class="options__header">Набор массы</h2>
           <p class="options__text options__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы! </p>
           <a class="options__link" href="catalog.html#pro">Каталог Pro</a>
-          <!--эту будeт ссылка на страницу с подборкой товаров категории Pro -->
         </li>
       </ul>
     </section>
@@ -129,7 +122,7 @@
       </ul>
     </section>
     <section class="example">
-    <div class="container-mobile container-desctop">
+    <div class="example__mobile example__desctop">
       <div class="example__wraper example__wraper--desk">
         <div class="example__wraper example__wraper--text">
           <h2 class="example__heading">Живой пример</h2>
@@ -210,27 +203,24 @@
     </section>
     <div class="footer__wraper container">
       <a class="site-logo site-logo--footer">
-        <img class="site-logo__img" src="img/logo-footer.svg" alt="Название магазина CAT ENERGY" width="128" height="24">
+        <img class="site-logo__img--footer" src="img/logo-footer.svg" alt="Название магазина CAT ENERGY" width="128" height="24">
       </a>
       <section class="social">
         <ul class="social__list">
           <li class="social__item">
-            <!-- 1 -->
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social__icon social__icon--vk" width="22" height="12"><use xlink:href="#vk-icon"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <!-- 2 -->
-            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy"  aria-label="Инстаграм htmlacademy">
+            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм htmlacademy">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="social__icon social__icon--inst" width="17" height="17"><use xlink:href="#inst-icon"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <!-- 3 -->
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"  aria-label="Фейсбук htmlacademy">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="social__icon social__icon--fb" width="10" height="19"><use xlink:href="#fb-icon"></use></svg>
             </a>

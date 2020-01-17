@@ -95,6 +95,14 @@
   margin-bottom: 35px;
 }
 
+@media (max-width: 767px) {
+  .example__mobile {
+    width: $mobile-widths-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
@@ -266,5 +274,14 @@
 
   .example__wraper--desk {
     display: flex;
+  }
+
+
+  @media (min-width: $desktop-widths) {
+    .example__desctop {
+      width: $desktop-widths;
+      padding: 0 40px;
+      margin: 0 auto;
+    }
   }
 }

@@ -11,7 +11,7 @@
     // Picture element HTML5 shiv
     document.createElement("picture");
   </script>
-  <script src="picturefill.js" async></script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
   </svg>
   <header class="header">
     <div class="header__container">
-      <div class="header__wraper container-mobile">
+      <div class="header__wraper header__mobile">
         <a class="site-logo site-logo--header" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -46,10 +46,7 @@
             <img class="site-logo__img" src="img/logo-mobile.svg" alt="Логотип магазина  CAT ENERGY" width="191" height="39">
           </picture>
         </a>
-        <div class="header__menu header__menu--nojs">
-          <div class="header__lines"><span class="visually-hidden">Открыть меню</span></div>
-          <div class="header__x"><span class="visually-hidden">Закрыть меню</span></div>
-        </div>
+        <button class="header__menu header__menu--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="site-navigation site-navigation--nojs">
         <ul class="site-navigation__list">
@@ -73,8 +70,7 @@
     </div>
     <form class="selection-form" action="https://echo.htmlacademy.ru" method="get">
       <div class="selection-form__catwrap">
-        <!--первая группа импутов, текстовые поля-->
-          <div class="selection-form__cat container-mobile container-tab">
+          <div class="selection-form__cat selection-form__cat--mobile selection-form__cat--tab">
             <div class="selection-form__wraper selection-form__wraper--name">
               <label class="selection-form__label" for="petname">Имя:*</label>
               <input class="selection-form__input" type="text" name="petname" id="petname" placeholder="Барсик" required> <!--"при невалидности поля добавляется класс error-input" -->
@@ -88,8 +84,7 @@
               <input class="selection-form__input selection-form__input--age" type="text" name="age" id="age" placeholder="7">
             </div>
           </div>
-          <!--вторая группа импутов, radio -->
-          <ul class="selection-form__radioblock selection-form__wraper selection-form__wraper--radio container-mobile ">
+          <ul class="selection-form__radioblock selection-form__wraper selection-form__wraper--radio selection-form__wraper--mobile ">
             <li class="selection-form__option">
               <input class="selection-form__radio" id="option-1" type="radio" name="option" value="Похудение" checked>
               <label class="selection-form__label selection-form__label--radio" for="option-1">
@@ -110,7 +105,6 @@
             </li>
           </ul>
         </div>
-      <!--третья группа импутов, поля контактных данных-->
       <div class="selection-form__wraper selection-form__wraper--contacts">
         <div class="container">
           <h2 class="selection-form__heading selection-form__heading--contacts">Контактные данные (владельца кота)</h2>
@@ -118,13 +112,13 @@
             <div class="selection-form__contactwrap">
               <div class="selection-form__wraper">
                 <label class="selection-form__label selection-form__label--email" for="email">E-mail:*</label>
-                <input class="selection-form__input selection-form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required> <!--"при невалидности поля добавляется класс error-input" -->
-                <svg class="selection-form__icon selection-form__icon--email" width="20" height="10"><use xlink:href="#mail-icon"></use></svg> <!--"при невалидности поля добавляется модификатор error" -->
+                <input class="selection-form__input selection-form__input--email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
+                <svg class="selection-form__icon selection-form__icon--email" width="20" height="10"><use xlink:href="#mail-icon"></use></svg> <!--"при невалидности поля добавляется модификатор selection-form__icon--error" -->
               </div>
               <div class="selection-form__wraper">
                 <label class="selection-form__label selection-form__label--tel" for="tel">Телефон:*</label>
-                <input class="selection-form__input selection-form__input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required> <!--"при невалидности поля добавляется класс error-input" -->
-                <svg class="selection-form__icon selection-form__icon--tel" width="10" height="20"><use xlink:href="#phone-icon"></use></svg> <!--"при невалидности поля добавляется модификатор error" -->
+                <input class="selection-form__input selection-form__input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
+                <svg class="selection-form__icon selection-form__icon--tel" width="10" height="20"><use xlink:href="#phone-icon"></use></svg> <!--"при невалидности поля добавляется модификатор selection-form__icon--error" -->
               </div>
             </div>
           </div>
@@ -136,7 +130,6 @@
           </div>
         </div>
       </div>
-      <!--третья группа импутов, чекбоксы-->
       <div class="selection-form__wraper selection-form__wraper--options">
         <div class="container">
           <h2 class="selection-form__heading selection-form__heading--options">Дополнительно</h2>
@@ -199,22 +192,19 @@
       <section class="social">
         <ul class="social__list">
           <li class="social__item">
-            <!-- 1 -->
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
               <svg class="social__icon social__icon--vk" width="22" height="12"><use xlink:href="#vk-icon"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <!-- 2 -->
-            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy"  aria-label="Инстаграм htmlacademy">
+            <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy" aria-label="Инстаграм htmlacademy">
               <span class="visually-hidden">Инстаграм</span>
               <svg class="social__icon social__icon--inst" width="17" height="17"><use xlink:href="#inst-icon"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <!-- 3 -->
-            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy"  aria-label="Фейсбук htmlacademy">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" aria-label="Фейсбук htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
               <svg class="social__icon social__icon--fb" width="10" height="19"><use xlink:href="#fb-icon"></use></svg>
             </a>

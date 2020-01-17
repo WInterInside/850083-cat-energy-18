@@ -1,45 +1,47 @@
-.error-input {
-  border: 2px solid $error-color;
-}
-
 .selection-form__icon--error {
   fill: $error-color;
 }
 
-::-webkit-input-placeholder {
-  color: $mr-gray-color;
-}
+.selection-form {
+  ::-webkit-input-placeholder {
+    color: $mr-gray-color;
+  }
 
-::-moz-placeholder {
-  color: $mr-gray-color;
-}
+  ::-moz-placeholder {
+    color: $mr-gray-color;
+  }
 
-:-moz-placeholder {
-  color: $mr-gray-color;
-}
+  :-moz-placeholder {
+    color: $mr-gray-color;
+  }
 
-:-ms-input-placeholder {
-  color: $mr-gray-color;
-}
+  :-ms-input-placeholder {
+    color: $mr-gray-color;
+  }
 
-input,
-textarea {
-  border: 1px solid rgba(205, 205, 205, 0.5);
-}
+  input,
+  textarea {
+    border: 1px solid rgba(205, 205, 205, 0.5);
+  }
 
-input:hover,
-textarea:hover {
-  border: 1px solid rgba(205, 205, 205, 1);
-}
+  input:hover,
+  textarea:hover {
+    border: 1px solid rgba(205, 205, 205, 1);
+  }
 
-input:focus,
-textarea:focus {
-  outline: none;
-  border: 2px solid $mr-gray-color;
-}
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid $mr-gray-color;
+  }
 
-input:focus + .selection-form__icon {
-  fill: $green-tone;
+  input:focus + .selection-form__icon {
+    fill: $green-tone;
+  }
+
+  .selection-form__input--error {
+    border: 2px solid $error-color;
+  }
 }
 
 .selection-form__input:focus {
@@ -125,6 +127,14 @@ input:focus + .selection-form__icon {
   padding-bottom: 20px;
 }
 
+@media (max-width: 767px) {
+  .selection-form__cat--mobile {
+    width: $mobile-widths-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
 .selection-form__wraper {
   position: relative;
   display: flex;
@@ -194,6 +204,14 @@ input:focus + .selection-form__icon {
   padding-bottom: 26px;
   margin: 0 auto;
   margin-bottom: 9px;
+}
+
+@media (max-width: 767px) {
+  .selection-form__wraper--mobile {
+    width: $mobile-widths-only;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }
 
 .selection-form__option {
@@ -452,6 +470,14 @@ input:focus + .selection-form__icon {
 
   .selection-form__wraper {
     margin-bottom: 19px;
+  }
+
+  @media (max-width: 1299px) {
+    .selection-form__cat--tab {
+      width: $tablet-widths;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
   }
 
   .selection-form__input--weight {

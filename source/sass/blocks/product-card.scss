@@ -102,6 +102,7 @@
 
   .product-card__wraper {
     display: flex;
+    width: 252px;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -119,6 +120,10 @@
   .product-card__image--big {
     height: 210px;
     top: -82px;
+  }
+
+  .product-card__button {
+    margin-top: 10px;
   }
 }
 
@@ -179,5 +184,9 @@
   .product-card__value {
     padding-bottom: 6px;
     padding-top: 6px;
+  }
+
+  .product-card__button {
+    margin-top: 10px;
   }
 }
