@@ -1,5 +1,7 @@
 .social__list {
   display: flex;
+  flex-wrap: wrap;
+  width: 150px;
   list-style: none;
 
   @include list-style;
@@ -12,8 +14,6 @@
 
 .social__item {
   display: inline-block;
-  margin-right: 36px;
-  margin-left: 74px;
 }
 
 .social__link:hover {
@@ -24,14 +24,15 @@
   opacity: 0.3;
 }
 
+/*
 .social__item:nth-child(2) {
-  margin-right: 38px;
-  margin-left: 0;
+
 }
 
 .social__item:last-child {
-  margin: 0;
+
 }
+*/
 
 .social__link {
   position: relative;
@@ -48,7 +49,6 @@
 }
 
 .social__icon--inst {
-
   width: 17px;
   height: 17px;
 }
@@ -61,6 +61,7 @@
 @media (min-width: $tablet-widths) {
   .social__list {
     display: flex;
+    width: 300px;
     align-items: center;
     border: none;
     padding: 0;
@@ -71,12 +72,6 @@
   .social__item {
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
-    margin-left: 153px;
-  }
-
-  .social__item:nth-child(2) {
-    margin-right: 28px;
   }
 
   .social__icon--vk {
@@ -97,11 +92,7 @@
 
 @media (min-width: $desktop-widths) {
   .social__list {
+    width: 600px;
     margin-top: -2px;
-    margin-right: 393px;
-  }
-
-  .social__item {
-    margin-right: 28px;
   }
 }

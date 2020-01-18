@@ -63,6 +63,7 @@
 
   .site-navigation__list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .site-navigation__item {
@@ -97,9 +98,13 @@
 @media (min-width: $desktop-widths) {
   .site-navigation {
     z-index: 1;
-    margin-top: 57px;
+    margin: 0;
     padding-top: 0;
     opacity: 1;
+  }
+
+  .site-navigation__list {
+    width: 555px;
   }
 
   .site-navigation__link {
@@ -120,6 +125,7 @@
   .site-navigation__item {
     text-align: center;
     margin-right: 36px;
+    margin-bottom: 10px;
     padding: 0;
     border: none;
     border-bottom: none;

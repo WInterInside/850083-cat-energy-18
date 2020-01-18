@@ -167,8 +167,7 @@
 @media (min-width: $desktop-widths) {
   .description__list {
     display: flex;
-    flex-wrap: nowrap;
-    width: 1200px;
+    width: $desktop-widths;
 
     @include list-style;
   }
@@ -177,7 +176,7 @@
     @include text (#111111, 60px, 60px);
     font-weight: normal;
     margin-top: 72px;
-    margin-bottom: 183px;
+    margin-bottom: 69px;
   }
 
   .description__item {
@@ -186,6 +185,9 @@
     margin-bottom: 0;
     margin-right: 70px;
     padding: 0;
+
+    padding-top: 115px;
+    padding-bottom: 45px;
   }
 
   .description__item:nth-child(2n),
@@ -196,6 +198,10 @@
   .description__item:last-child {
     margin-bottom: 0;
     margin-right: 0;
+  }
+
+  .description__item:nth-child(n+5) {
+    margin-top: 100px;
   }
 
   .description__text {
@@ -223,7 +229,7 @@
     display: inline-block;
 
     @include text ($options-color, 281px, 281px);
-    top: -150px;
+    top: -35px;
     right: 10px;
     z-index: 1;
   }

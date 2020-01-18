@@ -3,11 +3,10 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 11px;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
@@ -76,6 +75,11 @@
     padding-right: 92px;
   }
 
+  .button--additional-order {
+    @include text(#ffffff, 16px, 20px);
+    width: 100%;
+  }
+
   .button--more {
     padding-top: 12px;
     padding-left: 78px;
@@ -90,15 +94,31 @@
   }
 
   .button--button {
-    padding-left: 209px;
-    padding-right: 206px;
+    width: 568px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0;
     margin-right: 82px;
   }
 
   .button--order {
+    min-height: 40px;
+    width: 245px;
     padding-top: 11px;
-    padding-left: 55px;
-    padding-right: 54px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .button--additional-order {
+    @include text(#ffffff, 16px, 20px);
+    word-wrap: break-word;
+    width: 245px;
+    margin: 0;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-top: 10 px;
   }
 }

@@ -45,13 +45,17 @@
   flex-direction: column;
 }
 
+.product-card__link:focus {
+  outline-style: auto;
+  outline-width: 5px;
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .product-card {
     position: relative;
     border: none;
-    width: 324px;
     min-height: 431px;
     padding-top: 145px;
     background-color: $options-color;
@@ -82,7 +86,6 @@
   }
 
   .product-card__data {
-    width: 252px;
     min-height: 97px;
     margin-bottom: 22px;
     border-collapse: collapse;
@@ -102,7 +105,6 @@
 
   .product-card__wraper {
     display: flex;
-    width: 252px;
     flex-direction: column;
     align-items: center;
     text-align: center;

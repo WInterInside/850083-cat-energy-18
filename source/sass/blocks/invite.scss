@@ -1,6 +1,5 @@
 .invite {
   position: relative;
-  background-color: $options-color;
   margin-bottom: 38px;
 }
 
@@ -58,7 +57,6 @@
   .invite__data {
     display: flex;
     min-height: 201px;
-    background-color: $options-color;
   }
 
   .invite__text {

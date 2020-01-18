@@ -46,7 +46,7 @@
 
 @media (min-width: $desktop-widths) {
   .invite-map {
-    width: 1440px;
+    width: $desktop-widths;
     position: absolute;
     z-index: 1;
     top: 0;

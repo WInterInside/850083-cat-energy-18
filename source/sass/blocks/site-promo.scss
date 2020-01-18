@@ -126,6 +126,7 @@
     margin: 0;
     margin-bottom: 50px;
     padding-left: 80px;
+    width: 50%;
   }
 
   .site-promo__wraper--order {
@@ -136,6 +137,7 @@
 
   .site-promo__link {
     position: absolute;
+    z-index: 0;
     top: -310px;
     left: 490px;
   }
@@ -143,11 +145,12 @@
   .site-promo__button {
     z-index: 2;
     margin-right: 895px;
+    min-height: 52px;
 
     @include text(#ffffff, 20px, 20px);
     padding-left: 18px;
     padding-right: 20px;
-    padding-bottom: 38px;
+    padding-bottom: 15px;
     padding-top: 15px;
   }
 }
