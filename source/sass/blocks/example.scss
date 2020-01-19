@@ -1,5 +1,5 @@
 .example {
-  padding-bottom: 37px;
+  padding-bottom: 38px;
   padding-top: 29px;
   margin-top: 44px;
   background-color: $options-color;
@@ -241,7 +241,7 @@
   .example__text {
     @include text(#444444, 16px, 24px);
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     padding-bottom: 10px;
   }
 

@@ -1,6 +1,6 @@
 .site-promo {
   padding-top: 28px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   text-align: center;
   background: url("../img/index-background-mobile@1x.jpg"), linear-gradient(180deg, rgba(99, 167, 58, 1) 305px, rgba(255, 255, 255, 1) 50%);
   background-position: top center, center;
@@ -28,15 +28,15 @@
 }
 
 .site-promo__button {
+  width: 280px;
   margin-top: 2px;
+  padding-top: 10px;
 }
 
 .site-promo__wraper--order {
   align-items: center;
   margin-bottom: 67px;
 }
-
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .site-promo {
@@ -72,7 +72,7 @@
     @include text(#ffffff, 20px, 20px);
     padding-left: 20px;
     padding-right: 23px;
-    padding-bottom: 38px;
+    padding-bottom: 16px;
     padding-top: 14px;
   }
 
@@ -93,8 +93,6 @@
     background: none;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .site-promo {

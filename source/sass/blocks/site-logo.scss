@@ -21,14 +21,16 @@
 
 @media (min-width: $tablet-widths) {
   .site-logo--header {
-    margin-left: 0;
-    margin-right: auto;
+    margin-right: 94px;
     width: 174px;
     height: 59px;
   }
 
-  .site-logo {
-    margin: 0;
+  .site-logo--footer {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 154px;
+    margin-bottom: 0;
   }
 
   .site-logo__img--footer {
@@ -40,7 +42,6 @@
   .site-logo--header {
     margin-top: 38px;
     margin-left: 0;
-    margin-right: auto;
     width: 203px;
     height: 60px;
   }

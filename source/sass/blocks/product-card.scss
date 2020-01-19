@@ -18,7 +18,7 @@
 }
 
 .product-card__data {
-  width: 145px;
+  width: 143px;
 }
 
 .product-card__sign,
@@ -50,12 +50,27 @@
   outline-width: 5px;
 }
 
+.product-card__link:focus img {
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.product-card__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  padding-right: 12px;
+  width: 280px;
+  word-wrap: break-word;
+}
+
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .product-card {
     position: relative;
     border: none;
+    width: 324px;
     min-height: 431px;
     padding-top: 145px;
     background-color: $options-color;
@@ -86,6 +101,7 @@
   }
 
   .product-card__data {
+    width: 250px;
     min-height: 97px;
     margin-bottom: 22px;
     border-collapse: collapse;
@@ -126,6 +142,7 @@
 
   .product-card__button {
     margin-top: 10px;
+    width: 249px;
   }
 }
 
@@ -190,5 +207,6 @@
 
   .product-card__button {
     margin-top: 10px;
+    width: 169px;
   }
 }

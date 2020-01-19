@@ -1,6 +1,6 @@
 .promo-offer {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
   background-color: $green-tone;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
@@ -37,8 +37,6 @@
   top: 63px;
   right: 112px;
 }
-
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .promo-offer {
@@ -81,8 +79,6 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ДЕСКА */
-
 @media (min-width: $desktop-widths) {
   .promo-offer {
     width: 325px;
@@ -107,12 +103,12 @@
     text-align: center;
     margin: 0;
     padding-top: 188px;
-    padding-left: 38px;
+    padding-left: 36px;
     padding-right: 30px;
   }
 
   .promo-offer__text::before {
     top: 65px;
-    left: 98px;
+    left: 96px;
   }
 }

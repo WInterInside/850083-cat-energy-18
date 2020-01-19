@@ -5,11 +5,11 @@
 
 .additional-card {
   border-bottom: 1px solid $border-color;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 }
 
 .additional-card:last-child {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .additional-card__heading {
@@ -38,8 +38,6 @@
 .additional-card .button--order {
   margin-top: 1px;
 }
-
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .additional-card {
@@ -94,25 +92,24 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ДЕСКА */
 @media (min-width: $desktop-widths) {
   .additional-card {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 895px;
+    width: 896px;
     border: 1px solid $border-color;
     border-bottom: none;
     border-left: none;
     border-right: none;
-    padding-top: 16px;
+    padding-top: 15px;
     padding-right: 0;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
     padding-left: 0;
   }
 
   .additional-card:first-child {
-    padding-top: 16px;
+    padding-top: 14px;
     padding-bottom: 14px;
   }
 

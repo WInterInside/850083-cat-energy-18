@@ -55,6 +55,7 @@
 @media (min-width: $tablet-widths) {
   .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     margin-top: 22px;
     padding-top: 0;
@@ -69,6 +70,8 @@
   .site-navigation__item {
     text-align: center;
     margin-right: 34px;
+
+    margin-bottom: 20px;
     padding: 0;
     border: none;
     border-bottom: none;
@@ -78,7 +81,7 @@
     margin-right: 37px;
   }
 
-  .site-navigation__item:last-child {
+  .site-navigation__item:nth-child(3n+3) {
     border-bottom: none;
     margin-right: 0;
   }
@@ -105,6 +108,7 @@
 
   .site-navigation__list {
     width: 555px;
+    margin-top: 58px;
   }
 
   .site-navigation__link {

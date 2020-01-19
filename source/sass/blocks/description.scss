@@ -77,8 +77,6 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .description__header {
     @include text (#111111, 60px, 60px);
@@ -137,8 +135,8 @@
     margin-right: 0;
   }
 
-  .description__item:nth-child(3),
-  .description__item:last-child {
+  .description__item:last-child,
+  .description__item:nth-last-child(2) {
     margin-bottom: 0;
   }
 
@@ -161,8 +159,6 @@
     background-position: center;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .description__list {
