@@ -163,7 +163,7 @@
 @media (min-width: $desktop-widths) {
   .description__list {
     display: flex;
-    width: $desktop-widths;
+    width: 1250px;
 
     @include list-style;
   }

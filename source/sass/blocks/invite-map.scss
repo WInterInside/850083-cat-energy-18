@@ -20,8 +20,6 @@
   vertical-align: bottom;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .invite-map {
     width: $tablet-widths;
@@ -42,21 +40,19 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ДЕСКА */
-
 @media (min-width: $desktop-widths) {
   .invite-map {
     width: $desktop-widths;
     position: absolute;
     z-index: 1;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
   }
 
   .invite-map__img {
     margin-top: 0;
-    width: 1440px;
+    width: $desktop-widths;
     vertical-align: bottom;
   }
 
