@@ -1,6 +1,7 @@
 .promo-offer {
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
+  background-color: $green-tone;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
 
   @include background (center, no-repeat);
@@ -37,13 +38,14 @@
   right: 112px;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .promo-offer {
+    margin-top: 69px;
+    margin-bottom: 77px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-color: transparent;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -56,8 +58,9 @@
   .promo-offer__text {
     margin: 0;
     padding: 0;
-    padding-top: 117px;
-    padding-left: 424px;
+    min-height: 200px;
+    padding-top: 71px;
+    padding-left: 423px;
     padding-right: 100px;
 
     @include text(#ffffff, 16px, 20px);
@@ -71,12 +74,10 @@
     @include background (center, no-repeat);
     width: 56px;
     height: 61px;
-    top: 109px;
+    top: 63px;
     left: 90px;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .promo-offer {
@@ -102,12 +103,12 @@
     text-align: center;
     margin: 0;
     padding-top: 188px;
-    padding-left: 38px;
+    padding-left: 36px;
     padding-right: 30px;
   }
 
   .promo-offer__text::before {
     top: 65px;
-    left: 98px;
+    left: 96px;
   }
 }

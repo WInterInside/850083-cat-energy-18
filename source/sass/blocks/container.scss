@@ -21,24 +21,8 @@
   margin: 0 auto;
 }
 
-@media (max-width: 767px) {
-  .container-mobile {
-    width: $mobile-widths-only;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-}
-
 @media (min-width: $tablet-widths) {
   .container {
-    width: $tablet-widths;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1299px) {
-  .container-tab {
     width: $tablet-widths;
     padding: 0 30px;
     margin: 0 auto;
@@ -57,9 +41,7 @@
     width: 174px;
   }
 
-  .container-desctop {
-    width: $desktop-widths;
-    padding: 0 40px;
-    margin: 0 auto;
+  .container--footer {
+    padding-top: 30px;
   }
 }

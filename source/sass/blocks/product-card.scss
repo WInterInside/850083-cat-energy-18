@@ -18,7 +18,7 @@
 }
 
 .product-card__data {
-  width: 145px;
+  width: 143px;
 }
 
 .product-card__sign,
@@ -45,13 +45,23 @@
   flex-direction: column;
 }
 
-.product-card__image--tab,
-.product-card__image--desk {
-  display: none;
+.product-card__link:focus {
+  outline-style: auto;
+  outline-width: 5px;
 }
 
-.product-card__image--mob {
-  display: block;
+.product-card__link:focus img {
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.product-card__button {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  padding-right: 12px;
+  width: 280px;
+  word-wrap: break-word;
 }
 
 /* СТИЛИ ДЛЯ ТАБЛЕТКИ */
@@ -91,7 +101,7 @@
   }
 
   .product-card__data {
-    width: 252px;
+    width: 250px;
     min-height: 97px;
     margin-bottom: 22px;
     border-collapse: collapse;
@@ -128,6 +138,11 @@
   .product-card__image--big {
     height: 210px;
     top: -82px;
+  }
+
+  .product-card__button {
+    margin-top: 10px;
+    width: 249px;
   }
 }
 
@@ -188,5 +203,10 @@
   .product-card__value {
     padding-bottom: 6px;
     padding-top: 6px;
+  }
+
+  .product-card__button {
+    margin-top: 10px;
+    width: 169px;
   }
 }

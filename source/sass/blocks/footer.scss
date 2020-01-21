@@ -2,12 +2,12 @@
   background-color: $options-color;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .footer__wraper {
     display: flex;
     min-height: 150px;
     align-items: center;
+    /* убрать контейнер + падддинг топ + маргин 0 авто + видс 1300*/
   }
 }

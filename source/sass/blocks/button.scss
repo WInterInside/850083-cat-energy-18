@@ -3,11 +3,10 @@
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
-  padding-left: 72px;
-  padding-right: 72px;
-  padding-top: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   text-transform: uppercase;
   background-color: $green-tone;
@@ -61,10 +60,6 @@
 }
 
 @media (min-width: $tablet-widths) {
-  .product-card .button {
-    margin-top: 10px;
-  }
-
   .button--button {
     @include text(#ffffff, 20px, 20px);
     min-height: 52px;
@@ -76,11 +71,17 @@
 
   .button--order {
     padding-top: 12px;
-    padding-left: 95px;
-    padding-right: 92px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .button--additional-order {
+    @include text(#ffffff, 16px, 20px);
+    width: 100%;
   }
 
   .button--more {
+    margin-top: 10px;
     padding-top: 12px;
     padding-left: 78px;
     padding-right: 77px;
@@ -88,25 +89,38 @@
 }
 
 @media (min-width: $desktop-widths) {
-  .product-card .button {
-    margin-top: 10px;
-  }
-
   .button--more {
-    padding-left: 23px;
-    padding-right: 23px;
+    width: 169px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .button--button {
-    padding-left: 209px;
-    padding-right: 206px;
+    width: 568px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
     margin: 0;
-    margin-right: 82px;
+    margin-right: 83px;
   }
 
   .button--order {
+    min-height: 40px;
+    width: 245px;
     padding-top: 11px;
-    padding-left: 55px;
-    padding-right: 54px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .button--additional-order {
+    @include text(#ffffff, 16px, 20px);
+    word-wrap: break-word;
+    width: 245px;
+    margin: 0;
+    margin-left: 40px;
+    padding-left: 15px;
+    padding-top: 10px;
   }
 }
