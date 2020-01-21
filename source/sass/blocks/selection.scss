@@ -14,7 +14,6 @@
   text-transform: uppercase;
 }
 
-/* СТИЛИ ДЛЯ taba */
 @media (min-width: $tablet-widths) {
   .selection__heading {
     @include text(#111111, 60px, 60px);

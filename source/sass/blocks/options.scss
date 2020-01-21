@@ -112,8 +112,6 @@
   border-right: 0;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .options__list {
     margin-bottom: 44px;
@@ -200,8 +198,6 @@
     top: 9px;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .options__list {

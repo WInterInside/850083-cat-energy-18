@@ -103,8 +103,6 @@
   }
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .example {
     padding-bottom: 0;
@@ -203,8 +201,6 @@
     left: -21px;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .example {

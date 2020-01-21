@@ -64,8 +64,6 @@
   word-wrap: break-word;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .product-card {
     position: relative;
@@ -145,8 +143,6 @@
     width: 249px;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .product-card {

@@ -16,8 +16,6 @@
   @include list-style;
 }
 
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
-
 @media (min-width: $tablet-widths) {
   .additional-goods__heading {
     padding-left: 39px;
@@ -29,9 +27,6 @@
     @include text(#111111, 36px, 36px);
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
-
 
 @media (min-width: $desktop-widths) {
   .additional-goods__heading {

@@ -27,7 +27,6 @@
   height: 3px;
   background-color: $green-tone;
 }
-/* СТИЛИ ДЛЯ ТАБЛЕТКИ */
 
 @media (min-width: $tablet-widths) {
   .catalog__list {
@@ -54,8 +53,6 @@
     top: 90px;
   }
 }
-
-/* СТИЛИ ДЛЯ ДЕСКА */
 
 @media (min-width: $desktop-widths) {
   .catalog__heading {

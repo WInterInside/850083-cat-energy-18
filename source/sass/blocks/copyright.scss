@@ -10,6 +10,7 @@
 
 .copyright {
   display: flex;
+  min-height: 40px;
   align-items: center;
   padding-bottom: 25px;
 }
@@ -40,30 +41,35 @@
 
 @media (min-width: $tablet-widths) {
   .copyright {
-    padding-top: 17px;
+    height: 41px;
+    margin-top: 5px;
   }
 
   .copyright__text {
     margin: 0;
-    margin-top: 5px;
+    margin-top: 0;
     margin-right: 13px;
   }
 
   .copyright__link--logo {
     display: block;
-    margin-top: 4px;
+    margin-top: px;
     width: 35px;
     height: 41px;
   }
 }
 
 @media (min-width: $desktop-widths) {
-  .copyright__link--logo {
+  .copyright {
     margin-top: 5px;
+  }
+
+  .copyright__link--logo {
+    margin-top: 0;
   }
 
   .copyright__text {
     margin-right: 14px;
-    margin-top: 2px;
+    margin-top: 0;
   }
 }
