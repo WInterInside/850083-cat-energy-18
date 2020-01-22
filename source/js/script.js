@@ -18,4 +18,4 @@ menu.addEventListener('click', function() {
     menu.classList.remove('header__menu--on');
     menu.classList.add('header__menu--off');
   }
-  });
+});

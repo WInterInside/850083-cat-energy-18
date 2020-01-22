@@ -29,7 +29,7 @@
 
 .promo-offer__text::before {
   @include pseudo;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/gift.svg");
 
   @include background (center, no-repeat);
   width: 56px;
@@ -45,7 +45,6 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-color: transparent;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -69,7 +68,7 @@
 
   .promo-offer__text::before {
     @include pseudo;
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/gift.svg");
 
     @include background (center, no-repeat);
     width: 56px;

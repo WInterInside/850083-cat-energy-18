@@ -59,11 +59,11 @@
             </div>
             <div class="selection-form__wraper selection-form__wraper--weight">
               <label class="selection-form__label selection-form__label--weight" for="weight">Вес (кг):*</label>
-              <input class="selection-form__input selection-form__input--weight" type="text" name="weight" id="weight" placeholder="7" required=""> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
+              <input class="selection-form__input selection-form__input--weight" type="number" name="weight" id="weight" placeholder="7" required=""> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
             </div>
             <div class="selection-form__wraper selection-form__wraper--age">
               <label class="selection-form__label selection-form__label--age" for="age">Возраст (лет):</label>
-              <input class="selection-form__input selection-form__input--age" type="text" name="age" id="age" placeholder="7">
+              <input class="selection-form__input selection-form__input--age" type="number" name="age" id="age" placeholder="7">
             </div>
           </div>
           <ul class="selection-form__radioblock selection-form__wraper selection-form__wraper--radio selection-form__wraper--mobile ">
@@ -99,7 +99,7 @@
               </div>
               <div class="selection-form__wraper">
                 <label class="selection-form__label selection-form__label--tel" for="tel">Телефон:*</label>
-                <input class="selection-form__input selection-form__input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required=""> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
+                <input class="selection-form__input selection-form__input--tel" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="8\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required=""> <!--"при невалидности поля добавляется модификатор selection-form__input--error" -->
                 <svg class="selection-form__icon selection-form__icon--tel" width="10" height="20"><use xlink:href="#icon-phone"></use></svg> <!--"при невалидности поля добавляется модификатор selection-form__icon--error" -->
               </div>
             </div>
