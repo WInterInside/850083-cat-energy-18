@@ -18,8 +18,8 @@
   margin-left: 38px;
 }
 
-.slider__buttons::before {
-  @include pseudo;
+.slider__bar {
+  position: absolute;
   top: 3px;
   left: 61px;
   width: 84px;
@@ -28,9 +28,9 @@
   border-radius: 8px;
 }
 
-.slider__buttons::after {
-  @include pseudo;
-  left: 66px;
+.slider__toggle {
+  position: absolute;
+  left: 67px;
   top: 7px;
   width: 35px;
   height: 6px;
@@ -49,11 +49,6 @@
 
 .slider__button:first-child {
   padding-right: 113px;
-}
-
-.slider__image--tab,
-.slider__image--desk {
-  display: none;
 }
 
 .slider__image--after {
@@ -114,8 +109,8 @@
     padding: 0;
   }
 
-  .slider__buttons::before {
-    @include pseudo;
+  .slider__bar {
+    position: absolute;
     top: 25px;
     left: 170px;
     width: 429px;
@@ -124,12 +119,8 @@
     border-radius: 8px;
   }
 
-  .slider__buttons::after {
-    display: none;
-  }
-
-  .slider__button:first-child::before {
-    @include pseudo;
+  .slider__toggle {
+    position: absolute;
     z-index: 1;
     left: 367px;
     top: 12px;
@@ -142,11 +133,11 @@
     cursor: pointer;
   }
 
-  .slider__button:first-child::after {
+  .slider__toggle::after {
     @include pseudo;
     z-index: 2;
-    left: 380px;
-    top: 25px;
+    left: 12px;
+    top: 12px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -154,11 +145,16 @@
     cursor: pointer;
   }
 
-  .slider__button:active:first-child::before {
+  .slider__toggle:active {
     border: 2px solid $green-tone;
   }
 
-  .slider__button:hover:first-child::before {
+  .slider__toggle:active::after {
+    top: 11px;
+    left: 11px;
+  }
+
+  .slider__toggle:hover {
     box-shadow: 0 4px 5px 1px rgba(0, 0, 0, 0.2);
   }
 
@@ -251,20 +247,45 @@
     padding-bottom: 10px;
   }
 
-  .slider__buttons::before {
+  .slider__bar {
     top: 26px;
     left: 110px;
     width: 429px;
   }
 
-  .slider__button:first-child::before {
+  .slider__toggle {
+    position: absolute;
+    z-index: 1;
     left: 308px;
     top: 12px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #cdcdcd;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
   }
 
-  .slider__button:first-child::after {
-    left: 321px;
-    top: 25px;
+  .slider__toggle::after {
+    @include pseudo;
+    z-index: 2;
+    left: 12px;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $green-tone;
+    cursor: pointer;
+  }
+
+  .slider__toggle:active {
+    border: 2px solid $green-tone;
+  }
+
+  .slider__toggle:active::after {
+    top: 11px;
+    left: 11px;
   }
 
   .slider__after,
